@@ -1,0 +1,51 @@
+@import '_vars.scss';
+
+%flex {
+    display: flex;
+}
+
+.logo,
+.logo-link {
+    @extend %flex;
+}
+
+.logo {
+    .logo-link {}
+
+    .logo-pic {
+        width: 34px;
+        height: 59px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 11px;
+        font-size: 0.75rem;
+        color: $red;
+    }
+
+    .logo-header {
+        width: 90px;
+
+        .logo-title {
+            color: #18152F;
+            font-size: 0.8125rem;
+            font-family: $font-bold;
+            padding-top: 3px;
+            padding-bottom: 2px;
+            border-top: 2px solid #151334;
+            border-bottom: 2px solid #151334;
+            text-transform: uppercase;
+            margin-top: 6px;
+            letter-spacing: 1.5px;
+            width: 86px;
+        }
+
+        .logo-descriprion {
+            margin-top: 3px;
+            line-height: 1.2;
+            letter-spacing: 0.2px;
+            color: #9096AF;
+            font-size: 0.75rem;
+            font-family: $font-regular;
+        }
+    }
+}

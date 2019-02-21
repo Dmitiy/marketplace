@@ -4,18 +4,10 @@
 
 // @import './_helper.scss';
 
-// @import './layout.scss';
+@import './_layout.scss';
 
 @import './_default.scss';
 
 @import './_myReset.scss';
 
 @import './_media.scss';
-
-h1 {
-    color: red;
-    font-family: 'PT_Root_UI_Bold';
-    font-family: 'PT_Root_UI-Web-Light';
-    font-family: 'PT_Root_UI-Web-Medium';
-    font-family: 'PT_Root_UI-Web-Regular';
-}
