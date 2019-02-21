@@ -1,0 +1,89 @@
+@import '_vars.scss';
+
+
+.header {
+    @import './components/logo/_logo.scss';
+
+    @extend %inline-flex-y--center;
+    background-color: $white;
+    padding-top: 0.75rem;
+    padding-bottom: 1.125rem;
+
+    .wrapper,
+    .phone,
+    .menu {
+        @extend %inline-flex-y--center;
+    }
+
+    .phone {
+        margin-left: 4.125rem;
+
+        .phone-number {
+            margin-left: 0.5625rem;
+            color: #272E4A;
+            font-size: 1rem;
+            font-family: $font-bold;
+        }
+    }
+
+    .menu {
+        justify-content: flex-end;
+        margin-left: auto;
+
+        .menu__item {
+            .menu__link {
+                color: #272E49;
+                font-family: $font-regular;
+                font-size: 0.875rem;
+            }
+
+            .check-status,
+            .cart,
+            .log-in {
+                @extend %inline-flex-y--center;
+            }
+
+            .log-in .menu__link,
+            .cart .cart-counter {
+                @extend %inline-flex-xy--center;
+            }
+
+            .check-status {
+                .icon-circle_arrow_darkblue {
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .cart {
+                margin-left: 4.6875rem;
+
+                .menu__link {
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+
+                .cart-counter {
+                    color: #142558;
+                    font-size: 0.6875rem;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    position: relative;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: #f6f6fa;
+                }
+            }
+
+            .log-in {
+                margin-left: 3.75rem;
+
+                .menu__link {
+                    .icon-user {
+                        margin-right: 0.4375rem;
+                    }
+                }
+            }
+        }
+    }
+}

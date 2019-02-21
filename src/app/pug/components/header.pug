@@ -1,2 +1,22 @@
-header
-    include logo
+header.header
+    .wrapper
+        include logo
+        p.phone
+            span.icons.icon-phone
+            span.phone-number +7(499) 653-9-900
+        ul.menu
+            li.menu__item
+                .check-status
+                    a.menu__link(href="") Проверить статус заказа
+                        span.icons.icon-circle_arrow_darkblue
+            li.menu__item
+                .cart
+                    span.icons.icon-cart
+                    a.menu__link(href="") Корзина
+                    span.cart-counter 0
+            li.menu__item
+                .log-in
+                    a.menu__link.btn.btn--outline(href="") 
+                        span.icons.icon-user
+                        | Вход
+        

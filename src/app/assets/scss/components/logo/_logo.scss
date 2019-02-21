@@ -1,12 +1,8 @@
 @import '_vars.scss';
 
-%flex {
-    display: flex;
-}
-
 .logo,
 .logo-link {
-    @extend %flex;
+    @extend %inline-flex;
 }
 
 .logo {
@@ -24,6 +20,7 @@
 
     .logo-header {
         width: 90px;
+        margin-top: 6px;
 
         .logo-title {
             color: #18152F;
@@ -34,7 +31,6 @@
             border-top: 2px solid #151334;
             border-bottom: 2px solid #151334;
             text-transform: uppercase;
-            margin-top: 6px;
             letter-spacing: 1.5px;
             width: 86px;
         }

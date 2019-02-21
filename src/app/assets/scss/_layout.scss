@@ -1,3 +1,13 @@
-@import './_vars.scss';
+@import './_fonts.scss';
 
-@import './components/logo/_logo.scss';
+@import './_sprite.scss';
+
+@import './_helper.scss';
+
+@import './_myReset.scss';
+
+@import './_default.scss';
+
+@import './components/header/_header.scss';
+
+@import './components/buttons/_buttons.scss';

@@ -1,5 +1,9 @@
-// path
+// page
+$full-width: 1400px;
+$wrapper-width: 1170px;
 
+
+// path
 $path-img: '../img';
 $path-fonts: '../fonts/';
 
@@ -18,6 +22,7 @@ $font-family: 'PT_ROOT_UI',
 sans-serif;
 
 // colors palette
+$white: #fff;
 $bg: #f5f8fa;
 $footer-bg-color: #222328;
 $red: #f54732;
@@ -45,7 +50,7 @@ $disabled-btn-outline-color: $light-grey;
 
 //links
 $default-link-color: #9096AF;
-$hover-link-color: #fff;
+$hover-link-color: $white;
 
 // input-colors
 $default-input-outline-color: $light-grey;

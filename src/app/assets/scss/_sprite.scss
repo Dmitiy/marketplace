@@ -1,130 +1,120 @@
 .icons {
-    background: url('#{$path-img}/sprite/sprite1x.png') no-repeat top left;
-    display: inline-block;
-    vertical-align: top;
-    display: inline-flex;
+  background: url('#{$path-img}/sprite/sprite.png') no-repeat top left;
+  display: inline-block;
+  vertical-align: top;
+  display: inline-flex;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &.icon-active_page {
+    width: 80px;
+    height: 80px;
+    background-position: -10px -10px;
+  }
 
-    @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
-        background: url('#{$path-img}/sprite/sprite2x.png') no-repeat top left;
-        background-size: 139px 110px;
-    }
+  &.icon-arrow {
+    width: 5px;
+    height: 7px;
+    background-position: -136px -78px;
+  }
 
-    &.icon-active-page {
-        background-position: 0 0;
-        width: 48px;
-        height: 48px;
-    }
+  &.icon-breadcrumbs_arrow {
+    width: 6px;
+    height: 8px;
+    background-position: -110px -78px;
+  }
 
-    &.icon-next_pager {
-        background-position: -52px 0;
-        width: 32px;
-        height: 32px;
-    }
+  &.icon-carousel_arrow {
+    width: 12px;
+    height: 7px;
+    background-position: -246px -145px;
+  }
 
-    &.icon-next-pager {
-        background-position: 0 -52px;
-        width: 32px;
-        height: 32px;
-    }
+  &.icon-cart {
+    width: 18px;
+    height: 17px;
+    background-position: -246px -10px;
+  }
 
-    &.icon-prev_page {
-        background-position: -36px -52px;
-        width: 32px;
-        height: 32px;
-    }
+  &.icon-chevron_down {
+    width: 10px;
+    height: 6px;
+    background-position: -246px -172px;
+  }
 
-    &.icon-prev-pager {
-        background-position: -88px 0;
-        width: 32px;
-        height: 32px;
-    }
+  &.icon-circle_arrow_darkblue {
+    width: 19px;
+    height: 19px;
+    background-position: -178px -78px;
+  }
 
-    &.icon-circle-arrow-darkblue {
-        background-position: -88px -36px;
-        width: 18px;
-        height: 18px;
-    }
+  &.icon-circle_arrow_grey {
+    width: 19px;
+    height: 19px;
+    background-position: -178px -117px;
+  }
 
-    &.icon-circle-arrow-grey {
-        background-position: -88px -58px;
-        width: 18px;
-        height: 18px;
-    }
+  &.icon-circle_arrow_white {
+    width: 19px;
+    height: 19px;
+    background-position: -10px -178px;
+  }
 
-    &.icon-circle-arrow-white {
-        background-position: 0 -88px;
-        width: 18px;
-        height: 18px;
-    }
+  &.icon-next_pager {
+    width: 48px;
+    height: 48px;
+    background-position: -110px -10px;
+  }
 
-    &.icon-cart {
-        background-position: -22px -88px;
-        width: 17px;
-        height: 17px;
-    }
+  &.icon-next_arr_red {
+    width: 6px;
+    height: 10px;
+    background-position: -217px -78px;
+  }
 
-    &.icon-transfer {
-        background-position: -43px -88px;
-        width: 18px;
-        height: 16px;
-    }
+  &.icon-next_pager {
+    width: 48px;
+    height: 48px;
+    background-position: -10px -110px;
+  }
 
-    &.icon-search {
-        background-position: -65px -88px;
-        width: 15px;
-        height: 15px;
-    }
+  &.icon-next {
+    width: 6px;
+    height: 10px;
+    background-position: -217px -117px;
+  }
 
-    &.icon-phone {
-        background-position: -84px -88px;
-        width: 15px;
-        height: 15px;
-    }
+  &.icon-prev_page {
+    width: 48px;
+    height: 48px;
+    background-position: -78px -110px;
+  }
 
-    &.icon-user {
-        background-position: -103px -88px;
-        width: 14px;
-        height: 14px;
-    }
+  &.icon-phone {
+    width: 13px;
+    height: 13px;
+    background-position: -246px -47px;
+  }
 
-    &.icon-carousel-arrow {
-        background-position: -52px -36px;
-        width: 14px;
-        height: 12px;
-    }
+  &.icon-search {
+    width: 13px;
+    height: 13px;
+    background-position: -246px -80px;
+  }
 
-    &.icon-next {
-        background-position: -72px -52px;
-        width: 11px;
-        height: 13px;
-    }
+  &.icon-transfer {
+    width: 20px;
+    height: 16px;
+    background-position: -49px -178px;
+  }
 
-    &.icon-next-arr-red {
-        background-position: -72px -69px;
-        width: 11px;
-        height: 13px;
-    }
+  &.icon-prev_pager {
+    width: 48px;
+    height: 48px;
+    background-position: -178px -10px;
+  }
 
-    &.icon-chevron-down {
-        background-position: -70px -36px;
-        width: 13px;
-        height: 11px;
-    }
-
-    &.icon-arrow {
-        background-position: -124px 0;
-        width: 11px;
-        height: 12px;
-    }
-
-    &.icon-breadcrumbs-arrow {
-        background-position: -124px -16px;
-        width: 11px;
-        height: 12px;
-    }
+  &.icon-user {
+    width: 12px;
+    height: 12px;
+    background-position: -246px -113px;
+  }
 }

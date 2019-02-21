@@ -1,13 +1,25 @@
 @import './_vars.scss';
 
-@import './_fonts.scss';
-
-@import './sprite.scss';
-
 @import './_layout.scss';
 
-@import './_default.scss';
+body {
+    background-color: $bg;
+}
 
-@import './_myReset.scss';
+.page {
+    max-width: $full-width;
+    width: 100%;
+    margin: 0 auto;
+
+    .wrapper {
+        max-width: $wrapper-width;
+        width: $wrapper-width / $full-width * 100%;
+        margin: 0 auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+}
 
 @import './_media.scss';

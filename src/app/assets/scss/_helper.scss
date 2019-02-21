@@ -1,1 +1,25 @@
 @import '_vars.scss';
+
+%flex {
+    display: flex;
+}
+
+%inline-flex {
+    display: inline-flex;
+}
+
+%inline-flex-y--center {
+    display: inline-flex;
+    align-items: center;
+}
+
+%inline-flex-x--center {
+    display: inline-flex;
+    justify-content: center;
+}
+
+%inline-flex-xy--center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
