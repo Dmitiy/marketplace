@@ -1,6 +1,6 @@
 @import './_vars.scss';
 
-// @import './_fonts.scss';
+@import './_fonts.scss';
 
 // @import './_helper.scss';
 
@@ -11,3 +11,11 @@
 @import './_myReset.scss';
 
 @import './_media.scss';
+
+h1 {
+    color: red;
+    font-family: 'PT_Root_UI_Bold';
+    font-family: 'PT_Root_UI-Web-Light';
+    font-family: 'PT_Root_UI-Web-Medium';
+    font-family: 'PT_Root_UI-Web-Regular';
+}

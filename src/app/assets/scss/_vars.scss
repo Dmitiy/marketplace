@@ -3,8 +3,14 @@
 // $path-img: '../img';
 $path-fonts: '../fonts/';
 
-//fonts
-$font-family: 'Myriad Pro',
+// fonts
+$font-bold: 'PT_Root_UI_Bold';
+$font-light: 'PT_Root_UI-Web-Light';
+$font-medium: 'PT_Root_UI-Web-Medium';
+$font-regular: 'PT_Root_UI-Web-Regular';
+
+//font-family
+$font-family: 'PT_ROOT_UI',
 'PT Sans',
 'Roboto',
 'Helvetica',
