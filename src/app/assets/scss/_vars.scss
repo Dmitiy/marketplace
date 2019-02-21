@@ -1,6 +1,6 @@
 // path
 
-// $path-img: '../img';
+$path-img: '../img';
 $path-fonts: '../fonts/';
 
 // fonts
@@ -18,11 +18,15 @@ $font-family: 'PT_ROOT_UI',
 sans-serif;
 
 // colors palette
+$bg: #f5f8fa;
+$footer-bg-color: #222328;
 $red: #f54732;
 $dark-blue: #142558;
 $grey: #a1a8bd;
 $light-grey: #e3e8f0;
-
+$green: #44b759;
+$cart-footer-bg-color: $grey;
+$card-2x-size-bg:#c9d6e0;
 
 // text-color
 $main-text-color: $dark-blue;
