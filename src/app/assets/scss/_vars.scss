@@ -38,19 +38,24 @@ $card-2x-size-bg:#c9d6e0;
 $main-text-color: $dark-blue;
 $default-text-color: $grey;
 
-// buttons-color
-$default-btn-color: #f24841;
-$hover-btn-color: #e93d35;
-$active-btn-color: #db2d25;
+// buttons-large-color
+$default-btn-large-bg-color: #f24841;
+$hover-btn-large-bg-color: #e93d35;
+$active-btn-large-bg-color: #db2d25;
+$disabled-btn-large-bg-color: $grey;
 
-$disabled-btn-color: $grey;
+$default-btn-large-text-color: $white;
+
+//btn - default
+$default-btn-text-color: $dark-blue;
 
 $default-btn-outline-color: $light-grey;
+$default-btn-text-color: $dark-blue;
 
-$hover-btn-outline-color: $default-btn-color;
+$hover-btn-outline-color: #f24841;
 $hover-btn-text-color: #EC3033;
 
-$active-btn-outline-color: $active-btn-color;
+$active-btn-outline-color: #db2d25;
 $active-btn-text-color: #D0171D;
 
 $disabled-btn-outline-color: $light-grey;
