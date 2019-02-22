@@ -30,6 +30,7 @@ $dark-blue: #142558;
 $grey: #a1a8bd;
 $light-grey: #e3e8f0;
 $green: #44b759;
+
 $cart-footer-bg-color: $grey;
 $card-2x-size-bg:#c9d6e0;
 
@@ -41,12 +42,19 @@ $default-text-color: $grey;
 $default-btn-color: #f24841;
 $hover-btn-color: #e93d35;
 $active-btn-color: #db2d25;
+
 $disabled-btn-color: $grey;
 
 $default-btn-outline-color: $light-grey;
+
 $hover-btn-outline-color: $default-btn-color;
+$hover-btn-text-color: #EC3033;
+
 $active-btn-outline-color: $active-btn-color;
+$active-btn-text-color: #D0171D;
+
 $disabled-btn-outline-color: $light-grey;
+$disabled-btn-text-color: #9096AF;
 
 //links
 $default-link-color: #9096AF;

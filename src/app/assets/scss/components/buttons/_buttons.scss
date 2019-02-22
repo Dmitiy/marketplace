@@ -1,5 +1,6 @@
 @import '_vars.scss';
 
+button,
 .btn {
     padding-top: 8px;
     padding-bottom: 10px;
@@ -8,8 +9,53 @@
     width: 100px;
     border-radius: 5px;
     border: 2px solid transparent;
+    font-family: $font-bold !important;
+    cursor: pointer;
+
+}
+
+[disabled] {
+    color: $white !important;
+    border: 2px solid $disabled-btn-outline-color !important;
+
+    &:hover {
+        cursor: not-allowed;
+    }
+
+    &.btn--outline {
+        border: 2px solid $disabled-btn-outline-color !important;
+    }
+
+    &.btn-large {
+
+        background-color: $disabled-btn-color;
+        border: 2px solid $disabled-btn-color !important;
+    }
+}
+
+.btn {
+
+
+    &:hover {
+        transition: all .2s linear;
+        color: $hover-btn-text-color;
+
+        &.btn--outline {
+            border: 2px solid $hover-btn-outline-color;
+        }
+    }
+
+    &:active {
+        transition: all .1s linear;
+        color: $active-btn-text-color !important;
+
+        &.btn--outline {
+            border: 2px solid $active-btn-outline-color !important;
+        }
+    }
 
     &.btn--outline {
         border: 2px solid $default-btn-outline-color;
     }
+
 }
