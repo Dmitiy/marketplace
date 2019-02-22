@@ -37,6 +37,7 @@ $card-2x-size-bg:#c9d6e0;
 // text-color
 $main-text-color: $dark-blue;
 $default-text-color: $grey;
+$text-error: $red;
 
 // buttons-large-color
 $default-btn-large-bg-color: #f24841;
@@ -66,9 +67,12 @@ $default-link-color: #9096AF;
 $hover-link-color: $white;
 
 // input-colors
+$input-default-text-color: #a1a8bd;
+
 $default-input-outline-color: $light-grey;
 $blur-input-outline-color: $light-grey;
 $disabled-input-outline-color: $light-grey;
+$disabled-input-bg-color: #f3f6fa;
 $hover-input-outline-color: $grey;
 $focus-input-outline-color: #315ad5;
 $error-input-outline-color: $red;
