@@ -1,0 +1,61 @@
+@import '_vars.scss';
+
+.menu,
+.check-status,
+.cart,
+.log-in {
+    @extend %flex-y--center;
+}
+
+.menu {
+    justify-content: flex-end;
+    margin-left: auto;
+
+    .menu__item {
+        @extend %flex;
+    }
+
+    .menu__link,
+    .log-in .btn {
+        color: #272E49;
+        font-family: $font-regular;
+        font-size: 0.875rem;
+    }
+
+    .check-status {
+        .icon-circle_arrow_darkblue {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .cart {
+        margin-left: 4.6875rem;
+
+        .menu__link {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        .cart-counter {
+            color: #142558;
+            font-size: 0.6875rem;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #f6f6fa;
+            @extend %flex-xy--center;
+        }
+    }
+
+    .log-in {
+        margin-left: 3.75rem;
+
+        .btn {
+            .icon-user {
+                margin-right: 0.4375rem;
+            }
+        }
+    }
+}

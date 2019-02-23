@@ -16,19 +16,16 @@ body {
     color: $main-text-color;
 }
 
-.page {
-    max-width: $full-width;
-    width: 100%;
-    margin: 0 auto;
+.app {
 
-    .wrapper {
+    .app-wrap {
         max-width: $wrapper-width;
-        width: $wrapper-width / $full-width * 100%;
+        width: 100%;
         margin: 0 auto;
     }
 
-    .header {
-        width: 100%;
+    header {
+        @import './components/header/_header.scss';
     }
 }
 

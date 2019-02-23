@@ -4,6 +4,22 @@
     display: flex;
 }
 
+%flex-x--center {
+    display: inline-flex;
+    justify-content: center;
+}
+
+%flex-y--center {
+    display: inline-flex;
+    align-items: center;
+}
+
+%flex-xy--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 %inline-flex {
     display: inline-flex;
 }

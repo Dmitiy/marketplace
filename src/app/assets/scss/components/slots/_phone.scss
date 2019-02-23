@@ -1,0 +1,12 @@
+@import '_vars.scss';
+
+.phone {
+    @extend %flex-y--center;
+
+    .phone-number {
+        margin-left: 0.5625rem;
+        color: #272E4A;
+        font-size: 1rem;
+        font-family: $font-bold;
+    }
+}

@@ -6,8 +6,9 @@ html(lang="ru")
         include ../includes/meta
         title #{nameTitle}
     body
-        .page
-            include ../components/header
+        .app
+            header
+                include ../components/header
             main
                 block content
             footer
