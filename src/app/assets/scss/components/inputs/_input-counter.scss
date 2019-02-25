@@ -1,0 +1,47 @@
+@import '_vars.scss';
+
+.input-counter {
+    max-width: 125px;
+    width: 100%;
+    @extend %inline-flex-xy--center;
+
+    .control-minus,
+    .control-plus {
+        @extend %flex-xy--center;
+        width: 18px;
+        height: 18px;
+        border: none;
+        background-color: transparent;
+
+        .sign {
+            background-color: #f24841;
+            width: 18px;
+            height: 2px;
+            @extend %flex;
+        }
+    }
+
+    .control-plus {
+        position: relative;
+
+        .sign {
+
+            &:last-child {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .input {
+        width: 46px;
+        padding: 10px 0 11px;
+        text-align: center;
+        margin: 0 13px;
+        font-size: 1rem;
+        line-height: 1.3125rem;
+        font-family: $font-light;
+    }
+}

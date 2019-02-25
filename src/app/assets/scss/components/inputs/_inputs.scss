@@ -61,12 +61,15 @@
     .input-label {
         pointer-events: none;
     }
+
+    .input {
+        width: 250px;
+    }
 }
 
 input,
 textarea,
 select {
-    width: 250px;
     padding: 10px 16px 12px;
     border-radius: 3px;
     background-color: $white;
