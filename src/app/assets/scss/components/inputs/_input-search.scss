@@ -1,0 +1,30 @@
+@import '_vars.scss';
+
+.input-search {
+    @extend %inline-flex-xy--center;
+    max-width: 370px;
+
+    .input {
+        width: 100%;
+        border-width: 1px;
+        padding-left: 21px;
+        padding-right: 34px;
+        padding-top: 15px;
+        padding-bottom: 17px;
+        font-family: $font-regular;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .search-label {
+        @extend %inline-flex-xy--center;
+        position: relative;
+
+        .icon-search {
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+        }
+    }
+}
