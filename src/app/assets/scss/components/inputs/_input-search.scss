@@ -2,7 +2,6 @@
 
 .input-search {
     @extend %inline-flex-xy--center;
-    max-width: 370px;
 
     .input {
         width: 100%;
@@ -19,6 +18,7 @@
     .search-label {
         @extend %inline-flex-xy--center;
         position: relative;
+        width: 370px;
 
         .icon-search {
             position: absolute;
