@@ -34,6 +34,10 @@ body {
 
             @import './components/nav/_nav.scss';
 
+            .nav {
+                @extend %inline-flex;
+            }
+
             .input-search {
                 .input {
                     border-radius: 0;
@@ -49,10 +53,9 @@ body {
                 }
             }
         }
-
-
     }
 
+    @import './components/breadcrumbs/_breadcrumbs.scss';
 }
 
 @import './_media.scss';

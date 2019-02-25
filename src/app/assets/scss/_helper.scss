@@ -5,13 +5,18 @@
 }
 
 %flex-x--center {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 }
 
 %flex-y--center {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+}
+
+%flex-y--baseline {
+    display: flex;
+    align-items: baseline;
 }
 
 %flex-xy--center {
@@ -38,4 +43,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+%inline-flex-y--baseline {
+    display: inline-flex;
+    align-items: baseline;
 }

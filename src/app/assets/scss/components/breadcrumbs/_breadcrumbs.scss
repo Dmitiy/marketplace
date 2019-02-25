@@ -1,0 +1,32 @@
+@import './_vars.scss';
+
+.breadcrumbs {
+    @extend %flex-y--center;
+
+    li {
+        @extend %flex-y--baseline;
+        padding-top: 30px;
+        padding-bottom: 29px;
+        font-size: 0.875rem;
+
+        a {
+            color: #6E7691;
+            font-family: $font-regular;
+            transition: all .2s ease;
+
+            &:hover {
+                color: #101A46;
+            }
+        }
+
+        .icon-breadcrumbs_arrow {
+            margin: 0 8px;
+        }
+    }
+
+    .active {
+        a {
+            color: #101A46;
+        }
+    }
+}
