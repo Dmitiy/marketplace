@@ -1,0 +1,117 @@
+@import '_vars.scss';
+
+.pagination {
+    @extend %flex-xy--center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    background-color: $white;
+    border-radius: 4px;
+
+    .pager,
+    .pager-prev,
+    .pager-next {
+        @extend %inline-flex-y--center;
+    }
+
+    .pager {
+        .active {
+            a {
+                color: #f54732;
+                box-shadow: 0px 4px 36px rgba(89, 89, 89, .4);
+
+                &:hover {
+                    color: #f54732;
+                    font-family: $font-bold;
+                }
+            }
+        }
+
+        li {
+            +li {
+                margin-left: 30px;
+            }
+        }
+
+        a {
+            font-family: $font-bold;
+            font-size: 0.875rem;
+            line-height: 3.25rem;
+            color: #3a405b;
+
+            &:hover {
+                color: #f54732;
+                font-family: $font-regular;
+            }
+        }
+    }
+
+    .pager .active a,
+    .pager-double-arrow,
+    .pager-single-arrow {
+        @extend %flex-xy--center;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        border: 1px solid #e4e9f1;
+
+    }
+
+    .pager-prev,
+    .pager-next {
+
+        .pager-double-arrow,
+        .pager-single-arrow {
+            transition: all .2s ease;
+
+            &:hover {
+                .icon-next {
+                    background-position: -217px -78px;
+                }
+            }
+        }
+    }
+
+    .pager-prev {
+
+        .pager-double-arrow,
+        .pager-single-arrow {
+            &:hover {
+                .icon-next {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .pager-double-arrow {
+            margin-right: 15px;
+        }
+
+        .pager-single-arrow {
+            margin-right: 30px;
+        }
+    }
+
+    .pager-next {
+
+        .pager-double-arrow,
+        .pager-single-arrow {
+            .icon-next {
+                transform: rotate(180deg);
+            }
+
+            &:hover {
+                .icon-next {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        .pager-double-arrow {
+            margin-left: 12px;
+        }
+
+        .pager-single-arrow {
+            margin-left: 48px;
+        }
+    }
+}
