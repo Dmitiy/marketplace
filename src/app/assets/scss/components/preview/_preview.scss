@@ -1,26 +1,25 @@
 @import '_vars.scss';
 
 .preview-product {
-    @extend %flex-y--center;
-    padding-top: 20px;
-    background-color: $white;
+	@extend %flex-y--center;
+	padding-top: 20px;
+	background-color: $white;
 
-    .app-wrap {
-        @extend %flex-y--center;
-        justify-content: space-between;
-        padding-right: 93px;
+	.app-wrap {
+		@extend %flex-y--center;
+		justify-content: space-between;
+		padding-right: 93px;
 
-        h1 {
-            font-size: 2.625rem;
-            font-family: $font-bold;
-            color: #202A57;
-            @extend %inline-flex;
-        }
+		h1 {
+			font-size: 2.625rem;
+			font-family: $font-bold;
+			color: #202a57;
+			@extend %inline-flex;
+		}
 
-        img {
-            width: 271px;
-            height: 217px;
-        }
-    }
-
+		img {
+			width: 271px;
+			height: 217px;
+		}
+	}
 }

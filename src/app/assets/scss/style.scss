@@ -56,6 +56,13 @@ body {
     }
 
     @import './components/breadcrumbs/_breadcrumbs.scss';
+
+    main {
+        @import './components/product-item/_product-item.scss';
+
+        @import './components/pagination/_pagination.scss';
+
+    }
 }
 
 @import './_media.scss';
