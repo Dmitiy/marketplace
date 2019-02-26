@@ -19,15 +19,42 @@ $w-product-2x: $product-w-2x / $wrapper-width * 100%;
         flex-direction: column;
         justify-content: center;
         flex-basis: $w-product-1x;
+        text-center: center;
         border-radius: 5px;
         background-color: $white;
         padding-top: 30px;
         padding-bottom: 40px;
         margin-bottom: 30px;
-        text-center: center;
 
         &.product-item--2x {
             flex-basis: $w-product-2x;
+            position: relative;
+            background-color: #c9d6e0;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .product-item__desc {
+                position: absolute;
+                top: 47%;
+                left: 40px;
+                transform: translateY(-50%);
+                text-align: left;
+                margin-top: 0;
+
+                .product-item__title {
+                    font-size: 2.25rem;
+                    line-height: 1.1;
+                    font-family: $font-bold;
+                    text-transform: none;
+                    max-width: 280px;
+                    width: 100%;
+                }
+
+                .btn {
+                    font-size: 0.875rem;
+
+                }
+            }
         }
 
         &:hover {

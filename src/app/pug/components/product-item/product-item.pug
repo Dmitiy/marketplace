@@ -1,20 +1,26 @@
 mixin product-item(src, title, price, currency)
-    figure.product-item
+    figure.product-item(class!=attributes.class)
         img.product-item__img(src=src alt=title)
         figcaption.product-item__desc
             h4.product-item__title= title
             p.product-item__price= price
                 span.product-item__currency= currency
             button.btn В корзину
+
+mixin product-item-2x(src, title)
+    figure.product-item.product-item--2x(class!=attributes.class)
+        img.product-item__img(src=src alt=title)
+        figcaption.product-item__desc
+            h4.product-item__title= title
+            a(href="").btn Смотреть все
+            
 +product-item('assets/img/products/chairs/ch-1.png', 'Cтул ханна','9 399', '₽')
 +product-item('assets/img/products/chairs/ch-2.png', 'Cтул Эдинбург','5 690', '₽')
 +product-item('assets/img/products/chairs/ch-3.png', 'Cтул Сольер','2 390', '₽')
 +product-item('assets/img/products/chairs/ch-4.png', 'Cтул Стелла','3 500', '₽')
 +product-item('assets/img/products/chairs/ch-5.png', 'Cтул Бланес','9 399', '₽')
 +product-item('assets/img/products/chairs/ch-6.png', 'Кресло Гоа','9 399', '₽')
-
-//- +product-item('assets/img/products/chairs/household2x-7.png', 'Cтул Ханна','9 399', '₽')
-
++product-item-2x('assets/img/products/chairs/household2x-7.png', 'Товары для дома со скидкой')
 +product-item('assets/img/products/chairs/ch-8.png', 'Кресло Мильтон','9 399', '₽')
 +product-item('assets/img/products/chairs/ch-9.png', 'Кресло Рикардо','9 399', '₽')
 +product-item('assets/img/products/chairs/ch-10.png', 'Cтул Версаль','9 399', '₽')
@@ -22,3 +28,4 @@ mixin product-item(src, title, price, currency)
 +product-item('assets/img/products/chairs/ch-12.png', 'Кресло Софья','9 399', '₽')
 +product-item('assets/img/products/chairs/ch-13.png', 'Cтул Родос','9 399', '₽')
 +product-item('assets/img/products/chairs/ch-14.png', 'Cтул Бетти','9 399', '₽')
++product-item('assets/img/products/chairs/ch-15.png', 'Cтул Yohoho','4 003', '₽')

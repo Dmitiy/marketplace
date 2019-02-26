@@ -36,9 +36,9 @@ h6 {
 
 a {
     text-decoration: none;
-    cursor: pointer;
 
     &:hover {
+        cursor: pointer !important;
         text-decoration: none;
     }
 }
