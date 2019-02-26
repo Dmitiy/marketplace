@@ -1,0 +1,14 @@
+@import '_vars.scss';
+
+.footer {
+    @extend %flex-y--center;
+    background-color: $footer-bg-color;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    @import './components/footer/_top-footer.scss';
+    @import './components/menu/_menu-footer.scss';
+
+}

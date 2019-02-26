@@ -1,0 +1,50 @@
+@import '_vars.scss';
+
+.top-footer {
+    @extend %flex-y--center;
+    padding-bottom: 20px;
+    @import './components/logo/_logo.scss';
+
+    .logo {
+        margin-right: 160px;
+
+        .logo-header {
+
+            .logo-title {
+                color: $white !important;
+                border-top: 2px solid $white;
+                border-bottom: 2px solid $white;
+            }
+
+            .logo-descriprion {
+                color: #A2A6BB;
+            }
+        }
+    }
+
+    .navigation {
+        @extend %inline-flex;
+
+        @import './components/nav/_nav.scss';
+
+        .nav {
+            @extend %inline-flex;
+            padding-right: 0;
+
+            a {
+                color: $white;
+                font-family: $font-bold;
+                padding-top: 0;
+                padding-bottom: 0;
+
+                &.active-link {
+                    border-bottom: 0;
+                }
+
+                &:hover {
+                    color: $default-link-color;
+                }
+            }
+        }
+    }
+}

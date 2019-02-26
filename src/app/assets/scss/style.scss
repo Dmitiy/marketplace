@@ -63,6 +63,10 @@ body {
         @import './components/pagination/_pagination.scss';
 
     }
+
+    footer {
+        @import './components/footer/_footer.scss';
+    }
 }
 
 @import './_media.scss';

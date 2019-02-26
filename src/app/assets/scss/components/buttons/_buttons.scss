@@ -26,12 +26,12 @@
     border: 2px solid $default-btn-outline-color;
     color: $default-btn-text-color;
     // width: 100px;
+    transition: all .2s linear;
 
     &:hover {
         cursor: pointer !important;
         border: 2px solid $hover-btn-outline-color;
         color: $hover-btn-text-color;
-        transition: all .2s linear;
 
         &:focus {
             border: 2px solid $active-btn-outline-color;

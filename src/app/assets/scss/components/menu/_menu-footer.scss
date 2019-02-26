@@ -1,0 +1,55 @@
+@import '_vars.scss';
+
+.menu {
+    @extend %flex-y--baseline;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid $white;
+
+    .menu__item {
+        color: #A2A6BB;
+        font-family: $font-regular;
+        font-size: 0.875rem;
+
+        .menu__link {
+            color: inherit;
+
+            &:hover {
+                color: $white;
+                cursor: pointer;
+            }
+        }
+
+        &.phone {
+            .phone-number {
+                .icon-phone {
+                    margin-right: 10px;
+                }
+
+                +.phone-number {
+                    margin-top: 10px;
+                }
+            }
+
+            .phone-number:nth-child(2) {
+                padding-left: 24px;
+                font-family: $font-bold;
+                font-size: 1rem;
+            }
+        }
+
+        &.check-status {
+            .icon-circle_arrow_grey {
+                margin-left: 8px;
+            }
+        }
+
+        &.log-in {
+            margin-right: 140px;
+        }
+
+        .icon-user {
+            margin-right: 10px;
+        }
+    }
+}
