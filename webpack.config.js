@@ -170,10 +170,11 @@ module.exports = {
 			filename: 'index.html',
 			template: './src/app/pug/index.pug',
 		}),
-		// new HtmlWebpackPlugin({
-		// 	filename: 'pages/main.html',
-		// 	template: './src/app/pug/pages/main.pug',
-		// }),
+
+		new HtmlWebpackPlugin({
+			filename: 'order-status.html',
+			template: './src/app/pug/pages/check-order-page.pug',
+		}),
 
 		extractPlugin,
 		cleanPlugin,

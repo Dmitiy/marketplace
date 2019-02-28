@@ -1,0 +1,19 @@
+- var nameTitle = '12 стульев';
+
+<!doctype html>
+html(lang="ru")
+    head
+        include ../includes/meta
+        title #{nameTitle}
+    body
+        .app
+            header
+                include ../components/header
+                .navigation
+                    .app-wrap
+                        include ../components/nav/nav
+                        include ../components/elements/input-search
+            main
+                block content
+            footer
+                include ../components/footer

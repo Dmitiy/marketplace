@@ -8,7 +8,8 @@
     position: relative;
 
     .helper-box {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 
     &.has-value {
@@ -29,6 +30,8 @@
 
         .helper-box {
             @extend %flex;
+            visibility: visible;
+            opacity: 1;
         }
 
         .txt-error {
@@ -44,7 +47,7 @@
         position: absolute;
         top: 26px;
         left: 33px;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateY(-50%);
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: $input-default-text-color;

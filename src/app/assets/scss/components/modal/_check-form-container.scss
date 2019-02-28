@@ -1,0 +1,68 @@
+@import './_vars.scss';
+
+.check-form-container {
+    height: 100vh;
+
+    .h2 {
+        font-size: 2rem;
+        font-family: $font-bold;
+        color: $dark-blue;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
+    .modal-box {
+        @extend %flex-xy--center;
+
+        .modal {
+            max-width: 576px;
+            width: 100%;
+            padding: 45px 130px 55px;
+            background-color: $white;
+            border-radius: 5px;
+
+            .txt-modal {
+                font-size: 1rem;
+                line-height: 1.3125rem;
+                font-family: $font-regular;
+                color: $main-text-color;
+                margin-bottom: 48px;
+                letter-spacing: -.6px;
+            }
+
+            .input-box,
+            .input {
+                max-width: 315px;
+                width: 100%;
+
+            }
+
+            .input-box {
+                +.input-box {
+                    margin-top: 2px;
+                    margin-bottom: 30px;
+                }
+
+                .input+.input-label,
+                .input~.input-label {
+                    // font-size: 1rem;
+                    // line-height: 1.3125rem;
+                }
+            }
+
+            .btn-default {
+                @extend %flex-xy--center;
+                padding-top: 14px;
+                padding-bottom: 17px;
+                font-size: 1.125rem;
+                line-height: 1.3125rem;
+                font-family: $font-bold;
+
+                .icon-circle_arrow_white {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
