@@ -68,7 +68,9 @@ body {
         border-radius: 5px;
         @extend %flex;
         justify-content: space-between;
+
         @import './components/range-slider/_range-slider.scss';
+
         @import './components/select/_select.scss';
     }
 
