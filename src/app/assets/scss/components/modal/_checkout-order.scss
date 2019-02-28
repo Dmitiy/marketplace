@@ -35,16 +35,33 @@
                 margin-bottom: 27px;
             }
 
-            .checkout-order__address,
-            .checkout-order__receiver {
-                //     @extend %flex-x--center;
-                //     flex-direction: column;
-                //     flex-wrap: wrap;
+            .checkout-order__address {
+                .checkout-order__item {
+                    .flex-inline {
+                        .input-box {
+                            width: 100px;
+
+                            +.input-box {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
             }
 
             .input-box {
                 .input {
                     width: 100%;
+
+                    &.input-sm {
+                        width: 100px;
+                    }
+                }
+
+                .helper-box {
+                    .txt-error {
+                        line-height: 1;
+                    }
                 }
             }
 

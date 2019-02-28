@@ -65,6 +65,14 @@
     color: $dark-blue;
 }
 
+.flex {
+    @extend %flex;
+}
+
+.flex-inline {
+    @extend %inline-flex;
+}
+
 .txt-error {
     color: $red;
 }
