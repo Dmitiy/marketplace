@@ -1,0 +1,22 @@
+@import '_vars.scss';
+
+.select {
+    @extend %inline-flex-y--center;
+
+    .select__item {
+        @extend %inline-flex-y--center;
+
+        +.select__item {
+            margin-left: 62px;
+        }
+
+        select {
+            border: none;
+            padding-right: 8px;
+            padding-left: 16px;
+            color: $dark-blue;
+            font-family: $font-bold;
+            font-size: 1rem;
+        }
+    }
+}

@@ -57,7 +57,23 @@ body {
 
     @import './components/breadcrumbs/_breadcrumbs.scss';
 
+    .controls-field {
+        background-color: $white;
+        padding-top: 25px;
+        padding-bottom: 18px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        @extend %flex;
+        justify-content: space-between;
+        @import './components/range-slider/_range-slider.scss';
+        @import './components/select/_select.scss';
+    }
+
     main {
+
         @import './components/product-item/_product-item.scss';
 
         @import './components/pagination/_pagination.scss';
