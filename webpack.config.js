@@ -51,8 +51,7 @@ module.exports = {
 	},
 
 	module: {
-		rules: [
-			{
+		rules: [{
 				test: /\.pug$/,
 				loader: 'pug-loader',
 				options: {
@@ -61,14 +60,12 @@ module.exports = {
 			},
 			{
 				test: /\.html$/,
-				use: [
-					{
-						loader: 'html-loader',
-						options: {
-							minimize: true,
-						},
+				use: [{
+					loader: 'html-loader',
+					options: {
+						minimize: true,
 					},
-				],
+				}, ],
 			},
 			{
 				test: /\.css$/,
@@ -80,8 +77,7 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				use: extractPlugin.extract({
-					use: [
-						{
+					use: [{
 							loader: 'css-loader',
 							options: {
 								sourceMap: true,
@@ -115,8 +111,7 @@ module.exports = {
 			},
 			{
 				test: /\.(png|gif|jpe?g)$/,
-				loaders: [
-					{
+				loaders: [{
 						loader: 'file-loader',
 						options: {
 							name: '[name].[ext]',
@@ -129,16 +124,14 @@ module.exports = {
 			},
 			{
 				test: /\.(eot|svg|ttf|woff|woff2)$/,
-				loaders: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[name].[ext]',
-							outputPath: 'assets/fonts/',
-							publicPath: '../fonts/',
-						},
+				loaders: [{
+					loader: 'file-loader',
+					options: {
+						name: '[name].[ext]',
+						outputPath: 'assets/fonts/',
+						publicPath: '../fonts/',
 					},
-				],
+				}, ],
 			},
 			{
 				test: /\.svg/,
@@ -163,18 +156,13 @@ module.exports = {
 		}),
 
 		new CopyWebpackPlugin(
-			[
-				{
-					from: 'src/app/assets/img',
-					to: 'assets/img/',
-				},
-			],
-			{
-				ignore: [
-					{
-						glob: 'svg/*',
-					},
-				],
+			[{
+				from: 'src/app/assets/img',
+				to: 'assets/img/',
+			}, ], {
+				ignore: [{
+					glob: 'svg/*',
+				}, ],
 			},
 		),
 
@@ -182,6 +170,10 @@ module.exports = {
 			filename: 'index.html',
 			template: './src/app/pug/index.pug',
 		}),
+		// new HtmlWebpackPlugin({
+		// 	filename: 'pages/main.html',
+		// 	template: './src/app/pug/pages/main.pug',
+		// }),
 
 		extractPlugin,
 		cleanPlugin,
