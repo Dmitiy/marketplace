@@ -1,0 +1,59 @@
+@import './_vars.scss';
+
+.checkout-order {
+
+    @extend %flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 90px;
+
+    form {
+        @extend %flex-x--center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: $white;
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-bottom: 56px;
+        border-radius: 5px;
+
+        fieldset {
+            max-width: 450px;
+            width: 100%;
+
+            .h2 {
+                margin-bottom: 42px;
+            }
+
+            p {
+                font-size: 1.25rem;
+                font-family: $font-bold;
+                color: $dark-blue;
+                margin-bottom: 27px;
+            }
+
+            .checkout-order__address,
+            .checkout-order__receiver {
+                //     @extend %flex-x--center;
+                //     flex-direction: column;
+                //     flex-wrap: wrap;
+            }
+
+            .input-box {
+                .input {
+                    width: 100%;
+                }
+            }
+
+            .btn-default {
+                padding-top: 16px;
+                padding-bottom: 18px;
+                font-family: $font-bold;
+                margin-top: 40px;
+            }
+        }
+    }
+}

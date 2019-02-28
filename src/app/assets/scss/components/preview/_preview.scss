@@ -10,10 +10,7 @@
 		justify-content: space-between;
 		padding-right: 93px;
 
-		h1 {
-			font-size: 2.625rem;
-			font-family: $font-bold;
-			color: #202a57;
+		.h1 {
 			@extend %inline-flex;
 		}
 

@@ -1,20 +1,5 @@
 @import '_vars.scss';
 
-.buttons-list {
-    li {
-        margin: 1rem 0;
-    }
-}
-
-[disabled] {
-    color: $disabled-btn-text-color;
-    border: 2px solid $disabled-btn-outline-color;
-
-    &:hover {
-        cursor: not-allowed;
-    }
-}
-
 .btn {
     @extend %inline-flex-xy--center;
     padding: 8px 15px 10px 16px;

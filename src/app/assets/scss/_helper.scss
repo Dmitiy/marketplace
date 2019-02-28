@@ -49,3 +49,33 @@
     display: inline-flex;
     align-items: baseline;
 }
+
+
+// classes
+
+.h1 {
+    font-size: 2.625rem;
+    font-family: $font-bold;
+    color: #202a57;
+}
+
+.h2 {
+    font-size: 2rem;
+    font-family: $font-bold;
+    color: $dark-blue;
+}
+
+.txt-error {
+    color: $red;
+}
+
+//attrs
+
+[disabled] {
+    color: $disabled-btn-text-color;
+    border: 2px solid $disabled-btn-outline-color;
+
+    &:hover {
+        cursor: not-allowed;
+    }
+}
