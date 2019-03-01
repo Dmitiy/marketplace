@@ -1,0 +1,62 @@
+@import '_vars.scss';
+
+.control-close,
+.control-minus,
+.control-plus {
+    @extend %flex-xy--center;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .sign {
+        width: 18px;
+        height: 2px;
+        @extend %flex;
+    }
+}
+
+.control-minus,
+.control-plus {
+    .sign {
+        background-color: #f24841;
+    }
+}
+
+.control-close,
+.control-plus {
+    position: relative;
+
+    .sign {
+
+        &:last-child {
+            position: absolute;
+            top: 8px;
+            left: 0;
+        }
+    }
+}
+
+.control-plus {
+    .sign {
+        &:last-child {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.control-close {
+
+    .sign {
+        background-color: #a1a8bd;
+        transform: rotate(45deg);
+
+        &:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}

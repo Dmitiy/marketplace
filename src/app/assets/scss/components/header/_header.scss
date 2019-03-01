@@ -1,23 +1,22 @@
 @import '_vars.scss';
 
 .header {
-    @import './components/logo/_logo.scss';
+	@import './components/logo/_logo.scss';
 
-    @extend %flex;
-    background-color: $white;
-    padding-top: 0.75rem;
-    padding-bottom: 1.125rem;
+	@extend %flex;
+	background-color: $white;
+	padding-top: 0.75rem;
+	padding-bottom: 1.125rem;
 
-    .app-wrap {
-        @extend %flex-y--center;
-    }
+	.app-wrap {
+		@extend %flex-y--center;
+	}
 
-    @import './components/slots/_phone.scss';
+	@import './components/slots/_phone.scss';
 
-    .phone {
-        margin-left: 4.125rem;
-    }
+	.phone {
+		margin-left: 4.125rem;
+	}
 
-    @import './components/menu/_menu.scss';
-
+	@import './components/menu/_menu.scss';
 }

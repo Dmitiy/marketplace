@@ -1,0 +1,32 @@
+//- menu
+
+mixin navLink(href, name)
+    a(class!=attributes.class href=href)= name
+
+//- product-item
+
+mixin product-item(src, title, price, currency)
+    figure.product-item(class!=attributes.class)
+        img.product-item__img(src=src alt=title)
+        figcaption.product-item__desc
+            h4.product-item__title= title
+            p.product-item__price= price
+                span.product-item__currency= currency
+            button.btn В корзину
+
+mixin product-item-2x(src, title)
+    figure.product-item.product-item--2x(class!=attributes.class)
+        img.product-item__img(src=src alt=title)
+        figcaption.product-item__desc
+            h4.product-item__title= title
+            a(href="").btn Смотреть все
+
+//- checkout-cart
+
+mixin cart-ticket(src, title, number)
+    figure.cart-ticket
+        img.cart-ticket__img(src=src, alt=title)
+        figcaption.cart-ticket-desc
+            h4.cart-ticket__title= title
+            p.cart-ticket__order Код товара
+                span.cart-ticket__number= number

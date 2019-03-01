@@ -1,8 +1,3 @@
-- var links = ['Стулья и Кресла', 'Кровати и Матрасы', 'Шкафы и комоды', 'Мебель для кухни', 'Товары для дома'];
-
-mixin navLink(href, name)
-    a(class!=attributes.class href=href)= name
-
 nav.nav
     +navLink('chairs', 'Стулья и Кресла')(class='active-link')
     +navLink('beds', 'Кровати и Матрасы')

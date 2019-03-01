@@ -5,35 +5,7 @@
     width: 100%;
     @extend %inline-flex-xy--center;
 
-    .control-minus,
-    .control-plus {
-        @extend %flex-xy--center;
-        width: 18px;
-        height: 18px;
-        border: none;
-        background-color: transparent;
-
-        .sign {
-            background-color: #f24841;
-            width: 18px;
-            height: 2px;
-            @extend %flex;
-        }
-    }
-
-    .control-plus {
-        position: relative;
-
-        .sign {
-
-            &:last-child {
-                position: absolute;
-                top: 8px;
-                left: 0;
-                transform: rotate(90deg);
-            }
-        }
-    }
+    @import '../buttons/_btn-controls.scss';
 
     .input {
         width: 46px;

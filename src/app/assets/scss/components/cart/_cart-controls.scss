@@ -1,0 +1,33 @@
+@import '_vars.scss';
+
+.cart-controls {
+    @extend %flex-y--center;
+
+    li {
+        font-size: 1.125rem;
+        line-height: 1.3125rem;
+        font-family: $font-bold;
+
+        &:first-child {
+            margin-right: 44px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 36px;
+
+            .input-counter {
+                .input {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            margin-right: 30px;
+        }
+
+        &:last-child {
+            @import '../buttons/_btn-controls.scss';
+        }
+    }
+}

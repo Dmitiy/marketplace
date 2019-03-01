@@ -1,5 +1,7 @@
 - var nameTitle = '12 стульев';
 
+include ../mixins/mixin
+
 <!doctype html>
 html(lang="ru")
     head
@@ -8,7 +10,7 @@ html(lang="ru")
     body
         .app
             header
-                include ../components/header
+                include ../components/header/header
                 .navigation
                     .app-wrap
                         include ../components/nav/nav
@@ -21,4 +23,4 @@ html(lang="ru")
             main
                 block content
             footer
-                include ../components/footer
+                include ../components/footer/footer

@@ -57,10 +57,15 @@ $w-product-2x: $product-w-2x / $wrapper-width * 100%;
             }
         }
 
+        transition: box-shadow .2s linear;
+
         &:hover {
             cursor: pointer;
-            transition: box-shadow .3s linear;
             box-shadow: 0px 4px 35px rgba(89, 89, 89, 0.4);
+        }
+
+        .product-item__img {
+            align-self: center;
         }
 
         .product-item__desc {
