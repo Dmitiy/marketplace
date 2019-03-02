@@ -1,0 +1,10 @@
+.form-check-modal
+    h2.h2 Проверить статус заказа
+    .form-modal
+        form
+            fieldset
+                p.txt-modal Введите номер Вашего заказа и электронный адрес, указанный при его оформлении.
+                +input('text', 'numOrder', 'Номер заказа', 'Пожалуйста заполните поле')
+                +input('email', 'emailOrder', 'Электронная почта', 'Пожалуйста заполните поле')
+                button.btn-default.btn-block Проверить статус
+                    span.icons.icon-circle_arrow_white

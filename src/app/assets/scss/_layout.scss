@@ -10,16 +10,11 @@
 
 @import './_default.scss';
 
-@import './components/header/_header.scss';
-
+//buttons
 @import './components/buttons/_buttons.scss';
+@import './components/buttons/_btn-controls.scss';
 
+//inputs
 @import './components/inputs/_inputs.scss';
-
 @import './components/inputs/_input-counter.scss';
-
 @import './components/inputs/_input-search.scss';
-
-@import './components/pagination/_pagination.scss';
-
-@import './components/preview/_preview.scss';

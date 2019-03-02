@@ -1,0 +1,31 @@
+@import './_vars.scss';
+
+.cart-ticket {
+    @extend %inline-flex-y--center;
+
+    .cart-ticket__img {
+        width: 20%;
+        max-width: 100px;
+    }
+
+    .cart-ticket-desc {
+        margin-left: 30px;
+
+        .cart-ticket__title {
+            margin-bottom: 10px;
+            font-family: $font-regular;
+            color: $main-text-color;
+            font-size: 1rem;
+        }
+
+        .cart-ticket__order {
+            font-family: $font-regular;
+            color: $default-text-color;
+            font-size: 0.875rem;
+
+            .cart-ticket__number {
+                margin-left: 6px;
+            }
+        }
+    }
+}

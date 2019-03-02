@@ -1,23 +1,21 @@
-.checkout-cart
-    .container.app-wrap
-        .cart
-            header.cart-header
-                h2.h2 Корзина
-            section.cart-body
-                ol.cart-list
-                    li.cart__item
-                        +cart-ticket("assets/img/products/chairs/ch-1.png","Кресло Ханна", '1049556')
-                        include ../controls/cart-controls
-                    li.cart__item
-                        +cart-ticket("assets/img/products/chairs/ch-2.png","Стул Ханна", '1049356')
-                        include ../controls/cart-controls
-                    li.cart__item
-                        +cart-ticket("assets/img/products/chairs/ch-3.png","Кресло Хао", '1043356')
-                        include ../controls/cart-controls
-            footer.cart-footer
-                p.cart-total
-                    span.cart-total-items 3
-                    | товара
-                p.cart-total-price К оплате:
-                    span.cart-total-cash 28 197
-                    span.cart-total-currency ₽
+.cart
+    header.cart-header
+        h2.h2 Корзина
+    section.cart-body
+        ol.cart-list
+            li.cart__item
+                +cart-ticket("assets/img/products/chairs/ch-1.png", "Кресло Ханна", '1049556')
+                include ../controls/cart-controls
+            li.cart__item
+                +cart-ticket("assets/img/products/chairs/ch-2.png", "Стул Ханна", '1049356')
+                include ../controls/cart-controls
+            li.cart__item
+                +cart-ticket("assets/img/products/chairs/ch-3.png", "Кресло Хао", '1043356')
+                include ../controls/cart-controls
+    footer.cart-footer
+        p.cart-total
+            span.cart-total-items 3
+            | товара
+        p.cart-total-price К оплате:
+            span.cart-total-cash 28 197
+            span.cart-total-currency ₽

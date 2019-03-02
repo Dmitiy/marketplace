@@ -1,13 +1,13 @@
 @import '_vars.scss';
 
-.menu,
-.check-status,
-.cart,
-.log-in {
+.menu-header,
+.menu-check-status,
+.menu-cart,
+.menu-log-in {
     @extend %flex-y--center;
 }
 
-.menu {
+.menu-header {
     justify-content: flex-end;
     margin-left: auto;
 
@@ -16,19 +16,19 @@
     }
 
     .menu__link,
-    .log-in .btn {
+    .menu-log-in .btn {
         color: #272E49;
         font-family: $font-regular;
         font-size: 0.875rem;
     }
 
-    .check-status {
+    .menu-check-status {
         .icon-circle_arrow_darkblue {
             margin-left: 0.5rem;
         }
     }
 
-    .cart {
+    .menu-cart {
         margin-left: 4.6875rem;
 
         .menu__link {
@@ -36,11 +36,10 @@
             padding-right: 0.5rem;
         }
 
-        .cart-counter {
+        .menu-cart__counter {
             color: #142558;
             font-size: 0.6875rem;
-            font-family: 'Montserrat';
-            font-weight: bold;
+            font-family: $font-bold;
             width: 24px;
             height: 24px;
             border-radius: 50%;
@@ -49,7 +48,7 @@
         }
     }
 
-    .log-in {
+    .menu-log-in {
         margin-left: 3.75rem;
 
         .btn {

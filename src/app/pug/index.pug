@@ -1,12 +1,6 @@
 extends layouts/layout
-//- extends layouts/check-order-layout
 
 block content
-    .app-wrap
-        .products-list
-            include ./components/product-item/product-item
-    //-     include ./components/pagination/pagination
-    //- .check-form-container
-    //-     .h2 Проверить статус заказа
-    //- include ./components/checkout-order/checkout-order
-    include ./components/cart/cart
+    include ./components/range-slider/range-slider
+    include ./components/product-item/product-item
+    include ./components/pagination/pagination

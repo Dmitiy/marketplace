@@ -1,13 +1,14 @@
 @import '_vars.scss';
 
-.menu {
+.menu-footer {
     @extend %flex-y--baseline;
     justify-content: space-between;
     padding-top: 20px;
     border-top: 1px solid $white;
+    width: 100%;
 
     .menu__item {
-        color: #A2A6BB;
+        color: $default-text-color;
         font-family: $font-regular;
         font-size: 0.875rem;
 
@@ -20,32 +21,35 @@
             }
         }
 
-        &.phone {
-            .phone-number {
+        &.menu-phone {
+            p {
+                @extend %flex-y--center;
+
+                +p {
+                    margin-top: 10px;
+                }
+
                 .icon-phone {
                     margin-right: 10px;
                 }
-
-                +.phone-number {
-                    margin-top: 10px;
-                }
             }
 
-            .phone-number:nth-child(2) {
+            p:nth-child(2) {
                 padding-left: 24px;
                 font-family: $font-bold;
                 font-size: 1rem;
             }
         }
 
-        &.check-status {
+        &.menu-check-status {
             .icon-circle_arrow_grey {
                 margin-left: 8px;
             }
         }
 
-        &.log-in {
+        &.menu-log-in {
             margin-right: 140px;
+            @extend %flex-y--center;
         }
 
         .icon-user {

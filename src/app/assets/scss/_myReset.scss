@@ -18,6 +18,7 @@ img {
 form {
     fieldset {
         border: none;
+        padding: 0;
     }
 }
 
@@ -38,7 +39,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        cursor: pointer !important;
+        cursor: pointer;
         text-decoration: none;
     }
 }

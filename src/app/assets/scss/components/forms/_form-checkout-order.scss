@@ -1,28 +1,25 @@
 @import './_vars.scss';
 
-.checkout-order {
+.form-checkout-order {
 
     @extend %flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 36px;
     margin-bottom: 90px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 56px;
 
     form {
         @extend %flex-x--center;
         flex-wrap: wrap;
         flex-direction: column;
         background-color: $white;
-        max-width: 870px;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-left: 50px;
-        padding-bottom: 56px;
+        max-width: 450px;
         border-radius: 5px;
+        width: 100%;
 
         fieldset {
-            max-width: 450px;
-            width: 100%;
 
             .h2 {
                 margin-bottom: 42px;
@@ -37,13 +34,15 @@
 
             .checkout-order__address {
                 .checkout-order__item {
-                    .flex-inline {
-                        .input-box {
-                            width: 100px;
-
-                            +.input-box {
+                    .inline-flex {
+                        .checkout-order__item {
+                            +.checkout-order__item {
                                 margin-left: 20px;
                             }
+                        }
+
+                        .input-box {
+                            width: 100px;
                         }
                     }
                 }

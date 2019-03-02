@@ -1,0 +1,14 @@
+@import './_vars.scss';
+
+.form-check-modal {
+    height: 100vh;
+
+    .h2 {
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
+    @import './form-modal.scss';
+
+}
