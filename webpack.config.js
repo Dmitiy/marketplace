@@ -181,6 +181,11 @@ module.exports = {
 			template: './src/app/pug/pages/cart-page.pug',
 		}),
 
+		new HtmlWebpackPlugin({
+			filename: 'detail-order.html',
+			template: './src/app/pug/pages/detail-order-page.pug',
+		}),
+
 		extractPlugin,
 		cleanPlugin,
 	],

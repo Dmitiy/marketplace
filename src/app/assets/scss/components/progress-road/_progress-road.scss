@@ -1,0 +1,88 @@
+@import './_vars.scss';
+
+.progress-road {
+    padding-top: 32px;
+    padding-bottom: 64px;
+
+    .progress-step {
+        counter-reset: step;
+        @extend %inline-flex;
+        max-width: 698px;
+        width: 100%;
+
+        li {
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.3125rem;
+            font-family: $font-bold;
+            color: $grey;
+            padding-top: 27px;
+            flex: 1;
+            text-align: center;
+
+            span {
+                position: relative;
+            }
+
+            &:first-child {
+                span {
+                    left: 56px;
+                }
+
+                &:after {
+                    content: none;
+                }
+            }
+
+            &:nth-child(2) {
+                span {
+                    left: 15px;
+                }
+            }
+
+            &:last-child {
+                span {
+                    left: -15px;
+                }
+            }
+
+            &:before {
+                content: counter(step);
+                counter-increment: step;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 2px solid $grey;
+                background-color: $white;
+                text-align: center;
+                margin: 0 auto;
+                @extend %inline-flex-xy--center;
+                position: absolute;
+                top: -22px;
+                left: 50%;
+                transform: translateY(50%);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: -50%;
+                // transform: translateY(-50%);
+                width: 100%;
+                height: 2px;
+                background-color: $grey;
+                z-index: -1;
+            }
+
+            &.active {
+                &:before {
+
+                    background-color: #142558;
+                    color: $white;
+                    border: 2px solid #142558;
+                }
+            }
+        }
+    }
+}
