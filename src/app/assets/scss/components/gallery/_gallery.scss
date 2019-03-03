@@ -1,0 +1,57 @@
+@import './_vars.scss';
+
+.gallery {
+    @extend %inline-flex;
+    background-color: $white;
+
+    .gallery-stack {
+        @extend %inline-flex;
+        flex-direction: column;
+
+        .controls-arrow__up,
+        .controls-arrow__down {
+            @extend %inline-flex-x--center;
+        }
+
+        .controls-arrow__up {
+            margin-bottom: 18px;
+        }
+
+        .controls-arrow__down {
+            margin-top: 14px;
+
+            .icon-carousel_arrow {
+                transform: rotateX(180deg);
+            }
+        }
+
+        .gallery-box {
+            li {
+                &.active {
+                    border-radius: 2px;
+                    border: 2px solid $light-grey;
+                }
+
+                +li {
+                    margin-top: 10px;
+                }
+
+                img {
+                    width: 65px;
+                }
+            }
+        }
+    }
+
+    .gallery-preview {
+        @extend %inline-flex;
+        max-width: 400px;
+        width: 100%;
+        margin-left: 64px;
+
+        img {
+            width: 320px;
+            object-fit: cover;
+        }
+    }
+}
