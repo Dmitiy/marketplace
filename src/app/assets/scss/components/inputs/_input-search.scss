@@ -26,6 +26,14 @@
         position: relative;
         width: 370px;
 
+        .input {
+            &:focus {
+                ~.icon-search {
+                    background-position: -130px -97px;
+                }
+            }
+        }
+
         .icon-search {
             position: absolute;
             top: 50%;
