@@ -1,0 +1,22 @@
+- var nameTitle = '12 стульев';
+
+include ../mixins/mixin
+
+<!doctype html>
+html(lang="ru")
+    head
+        include ../includes/meta
+        title #{nameTitle}
+    body
+        .app
+            header
+                include ../components/header/header
+                .navigation
+                    .app-wrap
+                        include ../components/nav/nav
+                        include ../components/elements/input-search
+            main
+                .app-wrap
+                    block content
+            footer
+                include ../components/footer/footer

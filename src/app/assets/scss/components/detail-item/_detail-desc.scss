@@ -1,0 +1,52 @@
+@import './_vars.scss';
+
+.detail-desc {
+    .h2 {
+        font-size: 2.25rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $font-regular;
+        font-size: 1rem;
+
+        +p {
+            margin-top: 18px;
+        }
+    }
+
+    .detail-desc__code {
+        font-family: $font-regular;
+        font-size: 1rem;
+        color: $grey;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+
+    .detail-desc__stat {
+        font-family: $font-regular;
+        font-size: 1rem;
+        color: $grey;
+        @extend %flex-y--center;
+
+        &.detail-desc__stat--active {
+            color: $dark-blue;
+
+            .detail-desc__indicator {
+                background-color: $green;
+            }
+        }
+
+        .detail-desc__indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $grey;
+            @extend %inline-flex;
+            margin-right: 9px;
+        }
+
+    }
+}

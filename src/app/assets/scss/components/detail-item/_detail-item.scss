@@ -1,0 +1,12 @@
+@import './_vars.scss';
+
+.detail-check-container {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+
+    @import './_detail-desc.scss';
+
+    @import './_detail-count.scss';
+
+}

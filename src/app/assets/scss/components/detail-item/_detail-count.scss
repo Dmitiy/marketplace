@@ -1,0 +1,59 @@
+@import './_vars.scss';
+
+.detail-count {
+    padding: 30px 27px 28px 28px;
+    background-color: $bg;
+    border-radius: 5px;
+    margin-top: 32px;
+
+    .detail-count__group {
+        @extend %flex-y--center;
+        justify-content: space-between;
+
+        .detail-count__amount {
+            font-family: $font-bold;
+            font-size: 1.875rem;
+            line-height: 1.3125rem;
+
+            .detail-count__currency {}
+        }
+
+        .input-counter {
+            margin-right: 40px;
+        }
+
+    }
+
+    .btn-default {
+        margin-top: 32px;
+    }
+
+    .detail-transfer {
+        margin-top: 22px;
+        color: $grey;
+        font-size: 1rem;
+        font-family: $font-regular;
+
+        .icons {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 37px;
+                height: 37px;
+                border-radius: 50%;
+                background-color: rgba(227, 232, 240, .5);
+            }
+
+            &.icon-transfer {
+                margin-right: 18px;
+            }
+        }
+
+    }
+
+}
