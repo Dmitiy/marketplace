@@ -19,6 +19,10 @@
             line-height: 1.5rem;
             font-family: $font-regular;
             color: $default-text-color;
+
+            +p {
+                margin-top: -2px;
+            }
         }
     }
 }

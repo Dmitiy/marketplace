@@ -1,14 +1,13 @@
 @import './_vars.scss';
 
 .form-modal {
-    @extend %flex-xy--center;
+    margin-bottom: 100px;
 
-    form {
+    .container {
         max-width: 576px;
         width: 100%;
         padding: 45px 130px 55px;
-        background-color: $white;
-        border-radius: 5px;
+        margin: 0 auto;
 
         .txt-modal {
             font-size: 1rem;

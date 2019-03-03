@@ -1,0 +1,27 @@
+.detail-status-order
+    h2.h2 Проверить статус заказа
+    .container
+        .order-status-detail__header
+            .order-status-detail__info
+                h3.h3 Заказ
+                    span ARU04889781
+                p.date Дата заказа:
+                    span 7 февраля 2019
+            a.order-status-detail__link(href="order-status.html") Проверить другой заказ
+        .order-status-detail__body
+            include ../progress-road/progress-road
+            include ../cart/cart-detail-order
+        .order-status-detail__footer
+            article.article 
+                header.article-header
+                    h4.h4 Адрес доставки
+                section.article-body
+                    p Севастополь, Победы пр-кт, д. 2А
+                    p Россия
+            article.article 
+                header.article-header
+                    h4.h4 Получатель
+                section.article-body
+                    p Иван Иванов  
+                    p ivanov@gmail.com
+                    p +7 (978) 123-45-67

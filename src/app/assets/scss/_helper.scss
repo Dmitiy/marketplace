@@ -52,6 +52,10 @@
 
 
 // classes
+.container {
+    background-color: $white;
+    border-radius: 5px;
+}
 
 .h1 {
     font-size: 2.625rem;
@@ -61,6 +65,13 @@
 
 .h2 {
     font-size: 2rem;
+    font-family: $font-bold;
+    color: $dark-blue;
+}
+
+.h3 {
+    font-size: 1.25rem;
+    line-height: 1.3125rem;
     font-family: $font-bold;
     color: $dark-blue;
 }

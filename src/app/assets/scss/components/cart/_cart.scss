@@ -4,6 +4,42 @@
     border-radius: 5px;
     margin-bottom: 36px;
 
+    &.cart-detail-order {
+        .cart-header {
+            .date {
+                font-family: $font-bold;
+                font-size: 1rem;
+                line-height: 1.3125rem;
+                color: $dark-blue;
+            }
+
+            .cart-detail-order__count {
+                font-family: $font-bold;
+                font-size: 1rem;
+                line-height: 1.3125rem;
+                color: $dark-blue;
+                margin-bottom: 10px;
+            }
+        }
+
+        .cart-body {
+            padding-left: 0;
+            padding-right: 0;
+
+            .cart-list {
+                .cart__item {
+                    .cart-ticket-desc {
+                        margin-left: 41px;
+                    }
+
+                    &:last-child {
+                        border-bottom: 1px solid #f0f2f7;
+                    }
+                }
+            }
+        }
+    }
+
     .cart-header {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
