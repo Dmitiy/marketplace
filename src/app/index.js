@@ -28,4 +28,5 @@
 			input_box.classList.add('has-value')
 		}
 	}
+
 })();

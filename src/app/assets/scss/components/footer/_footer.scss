@@ -20,6 +20,11 @@
                 margin-right: auto;
             }
 
+            @import '../slots/_phone.scss';
+
+            .phone-number {
+                color: #9ea5ba;
+            }
         }
     }
 

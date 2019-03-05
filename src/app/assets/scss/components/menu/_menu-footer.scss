@@ -22,10 +22,10 @@
         }
 
         &.menu-phone {
-            p {
+            .title {
                 @extend %flex-y--center;
 
-                +p {
+                +.tel {
                     margin-top: 10px;
                 }
 
@@ -34,10 +34,17 @@
                 }
             }
 
-            p:nth-child(2) {
+            .tel {
                 padding-left: 24px;
                 font-family: $font-bold;
                 font-size: 1rem;
+
+                a {
+                    font-size: inherit;
+                    line-height: inherit;
+                    font-family: inherit;
+                    color: inherit;
+                }
             }
         }
 

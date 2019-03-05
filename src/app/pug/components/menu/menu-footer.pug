@@ -2,10 +2,12 @@ ul.menu-footer
     li.menu__item
         include ../slots/copyright
     li.menu__item.menu-phone
-        p
+        p.title
             span.icons.icon-phone 
             | Техническая поддержка
-        p +7(499) 653-9-900
+        p.tel
+            a.url(href="tel:+7(499) 653-9-900")
+                span.value +7(499) 653-9-900
     li.menu__item.menu-check-status
         a.menu__link(href="order-status.html") Проверить статус заказа
             span.icons.icon-circle_arrow_grey

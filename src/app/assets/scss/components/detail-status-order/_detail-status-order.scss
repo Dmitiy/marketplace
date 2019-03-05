@@ -33,7 +33,7 @@
                 }
 
                 .date {
-                    span {
+                    .time {
                         margin-left: 9px;
                     }
                 }
@@ -63,10 +63,10 @@
         }
 
         .order-status-detail__footer {
-            .article {
+            .vcard {
                 margin-top: 8px;
 
-                .article-header {
+                .vcard-header {
                     margin-bottom: 7px;
 
                     .h4 {
@@ -74,14 +74,11 @@
                     }
                 }
 
-                +.article {
+                +.vcard {
                     margin-top: 30px;
                 }
             }
         }
 
     }
-
-
-
 }

@@ -8,19 +8,21 @@
 
 @import './_myReset.scss';
 
+@import './_animations.scss';
+
 @import './_default.scss';
 
-//buttons
+// buttons
 @import './components/buttons/_buttons.scss';
 @import './components/buttons/_btn-controls.scss';
 
-//inputs
+// inputs
 @import './components/inputs/_inputs.scss';
 @import './components/inputs/_input-counter.scss';
 @import './components/inputs/_input-search.scss';
 
-//gallery
+// gallery
 @import './components/gallery/_gallery.scss';
 
-//article
+// article
 @import './components/article/_article.scss';

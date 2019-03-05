@@ -76,3 +76,13 @@ $disabled-input-bg-color: #f3f6fa;
 $hover-input-outline-color: $grey;
 $focus-input-outline-color: #315ad5;
 $error-input-outline-color: $red;
+
+// grid-system
+$gap: 30px;
+
+$w-100: 100%;
+$w-25: calc(#{$w-100} / 4 - #{$gap});
+
+.w-25 {
+    width: $w-25;
+}
