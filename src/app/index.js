@@ -8,7 +8,6 @@
 		item.addEventListener('blur', onBlur, true);
 	})
 
-
 	function onFocus(event) {
 		const el = event.target;
 		const input_box = el.parentNode;
@@ -29,4 +28,13 @@
 		}
 	}
 
+	const burgerMenu = document.querySelector('.btn-burger');
+
+	burgerMenu.addEventListener('click', () => {
+		if (burgerMenu.classList == 'btn-burger') {
+			burgerMenu.classList.add('btn-burger--close');
+		} else {
+			burgerMenu.classList.remove('btn-burger--close');
+		}
+	});
 })();
