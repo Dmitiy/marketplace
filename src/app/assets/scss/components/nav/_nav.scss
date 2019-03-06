@@ -2,9 +2,7 @@
 
 .nav {
     @extend %flex-y--center;
-    padding-right: 27px;
-    padding-top: 22px;
-    padding-bottom: 19px;
+    padding: 22px 27px 19px 0;
 
     a {
         font-size: 0.75rem;

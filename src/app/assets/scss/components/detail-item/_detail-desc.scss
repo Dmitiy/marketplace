@@ -15,7 +15,7 @@
         }
     }
 
-    .detail-desc__code {
+    &__code {
         font-family: $font-regular;
         font-size: 1rem;
         color: $grey;
@@ -25,7 +25,7 @@
         }
     }
 
-    .detail-desc__stat {
+    &__stat {
         font-family: $font-regular;
         font-size: 1rem;
         color: $grey;
@@ -38,15 +38,14 @@
                 background-color: $green;
             }
         }
+    }
 
-        .detail-desc__indicator {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: $grey;
-            @extend %inline-flex;
-            margin-right: 9px;
-        }
-
+    &__indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $grey;
+        @extend %inline-flex;
+        margin-right: 9px;
     }
 }

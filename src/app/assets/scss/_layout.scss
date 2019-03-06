@@ -2,15 +2,15 @@
 
 @import './_fonts.scss';
 
-@import './_sprite.scss';
-
 @import './_helper.scss';
+
+@import './_sprite.scss';
 
 @import './_myReset.scss';
 
-@import './_animations.scss';
-
 @import './_default.scss';
+
+@import './_animations.scss';
 
 // buttons
 @import './components/buttons/_btn-burger.scss';
@@ -22,8 +22,30 @@
 @import './components/inputs/_input-counter.scss';
 @import './components/inputs/_input-search.scss';
 
+// logo
+@import './components/logo/_logo.scss';
+
+// nav
+@import './components/nav/_nav.scss';
+
 // gallery
 @import './components/gallery/_gallery.scss';
 
+// cart
+@import './components/cart/_cart.scss';
+
+// cart ticket
+@import './components/ticket/_ticket.scss';
+
 // article
 @import './components/article/_article.scss';
+
+// controls
+@import './components/range-slider/_range-slider.scss';
+@import './components/select/_select.scss';
+
+// progress-road-step
+@import './components/progress-road/_progress-road.scss';
+
+// slots
+@import './components/slots/_phone.scss';

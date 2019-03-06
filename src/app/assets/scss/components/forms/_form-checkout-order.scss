@@ -6,17 +6,14 @@
     flex-direction: column;
     margin-top: 36px;
     margin-bottom: 90px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 56px;
+    padding: 50px 0 56px 50px;
 
     form {
+        @extend %common-bdrs-bg;
         @extend %flex-x--center;
         flex-wrap: wrap;
         flex-direction: column;
-        background-color: $white;
         max-width: 450px;
-        border-radius: 5px;
         width: 100%;
 
         fieldset {

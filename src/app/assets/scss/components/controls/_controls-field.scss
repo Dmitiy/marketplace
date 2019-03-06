@@ -1,18 +1,10 @@
 @import '_vars.scss';
 
 .controls-field {
-    background-color: $white;
-    padding-top: 25px;
-    padding-bottom: 18px;
-    padding-left: 32px;
-    padding-right: 32px;
+    @extend %common-bdrs-bg;
+    padding: 25px 32px 18px;
     margin-top: 50px;
     margin-bottom: 20px;
-    border-radius: 5px;
     @extend %flex;
     justify-content: space-between;
-
-    @import '../range-slider/_range-slider.scss';
-
-    @import '../select/_select.scss';
 }

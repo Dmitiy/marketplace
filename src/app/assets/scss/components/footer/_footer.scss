@@ -8,9 +8,10 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    &.footer-cart {
+    &-cart {
         .app-wrap {
             @extend %flex-y--center;
+            justify-content: space-between;
 
             .logo {
                 margin-right: 65px;
@@ -19,8 +20,6 @@
             .copyright {
                 margin-right: auto;
             }
-
-            @import '../slots/_phone.scss';
 
             .phone-number {
                 color: #9ea5ba;
@@ -49,20 +48,15 @@
         }
     }
 
-    @import './components/logo/_logo.scss';
-
     .logo {
-        .logo-header {
+        &-title {
+            color: $white;
+            border-top: 2px solid $white;
+            border-bottom: 2px solid $white;
+        }
 
-            .logo-title {
-                color: $white !important;
-                border-top: 2px solid $white;
-                border-bottom: 2px solid $white;
-            }
-
-            .logo-descriprion {
-                color: #A2A6BB;
-            }
+        &-descriprion {
+            color: #A2A6BB;
         }
     }
 

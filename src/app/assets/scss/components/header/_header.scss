@@ -1,25 +1,25 @@
 @import '_vars.scss';
 
 .header {
-	@import './components/buttons/_btn-burger.scss';
+	@extend %flex;
+	background-color: $white;
+	padding-top: 0.75rem;
+	padding-bottom: 1.125rem;
 
 	.btn-burger {
 		margin-right: 1rem;
 		display: none;
 	}
 
-	@import './components/logo/_logo.scss';
-
-	@extend %flex;
-	background-color: $white;
-	padding-top: 0.75rem;
-	padding-bottom: 1.125rem;
+	&-cart {
+		.app-wrap {
+			justify-content: space-between;
+		}
+	}
 
 	.app-wrap {
 		@extend %flex-y--center;
 	}
-
-	@import './components/slots/_phone.scss';
 
 	.phone-number {
 		margin-left: 66px;

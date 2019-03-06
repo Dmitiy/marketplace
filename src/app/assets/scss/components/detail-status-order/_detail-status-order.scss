@@ -14,12 +14,14 @@
         padding: 38px 32px 55px 40px;
         margin: 0 auto;
 
-        .order-status-detail__header {
-            @extend %flex;
-            justify-content: space-between;
-            margin-bottom: 11px;
+        .order-status-detail {
+            &__header {
+                @extend %flex;
+                justify-content: space-between;
+                margin-bottom: 11px;
+            }
 
-            .order-status-detail__info {
+            &__info {
                 margin-bottom: 15px;
                 @extend %inline-flex;
                 flex-direction: column;
@@ -39,46 +41,42 @@
                 }
             }
 
-            .order-status-detail__link {
+            &__link {
                 color: $red;
                 font-family: $font-bold;
                 font-size: 1rem;
                 line-height: 1.3125rem;
             }
-        }
 
-        .order-status-detail__body {
-            @import '../progress-road/_progress-road.scss';
+            &__body {
 
-            .progress-road {
-                border-top: 1px solid #f0f2f7;
+                .progress-road {
+                    border-top: 1px solid #f0f2f7;
+                }
+
+                .cart {
+                    border-radius: 0px;
+                    margin-bottom: 0px;
+                }
             }
 
-            @import '../cart/_cart.scss';
+            &__footer {
+                .article {
+                    margin-top: 8px;
 
-            .cart {
-                border-radius: 0px;
-                margin-bottom: 0px;
-            }
-        }
+                    &-header {
+                        margin-bottom: 7px;
 
-        .order-status-detail__footer {
-            .vcard {
-                margin-top: 8px;
+                        .h4 {
+                            letter-spacing: 1.2px;
+                        }
+                    }
 
-                .vcard-header {
-                    margin-bottom: 7px;
-
-                    .h4 {
-                        letter-spacing: 1.2px;
+                    +.article {
+                        margin-top: 30px;
                     }
                 }
-
-                +.vcard {
-                    margin-top: 30px;
-                }
             }
         }
-
     }
 }

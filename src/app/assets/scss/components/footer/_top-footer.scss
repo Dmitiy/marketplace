@@ -8,8 +8,6 @@
     .navigation {
         @extend %inline-flex;
 
-        @import './components/nav/_nav.scss';
-
         .nav {
             @extend %inline-flex;
             padding-right: 0;

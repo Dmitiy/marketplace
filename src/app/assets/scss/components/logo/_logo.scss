@@ -6,9 +6,9 @@
 }
 
 .logo {
-    .logo-link {}
+    &-link {}
 
-    .logo-pic {
+    &-pic {
         width: 34px;
         height: 59px;
         display: inline-block;
@@ -18,30 +18,30 @@
         color: $red;
     }
 
-    .logo-header {
+    &-header {
         width: 90px;
         margin-top: 6px;
+    }
 
-        .logo-title {
-            color: #18152F;
-            font-size: 0.8125rem;
-            font-family: $font-bold;
-            padding-top: 3px;
-            padding-bottom: 2px;
-            border-top: 2px solid #151334;
-            border-bottom: 2px solid #151334;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            width: 86px;
-        }
+    &-title {
+        color: #18152F;
+        font-size: 0.8125rem;
+        font-family: $font-bold;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        border-top: 2px solid #151334;
+        border-bottom: 2px solid #151334;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        width: 86px;
+    }
 
-        .logo-descriprion {
-            margin-top: 3px;
-            line-height: 1.2;
-            letter-spacing: 0.2px;
-            color: #9096AF;
-            font-size: 0.75rem;
-            font-family: $font-regular;
-        }
+    &-descriprion {
+        margin-top: 3px;
+        line-height: 1.2;
+        letter-spacing: 0.2px;
+        color: #9096AF;
+        font-size: 0.75rem;
+        font-family: $font-regular;
     }
 }

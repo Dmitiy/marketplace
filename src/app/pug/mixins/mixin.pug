@@ -15,7 +15,7 @@ mixin product-item(href, src, title, price, currency)
 
 //- product-item-2x
 mixin product-item-2x(href, src, title)
-    figure.product-item--2x
+    figure.product-item.product-item-big
         img.product-item__img(src=src alt=title)
         figcaption.product-item__desc
             p.product-item__title= title
@@ -23,12 +23,12 @@ mixin product-item-2x(href, src, title)
 
 //- checkout-cart
 mixin cart-ticket(src, title, number)
-    figure.cart-ticket
-        img.cart-ticket__img(src=src, alt=title)
-        figcaption.cart-ticket-desc
-            p.cart-ticket__title= title
-            p.cart-ticket__order Код товара
-                span.cart-ticket__number= number
+    figure.ticket
+        img.ticket__img(src=src, alt=title)
+        figcaption.ticket__desc
+            p.ticket__title= title
+            p.ticket__order Код товара
+                span.ticket__number= number
 
 //- input
 mixin input(type, name, labelFor, errMsg)

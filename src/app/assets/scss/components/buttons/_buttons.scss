@@ -31,37 +31,37 @@
             cursor: not-allowed;
         }
     }
-}
 
-.btn-default {
-    width: 214px;
-    padding-top: 16px;
-    padding-bottom: 18px;
-    border-radius: 5px;
-    border: 2px solid transparent;
-    background-color: $default-btn-large-bg-color;
-    color: $default-btn-large-text-color;
-    font-family: $font-bold;
+    &-default {
+        width: 214px;
+        padding-top: 16px;
+        padding-bottom: 18px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background-color: $default-btn-large-bg-color;
+        color: $default-btn-large-text-color;
+        font-family: $font-bold;
 
-    &:hover,
-    &:hover &:focus,
-    &[disabled] {
-        color: $white !important;
-    }
+        &:hover,
+        &:hover &:focus,
+        &[disabled] {
+            color: $white !important;
+        }
 
-    &:hover {
-        background-color: $hover-btn-large-bg-color;
+        &:hover {
+            background-color: $hover-btn-large-bg-color;
 
-        &:focus {
-            background-color: $active-btn-large-bg-color;
+            &:focus {
+                background-color: $active-btn-large-bg-color;
+            }
+        }
+
+        &[disabled] {
+            background-color: $disabled-btn-large-bg-color;
         }
     }
 
-    &[disabled] {
-        background-color: $disabled-btn-large-bg-color;
+    &-block {
+        width: 100%;
     }
-}
-
-.btn-block {
-    width: 100%;
 }

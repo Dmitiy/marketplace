@@ -1,11 +1,9 @@
 @import '_vars.scss';
 
 .pagination {
+    @extend %common-bdrs-bg;
     @extend %flex-xy--center;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    background-color: $white;
-    border-radius: 4px;
+    padding: 21px 0;
     margin-bottom: 100px;
 
     .pager,

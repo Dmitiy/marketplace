@@ -2,14 +2,6 @@
 
 @import './_layout.scss';
 
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder,
-::placeholder {
-    color: $default-text-color;
-}
-
 body {
     background-color: $bg;
     font-family: $font-family;

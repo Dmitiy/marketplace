@@ -25,9 +25,5 @@
         &:nth-child(3) {
             margin-right: 30px;
         }
-
-        &:last-child {
-            @import '../buttons/_btn-controls.scss';
-        }
     }
 }

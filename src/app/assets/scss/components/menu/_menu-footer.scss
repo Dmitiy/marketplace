@@ -7,12 +7,14 @@
     border-top: 1px solid $white;
     width: 100%;
 
-    .menu__item {
-        color: $default-text-color;
-        font-family: $font-regular;
-        font-size: 0.875rem;
+    .menu {
+        &__item {
+            color: $default-text-color;
+            font-family: $font-regular;
+            font-size: 0.875rem;
+        }
 
-        .menu__link {
+        &__link {
             color: inherit;
 
             &:hover {
@@ -21,7 +23,7 @@
             }
         }
 
-        &.menu-phone {
+        &-phone {
             .title {
                 @extend %flex-y--center;
 
@@ -48,19 +50,19 @@
             }
         }
 
-        &.menu-check-status {
+        &-check-status {
             .icon-circle_arrow_grey {
                 margin-left: 8px;
             }
         }
 
-        &.menu-log-in {
+        &-log-in {
             margin-right: 140px;
             @extend %flex-y--center;
-        }
 
-        .icon-user {
-            margin-right: 10px;
+            .icon-user {
+                margin-right: 10px;
+            }
         }
     }
 }

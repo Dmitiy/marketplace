@@ -1,31 +1,34 @@
 @import './_vars.scss';
 
-.cart-ticket {
+.ticket {
     @extend %inline-flex-y--center;
 
-    .cart-ticket__img {
+    &__img {
         width: 20%;
         max-width: 100px;
     }
 
-    .cart-ticket-desc {
+    &__desc {
         margin-left: 30px;
+    }
 
-        .cart-ticket__title {
-            margin-bottom: 6px;
-            font-family: $font-regular;
-            color: $main-text-color;
-            font-size: 1rem;
-        }
+    &__title,
+    &__order {
+        font-family: $font-regular;
+    }
 
-        .cart-ticket__order {
-            font-family: $font-regular;
-            color: $default-text-color;
-            font-size: 0.875rem;
+    &__title {
+        margin-bottom: 6px;
+        color: $main-text-color;
+        font-size: 1rem;
+    }
 
-            .cart-ticket__number {
-                margin-left: 6px;
-            }
-        }
+    &__order {
+        color: $default-text-color;
+        font-size: 0.875rem;
+    }
+
+    &__number {
+        margin-left: 6px;
     }
 }

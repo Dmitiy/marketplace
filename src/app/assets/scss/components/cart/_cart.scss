@@ -4,7 +4,7 @@
     border-radius: 5px;
     margin-bottom: 36px;
 
-    &.cart-detail-order {
+    &-detail-order {
         .cart-header {
             .date {
                 font-family: $font-bold;
@@ -12,14 +12,14 @@
                 line-height: 1.3125rem;
                 color: $dark-blue;
             }
+        }
 
-            .cart-detail-order__count {
-                font-family: $font-bold;
-                font-size: 1rem;
-                line-height: 1.3125rem;
-                color: $dark-blue;
-                margin-bottom: 10px;
-            }
+        &__count {
+            font-family: $font-bold;
+            font-size: 1rem;
+            line-height: 1.3125rem;
+            color: $dark-blue;
+            margin-bottom: 10px;
         }
 
         .cart-body {
@@ -27,8 +27,8 @@
             padding-right: 0;
 
             .cart-list {
-                .cart__item {
-                    .cart-ticket-desc {
+                &__item {
+                    .ticket__desc {
                         margin-left: 41px;
                     }
 
@@ -40,47 +40,39 @@
         }
     }
 
-    .cart-header {
+    &-header {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
 
         .h2 {
-            padding-top: 44px;
-            padding-left: 46px;
-            padding-bottom: 36px;
+            padding: 44px 0 36px 46px;
         }
     }
 
-    .cart-body {
-
-        padding-left: 44px;
-        padding-right: 44px;
+    &-body {
+        padding: 0 44px;
 
         .cart-list {
             @extend %flex;
             flex-direction: column;
             padding-bottom: 20px;
 
-            .cart__item {
+            &__item {
                 @extend %flex-y--center;
                 justify-content: space-between;
                 height: 100px;
                 border-top: 1px solid #f0f2f7;
-
-                +.cart__item {}
             }
         }
-
-        @import '../ticket/_ticket.scss';
 
         @import '_cart-controls.scss';
     }
 
-    .cart-footer {
+    &-footer {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         background-color: #e3eaef;
-        padding: 36px 36px 36px 64px;
+        padding: 36px 36px 64px;
         @extend %flex-y--center;
         justify-content: space-between;
 
@@ -89,21 +81,21 @@
             font-family: $font-medium;
             font-size: 1.125rem;
 
-            .cart-total-items {
+            &-items {
                 margin-right: 6px;
             }
-        }
 
-        .cart-total-price {
-            font-size: 1.5rem;
-            color: $main-text-color;
-            font-family: $font-bold;
+            &-price {
+                font-size: 1.5rem;
+                color: $main-text-color;
+                font-family: $font-bold;
+            }
 
-            .cart-total-cash {
+            &-cash {
                 margin-left: 10px;
             }
 
-            .cart-total-currency {
+            &-currency {
                 margin-left: 6px;
             }
         }

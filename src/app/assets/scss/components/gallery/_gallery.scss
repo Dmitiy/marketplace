@@ -4,7 +4,7 @@
     @extend %inline-flex;
     background-color: $white;
 
-    .gallery-stack {
+    &-stack {
         @extend %inline-flex;
         flex-direction: column;
 
@@ -24,26 +24,26 @@
                 transform: rotateX(180deg);
             }
         }
+    }
 
-        .gallery-box {
-            li {
-                &.active {
-                    border-radius: 2px;
-                    border: 2px solid $light-grey;
-                }
+    &-box {
+        li {
+            &.active {
+                border-radius: 2px;
+                border: 2px solid $light-grey;
+            }
 
-                +li {
-                    margin-top: 10px;
-                }
+            +li {
+                margin-top: 10px;
+            }
 
-                img {
-                    width: 65px;
-                }
+            img {
+                width: 65px;
             }
         }
     }
 
-    .gallery-preview {
+    &-preview {
         @extend %inline-flex;
         max-width: 400px;
         width: 100%;
@@ -51,7 +51,7 @@
 
         img {
             width: 320px;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 }
