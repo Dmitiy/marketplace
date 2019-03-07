@@ -16,6 +16,7 @@
 
         &__link {
             color: inherit;
+            @extend %flex-y--center;
 
             &:hover {
                 color: $white;
@@ -46,13 +47,29 @@
                     line-height: inherit;
                     font-family: inherit;
                     color: inherit;
+
+                    &:hover {
+                        color: $white;
+                    }
                 }
             }
         }
 
         &-check-status {
-            .icon-circle_arrow_grey {
-                margin-left: 8px;
+            @extend %flex-y--center;
+
+            .menu__link {
+                @extend %flex-y--center;
+
+                .icon-circle_arrow_grey {
+                    margin-left: 8px;
+                }
+
+                &:hover {
+                    .icon-circle_arrow_grey {
+                        background-position: -4px -31px;
+                    }
+                }
             }
         }
 

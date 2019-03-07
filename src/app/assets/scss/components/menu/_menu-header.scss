@@ -27,6 +27,11 @@
     &__link {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        @extend %flex-y--center;
+
+        &:hover {
+            color: $red;
+        }
     }
 
     &-log-in {
@@ -36,12 +41,39 @@
             .icon-user {
                 margin-right: 0.4375rem;
             }
+
+            &:hover {
+                color: $red;
+            }
         }
     }
 
     &-check-status {
-        .icon-circle_arrow_darkblue {
-            margin-left: 0.5rem;
+        .menu__link {
+            @extend %flex-y--center;
+
+            &:hover {
+                .icon-arrow {
+                    background-position: -29px -79px;
+                }
+            }
+        }
+
+        .icon-arrow {
+            margin-left: .75rem;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                border: 2px solid $light-grey;
+            }
         }
     }
 
@@ -57,6 +89,16 @@
             border-radius: 50%;
             background-color: #f6f6fa;
             @extend %flex-xy--center;
+        }
+
+        &.menu-cart--active {
+            .icons.icon-cart {
+                background-position: -58px -28px;
+            }
+
+            .menu-cart__counter {
+                color: $red;
+            }
         }
     }
 }

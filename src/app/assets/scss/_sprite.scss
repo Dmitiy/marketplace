@@ -1,126 +1,106 @@
 .icons {
 	background: url('#{$path-img}/sprite/sprite.png') no-repeat top left;
-	display: inline-block;
-	vertical-align: top;
 	display: inline-flex;
-
-	&.icon-active_page {
-		width: 80px;
-		height: 80px;
-		background-position: -10px -10px;
-	}
 
 	&.icon-arrow {
 		width: 5px;
 		height: 7px;
-		background-position: -136px -78px;
+		background-position: -18px -79px;
+	}
+
+	&.icon-arrow-active {
+		width: 5px;
+		height: 7px;
+		background-position: -29px -79px;
 	}
 
 	&.icon-breadcrumbs_arrow {
 		width: 6px;
 		height: 8px;
-		background-position: -110px -78px;
+		background-position: -4px -79px;
+	}
+
+	&.icon-cart_active {
+		width: 18px;
+		height: 17px;
+		background-position: -58px -28px;
 	}
 
 	&.icon-carousel_arrow {
 		width: 12px;
 		height: 7px;
-		background-position: -246px -145px;
+		background-position: -86px -24px;
 	}
 
 	&.icon-cart {
 		width: 18px;
 		height: 17px;
-		background-position: -246px -10px;
+		background-position: -31px -31px;
 	}
 
 	&.icon-chevron_down {
 		width: 10px;
 		height: 6px;
-		background-position: -246px -172px;
+		background-position: -86px -39px;
 	}
 
 	&.icon-circle_arrow_darkblue {
 		width: 19px;
 		height: 19px;
-		background-position: -178px -78px;
+		background-position: -4px -4px;
 	}
 
 	&.icon-circle_arrow_grey {
 		width: 19px;
 		height: 19px;
-		background-position: -178px -117px;
+		background-position: -31px -4px;
 	}
 
 	&.icon-circle_arrow_white {
 		width: 19px;
 		height: 19px;
-		background-position: -10px -178px;
-	}
-
-	&.icon-next_pager {
-		width: 48px;
-		height: 48px;
-		background-position: -110px -10px;
+		background-position: -4px -31px;
 	}
 
 	&.icon-next_arr_red {
 		width: 6px;
 		height: 10px;
-		background-position: -217px -78px;
-	}
-
-	&.icon-next_pager {
-		width: 48px;
-		height: 48px;
-		background-position: -10px -110px;
+		background-position: -86px -53px;
 	}
 
 	&.icon-next {
 		width: 6px;
 		height: 10px;
-		background-position: -217px -117px;
-	}
-
-	&.icon-prev_page {
-		width: 48px;
-		height: 48px;
-		background-position: -78px -110px;
+		background-position: -67px -58px;
 	}
 
 	&.icon-phone {
 		width: 13px;
 		height: 13px;
-		background-position: -246px -47px;
+		background-position: -4px -58px;
+	}
+
+	&.icon-search_active {
+		width: 13px;
+		height: 13px;
+		background-position: -25px -58px;
 	}
 
 	&.icon-search {
 		width: 13px;
 		height: 13px;
-		background-position: -246px -80px;
-	}
-
-	&.icon-search-active {
-		width: 13px;
-		height: 13px;
-		background-position: -130px -97px;
+		background-position: -46px -58px;
 	}
 
 	&.icon-transfer {
 		width: 20px;
 		height: 16px;
-		background-position: -49px -178px;
-	}
-
-	&.icon-prev_pager {
-		width: 48px;
-		height: 48px;
-		background-position: -178px -10px;
+		background-position: -58px -4px;
 	}
 
 	&.icon-user {
 		width: 12px;
 		height: 12px;
-		background-position: -246px -113px;
+		background-position: -86px -4px;
 	}
 }

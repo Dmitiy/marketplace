@@ -13,7 +13,13 @@
 
 	&-cart {
 		.app-wrap {
-			justify-content: space-between;
+			.menu-header {
+				display: none;
+			}
+
+			.phone-number {
+				margin-left: auto;
+			}
 		}
 	}
 
@@ -23,6 +29,12 @@
 
 	.phone-number {
 		margin-left: 66px;
+
+		.url {
+			&:hover {
+				color: $red;
+			}
+		}
 	}
 
 	@import './components/menu/_menu-header.scss';
