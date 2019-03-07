@@ -8,7 +8,7 @@ mixin product-item(href, src, title, price, currency)
         figure.product-item
             img.product-item__img(src=src alt=title)
             figcaption.product-item__desc
-                p.product-item__title= title
+                p.product-item__title.overflow-ellipsis= title
                 p.product-item__price= price
                     span.product-item__currency= currency
                 button.btn В корзину
