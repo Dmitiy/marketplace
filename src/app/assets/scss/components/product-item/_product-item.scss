@@ -7,102 +7,106 @@ $w-product-1x: 25%;
 $w-product-2x: 50%;
 
 .products-list {
-    @extend %flex;
-    flex-wrap: wrap;
-    margin: 26px -15px 73px;
+	@extend %flex;
+	flex-wrap: wrap;
+	margin: 26px -15px 73px;
 
-    .product-link {
-        @extend %common-bdrs-bg;
-        @extend %inline-flex-x--center;
-        flex-basis: calc(#{$w-product-1x} - 30px);
-        padding: 30px 0 40px;
-        transition: all .2s ease;
-        text-align: center;
-        margin: 0 15px 30px;
+	.product-link {
+		@extend %common-bdrs-bg;
+		@extend %inline-flex-x--center;
+		flex-basis: calc(#{$w-product-1x} - 30px);
+		padding: 18px 0 38px;
+		transition: all 0.2s ease;
+		text-align: center;
+		margin: 0 15px 30px;
 
-        &:hover {
-            cursor: pointer;
-            box-shadow: 0px 9px 21px rgba(168, 172, 185, 0.44);
-        }
-    }
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0px 9px 21px rgba(168, 172, 185, 0.44);
+		}
+	}
 
-    .product-item {
+	.product-item {
+		max-height: 384px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		&__img {
+			object-fit: contain;
+		}
 
-        &__img {
-            align-self: center;
-        }
+		&__desc {
+			text-align: center;
+			margin-top: 10px;
+		}
 
-        &__desc {
-            text-align: center;
-            margin-top: 10px;
-        }
+		&__title {
+			font-size: 1rem;
+			line-height: 1.25rem;
+			font-family: $font-medium;
+			color: #202a57;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
 
-        &__title {
-            font-size: 1rem;
-            line-height: 1.25rem;
-            font-family: $font-medium;
-            color: #202A57;
-            text-transform: capitalize;
-            margin-bottom: 20px;
-        }
+		&__price,
+		&__currency {
+			font-size: 1.5rem;
+			line-height: 1.25rem;
+			font-family: $font-bold;
+			color: #263857;
+		}
 
-        &__price,
-        &__currency {
-            font-size: 1.5rem;
-            line-height: 1.25rem;
-            font-family: $font-bold;
-            color: #263857;
-        }
+		&__price {
+			margin-bottom: 25px;
+		}
 
-        &__price {
-            margin-bottom: 25px;
-        }
+		.btn {
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
 
-        .btn {
-            padding-top: 7px;
-            padding-bottom: 7px;
-        }
+		&-big {
+			flex-basis: calc(#{$w-product-2x} - 30px);
+			margin: 0 15px 30px;
+			position: relative;
+			background-color: #c9d6e0;
+			border-radius: 5px;
+			transition: all 0.2s ease;
 
-        &-big {
-            flex-basis: calc(#{$w-product-2x} - 30px);
-            margin: 0 15px 30px;
-            position: relative;
-            background-color: #c9d6e0;
-            border-radius: 5px;
-            transition: all .2s ease;
+			&:hover {
+				cursor: pointer;
+				box-shadow: 0px 9px 21px rgba(168, 172, 185, 0.44);
+			}
 
-            &:hover {
-                cursor: pointer;
-                box-shadow: 0px 9px 21px rgba(168, 172, 185, 0.44);
-            }
+			.product-item__desc {
+				position: absolute;
+				top: 47%;
+				left: 40px;
+				transform: translateY(-50%);
+				text-align: left;
+				margin-top: 0;
+			}
 
-            .product-item__desc {
-                position: absolute;
-                top: 47%;
-                left: 40px;
-                transform: translateY(-50%);
-                text-align: left;
-                margin-top: 0;
-            }
+			.product-item__title {
+				font-size: 2.25rem;
+				line-height: 1.1;
+				font-family: $font-bold;
+				text-transform: none;
+				max-width: 280px;
+				width: 100%;
+				margin-bottom: 30px;
+			}
 
-            .product-item__title {
-                font-size: 2.25rem;
-                line-height: 1.1;
-                font-family: $font-bold;
-                text-transform: none;
-                max-width: 280px;
-                width: 100%;
-                margin-bottom: 30px;
-            }
+			.btn {
+				font-size: 0.875rem;
+				border-color: #aabac8;
 
-            .btn {
-                font-size: 0.875rem;
-                border-color: #aabac8;
-
-                &:hover {
-                    border-color: #f24841;
-                }
-            }
-        }
-    }
+				&:hover {
+					border-color: #f24841;
+				}
+			}
+		}
+	}
 }
