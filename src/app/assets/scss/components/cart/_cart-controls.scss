@@ -8,22 +8,14 @@
         line-height: 1.3125rem;
         font-family: $font-bold;
 
-        &:first-child {
-            margin-right: 44px;
+        +li {
+            margin-left: 36px;
         }
 
-        &:nth-child(2) {
-            margin-right: 36px;
-
-            .input-counter {
-                .input {
-                    font-size: 1rem;
-                }
+        .input-counter {
+            .input {
+                font-size: 1rem;
             }
-        }
-
-        &:nth-child(3) {
-            margin-right: 30px;
         }
     }
 }

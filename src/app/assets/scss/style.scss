@@ -17,12 +17,15 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
 
     .app-wrap {
         max-width: $wrapper-width;
         width: 100%;
         margin: 0 auto;
     }
+
+    @import './components/aside/_aside.scss';
 
     header {
         @import './components/header/_header.scss';

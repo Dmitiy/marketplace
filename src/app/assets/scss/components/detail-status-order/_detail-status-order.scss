@@ -17,7 +17,6 @@
         .order-status-detail {
             &__header {
                 @extend %flex;
-                justify-content: space-between;
                 margin-bottom: 11px;
             }
 
@@ -46,6 +45,7 @@
                 font-family: $font-bold;
                 font-size: 1rem;
                 line-height: 1.3125rem;
+                margin-left: auto;
             }
 
             &__body {

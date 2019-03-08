@@ -13,10 +13,6 @@
 
 	&-cart {
 		.app-wrap {
-			.menu-header {
-				display: none;
-			}
-
 			.phone-number {
 				margin-left: auto;
 			}
@@ -25,6 +21,12 @@
 
 	.app-wrap {
 		@extend %flex-y--center;
+
+		.menu-header {
+			.mobile {
+				display: none;
+			}
+		}
 	}
 
 	.phone-number {

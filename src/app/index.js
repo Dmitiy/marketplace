@@ -29,12 +29,28 @@
 	}
 
 	const burgerMenu = document.querySelector('.btn-burger');
+	const aside = document.querySelector('.aside');
+	const body = document.querySelector('body');
 
 	burgerMenu.addEventListener('click', () => {
 		if (burgerMenu.classList == 'btn-burger') {
 			burgerMenu.classList.add('btn-burger--close');
+			aside.className = 'aside-open';
+			body.style.overflow = 'hidden';
 		} else {
 			burgerMenu.classList.remove('btn-burger--close');
+			aside.className = 'aside';
+			body.style.overflow = '';
 		}
 	});
+
+
+	const i_search = document.querySelector('.icon-search');
+
+	i_search.addEventListener('click', function (e) {
+		const el = event.target;
+		const parent_box = el.parentNode;
+		parent_box.classList.add('has-focus').focus();
+	})
+
 })();

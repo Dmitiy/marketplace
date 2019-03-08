@@ -8,6 +8,14 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    &-box {
+        .footer-box__item {
+            .copyright {
+                display: none;
+            }
+        }
+    }
+
     &-cart {
         .app-wrap {
             @extend %flex-y--center;
