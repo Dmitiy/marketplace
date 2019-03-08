@@ -582,6 +582,24 @@
 					}
 				}
 			}
+
+			.detail-status-order {
+				.form-modal {
+					.container {
+						padding: 45px 72px 45px;
+					}
+				}
+
+				.container {
+					.order-status-detail__header {
+						flex-direction: column;
+
+						.order-status-detail__link {
+							margin-left: 0;
+						}
+					}
+				}
+			}
 		}
 
 		footer .footer {
