@@ -6,7 +6,8 @@ mixin navLink(href, name)
 mixin product-item(href, src, title, price, currency)
     a(href=href).product-link
         figure.product-item
-            img.product-item__img(src=src alt=title)
+            .product-item__img
+                img(src=src alt=title)
             figcaption.product-item__desc
                 p.product-item__title.overflow-ellipsis= title
                 p.product-item__price= price
@@ -16,7 +17,8 @@ mixin product-item(href, src, title, price, currency)
 //- product-item-2x
 mixin product-item-2x(href, src, title)
     figure.product-item.product-item-big
-        img.product-item__img(src=src alt=title)
+        .product-item__img
+            img(src=src alt=title)
         figcaption.product-item__desc
             p.product-item__title= title
             a(href="").btn Смотреть все
@@ -24,7 +26,8 @@ mixin product-item-2x(href, src, title)
 //- checkout-cart
 mixin cart-ticket(src, title, number)
     figure.ticket
-        img.ticket__img(src=src, alt=title)
+        .ticket__img
+            img(src=src, alt=title)
         figcaption.ticket__desc
             p.ticket__title= title
             p.ticket__order Код товара

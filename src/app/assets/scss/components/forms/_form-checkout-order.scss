@@ -26,12 +26,24 @@
                 margin-bottom: 27px;
             }
 
+            .checkout-order__address,
+            .checkout-order__receiver {
+                .checkout-order__item {
+                    +.checkout-order__item {
+                        margin-top: 18px;
+                    }
+                }
+            }
+
             .checkout-order__address {
+                margin-bottom: 32px;
+
                 .checkout-order__item {
                     .inline-flex {
                         .checkout-order__item {
                             +.checkout-order__item {
                                 margin-left: 20px;
+                                margin-top: 0;
                             }
                         }
 

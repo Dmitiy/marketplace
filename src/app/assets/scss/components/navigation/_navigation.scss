@@ -5,11 +5,17 @@
     border-bottom: 1px solid #f0f2f7;
     background-color: $white;
 
+    .app-wrap {
+        @extend %flex;
+    }
+
     .nav {
         @extend %inline-flex;
     }
 
     .input-search {
+        margin-left: auto;
+
         .input {
             border-radius: 0;
             border: 1px solid #f0f2f7;

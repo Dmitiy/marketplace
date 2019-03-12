@@ -6,20 +6,92 @@
 }
 
 .select {
-
     &__item {
-
-        +.select__item {
+        &+& {
             margin-left: 62px;
         }
 
-        select {
-            border: none;
-            padding-right: 8px;
-            padding-left: 16px;
-            color: $dark-blue;
-            font-family: $font-bold;
-            font-size: 1rem;
+        label {
+            margin-right: 11px;
         }
+    }
+
+    .select-by {
+        position: relative;
+
+
+        select {
+            display: none;
+        }
+
+        .select-selected {
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            background-color: $white;
+
+            &.select-by--active {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                right: -1rem;
+                background: url('#{$path-img}/sprite/sprite.png') no-repeat top left;
+                background-position: -86px -39px;
+                width: 10px;
+                height: 6px;
+            }
+        }
+
+        .select-items div,
+        .select-selected {
+            color: $dark-blue;
+            // padding: 8px 16px;
+            cursor: pointer;
+            font-family: $font-bold;
+        }
+
+        /* Style items (options): */
+        .select-items {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            background-color: $white;
+
+            div {
+                margin-top: 5px;
+            }
+        }
+
+        /* Hide the items when the select box is closed: */
+        .select-hide {
+            display: none;
+        }
+
+        .select-items div:hover,
+        .same-as-selected {
+            cursor: pointer;
+        }
+    }
+}
+
+/* CAUTION: IE hackery ahead */
+
+select::-ms-expand {
+    display: none;
+    /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width: 0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
     }
 }

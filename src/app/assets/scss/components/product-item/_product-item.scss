@@ -15,8 +15,7 @@ $w-product-2x: 50%;
         @extend %common-bdrs-bg;
         @extend %inline-flex-x--center;
         flex-basis: calc(#{$w-product-1x} - 30px);
-        padding-top: 16px;
-        padding-bottom: 30px;
+        padding: 16px 16px 30px;
         transition: all 0.2s ease;
         text-align: center;
         margin: 0 15px 30px;
@@ -34,7 +33,11 @@ $w-product-2x: 50%;
         justify-content: flex-end;
 
         &__img {
-            object-fit: contain;
+            // height: 180px;
+
+            img {
+                object-fit: contain;
+            }
         }
 
         &__desc {

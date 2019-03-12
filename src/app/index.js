@@ -1,3 +1,5 @@
+import './assets/js/select';
+
 (() => {
 	console.log('ok');
 

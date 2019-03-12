@@ -1,12 +1,17 @@
 ul.select
     li.select__item
         label(for="") Сортировка:
-        select(name="")
-            option(value="") По наименованию
-            option(value="") По новизне
-        span.icons.icon-chevron_down
+        .select-by
+            select(name="")
+                option(value="") Выберите критерий
+                option(value="") По наименованию
+                option(value="") По новизне
+                option(value="") По дате
     li.select__item
         label(for="") Товаров на странице:
-        select(name="")
-            option(value="") 24
-        span.icons.icon-chevron_down
+        .select-by
+            select(name="")
+                option(value="") 24
+                option(value="") 24
+                option(value="") 12
+                option(value="") 4
