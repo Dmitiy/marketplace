@@ -1,15 +1,5 @@
 @import '_vars.scss';
 
-// @each $font-family in PT_Sans-Web-Bold,
-// PT_Sans-Web-Regular {
-//     @font-face {
-//         font-family: '#{$font-family}';
-//         src: url("#{$path-fonts}/#{$font-family}.ttf");
-//         font-weight: normal;
-//         font-style: normal;
-//     }
-// }
-
 @font-face {
     font-family: 'PT_Root_UI_Bold';
     src: url('#{$path-fonts}PT_Root_UI_Bold/PT_Root_UI_Bold.eot');
