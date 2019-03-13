@@ -1,4 +1,5 @@
 import './assets/js/select';
+import './assets/js/product';
 
 (() => {
 	console.log('ok');

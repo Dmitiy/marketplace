@@ -16,12 +16,13 @@ mixin product-item(href, src, title, price, currency)
 
 //- product-item-2x
 mixin product-item-2x(href, src, title)
-    figure.product-item.product-item-big
-        .product-item__img
-            img(src=src alt=title)
-        figcaption.product-item__desc
-            p.product-item__title= title
-            a(href="").btn Смотреть все
+    a(href=href).product-link.product-big
+        figure.product-item
+            .product-item__img
+                img(src=src alt=title)
+            figcaption.product-item__desc
+                p.product-item__title= title
+                button.btn Смотреть все
 
 //- checkout-cart
 mixin cart-ticket(src, title, number)
