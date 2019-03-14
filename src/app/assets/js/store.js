@@ -180,7 +180,7 @@ export const store = {
             "count": 2,
         },
     ],
-    "cupboard": [{
+    "cupboards": [{
             "id": 1,
             "href": "#",
             "imgSrc": "https://via.placeholder.com/250/cccccc",
@@ -217,7 +217,7 @@ export const store = {
             "count": 1,
         },
     ],
-    "kitchen": [{
+    "kitchens": [{
             "id": 1,
             "href": "#",
             "imgSrc": "https://via.placeholder.com/350/",
@@ -245,7 +245,7 @@ export const store = {
             "count": 5,
         },
     ],
-    "household": [{
+    "households": [{
             "id": 1,
             "href": "#",
             "imgSrc": "https://via.placeholder.com/350/",

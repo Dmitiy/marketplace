@@ -1,5 +1,5 @@
 import './assets/js/select';
-import './assets/js/product';
+// import './assets/js/product';
 
 (() => {
 	console.log('ok');
@@ -51,7 +51,7 @@ import './assets/js/product';
 	const i_search = document.querySelector('.icon-search');
 
 	i_search.addEventListener('click', function (e) {
-		const el = event.target;
+		const el = e.target;
 		const parent_box = el.parentNode;
 		parent_box.classList.add('has-focus').focus();
 	})
