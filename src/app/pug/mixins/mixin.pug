@@ -1,6 +1,6 @@
 //- menu
-mixin navLink(href, name)
-    a(class!=attributes.class href=href)= name
+mixin navLink( data, href, name)
+    a(class!=attributes.class href=href data-name=data)= name
 
 //- product-item
 mixin product-item(href, src, title, price, currency)
