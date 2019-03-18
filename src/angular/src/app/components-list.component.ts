@@ -59,6 +59,8 @@ import { CartPageComponent } from './pages/cart/cart-page.component';
 import { DetailItemPageComponent } from './pages/detail-item/detail-item-page.component';
 import { DetailOrderPageComponent } from './pages/detail-order/detail-order-page.component';
 import { OrderStatusPageComponent } from './pages/order-status/order-status-page.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { CheckStatusLayoutComponent } from './layouts/check-status-layout/check-status-layout.component';
 
 export const COMPONENTS_LIST = [
   HeaderComponent,
@@ -118,4 +120,6 @@ export const COMPONENTS_LIST = [
   DetailItemPageComponent,
   DetailOrderPageComponent,
   OrderStatusPageComponent,
+  PageNotFoundComponent,
+  CheckStatusLayoutComponent,
 ];

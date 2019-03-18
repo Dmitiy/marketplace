@@ -1,7 +1,9 @@
 <nav class="nav">
-  <a class="active-link" routerLink="chairs" data-name="chair">Стулья и кресла</a>
-  <a routerLink="bed" data-name="bed">Кровати и матрасы</a>
-  <a routerLink="cupboard" data-name="cupboard">Шкафы и комоды</a>
-  <a routerLink="kitchen" data-name="kitchen">Мебель для кухни</a>
-  <a routerLink="household" data-name="household">Товары для дома</a>
+  <a routerLink="/chairs" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Стулья и
+    кресла
+  </a>
+  <a routerLink="/beds" routerLinkActive="active">Кровати и матрасы</a>
+  <a routerLink="/cupboards" routerLinkActive="active">Шкафы и комоды</a>
+  <a routerLink="/kitchens" routerLinkActive="active">Мебель для кухни</a>
+  <a routerLink="/households" routerLinkActive="active">Товары для дома</a>
 </nav>
