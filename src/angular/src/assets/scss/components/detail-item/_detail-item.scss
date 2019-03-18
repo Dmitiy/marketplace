@@ -1,0 +1,36 @@
+@import './../../_vars.scss';
+
+.detail-item {
+  margin-bottom: 120px;
+
+  .container {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 36px 100px 100px 52px;
+    @extend %flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .detail-item-gallery,
+    .detail-check-container {
+      @extend %inline-flex;
+    }
+
+    .detail-check-container {
+      max-width: 370px;
+      width: 100%;
+      background-color: #fff;
+      flex-wrap: wrap;
+
+      form {
+        width: 100%;
+      }
+
+      @import './_detail-desc.scss';
+
+      @import './_detail-count.scss';
+
+      @import './_detail-transfer.scss';
+    }
+  }
+}

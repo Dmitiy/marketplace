@@ -1,0 +1,63 @@
+@import './../../_vars.scss';
+
+.btn-burger {
+  position: relative;
+  width: 18px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+  z-index: 101;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #2c386d;
+    transform-origin: left center;
+    transition: 0.35s ease-in-out;
+
+    &:first-child {
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 1px);
+    }
+
+    &:nth-child(3) {
+      top: calc(100% - 2px);
+    }
+  }
+
+  &--close {
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      border: 2px solid #2c386d;
+      transform-origin: left center;
+      transition: 0.35s ease-in-out;
+
+      &:first-child {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        top: calc(50% - 1px);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: calc(100% - 2px);
+      }
+    }
+  }
+}

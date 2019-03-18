@@ -1,0 +1,28 @@
+@import './../../_vars.scss';
+
+.detail-transfer {
+  margin-top: 22px;
+  color: $grey;
+  font-size: 1rem;
+  font-family: $font-regular;
+
+  .icons {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      background-color: rgba(227, 232, 240, 0.5);
+    }
+
+    &.icon-transfer {
+      margin-right: 18px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import './../../_vars.scss';
+
+.cart-checkout {
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  .app-wrap {
+    max-width: 870px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @import '_cart.scss';
+}

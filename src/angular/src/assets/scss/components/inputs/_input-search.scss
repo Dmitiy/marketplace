@@ -1,0 +1,39 @@
+@import './../../_vars.scss';
+
+.input-search,
+.search-label {
+  @extend %inline-flex-xy--center;
+}
+
+.input-search {
+  .input {
+    width: 100%;
+    border-width: 1px;
+    padding: 15px 34px 17px 21px;
+    font-family: $font-regular;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .search-label {
+    position: relative;
+    width: 370px;
+
+    .input {
+      &:focus {
+        color: #a1a7bd;
+
+        ~ .icon-search {
+          background-position: -25px -58px;
+        }
+      }
+    }
+
+    .icon-search {
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      transform: translateY(-50%);
+    }
+  }
+}

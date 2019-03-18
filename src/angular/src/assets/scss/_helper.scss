@@ -1,0 +1,91 @@
+@import '_vars.scss';
+
+%flex {
+    display: flex;
+}
+
+%flex-x--center {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-y--center {
+    display: flex;
+    align-items: center;
+}
+
+%flex-y--baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+%flex-xy--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%inline-flex {
+    display: inline-flex;
+}
+
+%inline-flex-y--center {
+    display: inline-flex;
+    align-items: center;
+}
+
+%inline-flex-x--center {
+    display: inline-flex;
+    justify-content: center;
+}
+
+%inline-flex-xy--center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%inline-flex-y--baseline {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+
+%common-bdrs-bg {
+    background-color: $white;
+    border-radius: 5px;
+}
+
+// classes
+
+.container {
+    @extend %common-bdrs-bg;
+}
+
+.flex {
+    @extend %flex;
+}
+
+.inline-flex {
+    @extend %inline-flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.txt-error {
+    color: $red;
+    font-size: 0.8125rem;
+}
+
+//attrs
+
+[disabled] {
+    color: $disabled-btn-text-color;
+    border: 2px solid $disabled-btn-outline-color;
+
+    &:hover {
+        cursor: not-allowed;
+    }
+}

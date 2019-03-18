@@ -1,0 +1,69 @@
+@import './_vars.scss';
+
+@import './_layout.scss';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: $bg;
+    font-family: $font-family;
+    color: $main-text-color;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    .app-wrap {
+        max-width: $wrapper-width;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @import './components/aside/_aside.scss';
+
+    header {
+        @import './components/header/_header.scss';
+
+        @import './components/navigation/_navigation.scss';
+
+        @import './components/breadcrumbs/_breadcrumbs.scss';
+
+        @import './components/preview/_preview.scss';
+    }
+
+    @import './components/controls/_controls-field.scss';
+
+
+    main {
+        flex: 1 0 auto;
+
+        @import './components/product-item/_product-item.scss';
+
+        @import './components/pagination/_pagination.scss';
+
+        @import './components/forms/_form-check-modal.scss';
+
+        @import './components/forms/_form-checkout-order.scss';
+
+        @import './components/cart/_cart-checkout.scss';
+
+        @import './components/detail-item/_detail-item.scss';
+
+        @import './components/detail-status-order/_detail-status-order.scss';
+
+    }
+
+    footer {
+        flex-shrink: 0;
+
+        @import './components/footer/_footer.scss';
+    }
+}
+
+@import './_media.scss';

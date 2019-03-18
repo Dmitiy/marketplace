@@ -1,0 +1,33 @@
+@import './../../_vars.scss';
+
+.top-footer {
+  @extend %inline-flex-y--center;
+  padding-bottom: 20px;
+  margin-left: 160px;
+
+  .navigation {
+    @extend %inline-flex;
+
+    .nav {
+      @extend %inline-flex;
+      padding-right: 0;
+
+      a {
+        color: $white;
+        font-family: $font-bold;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        &.active-link {
+          &:after {
+            display: none;
+          }
+        }
+
+        &:hover {
+          color: $default-link-color;
+        }
+      }
+    }
+  }
+}

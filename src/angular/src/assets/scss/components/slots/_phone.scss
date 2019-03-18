@@ -1,0 +1,18 @@
+@import './../../_vars.scss';
+
+.phone-number {
+  @extend %flex-y--center;
+  color: #272e4a;
+  font-size: 1rem;
+  font-family: $font-bold;
+
+  .icon-phone {
+    margin-right: 8px;
+  }
+
+  .url {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+  }
+}

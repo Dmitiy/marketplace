@@ -1,0 +1,23 @@
+@import './../../_vars.scss';
+
+.preview-product {
+  @extend %flex-y--center;
+  padding-top: 20px;
+  background-color: $white;
+  height: 236px;
+
+  .app-wrap {
+    @extend %flex-y--center;
+    justify-content: space-between;
+    padding-right: 93px;
+
+    .h1 {
+      @extend %inline-flex;
+    }
+
+    img {
+      width: 271px;
+      height: 217px;
+    }
+  }
+}

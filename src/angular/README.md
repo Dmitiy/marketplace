@@ -1,4 +1,4 @@
-# [Marketplace](https://dmitiy.github.io/marketplace/)
+# [Marketplace](https://dmitiy.github.io/Marketplace/)
 
 ## Development server
 

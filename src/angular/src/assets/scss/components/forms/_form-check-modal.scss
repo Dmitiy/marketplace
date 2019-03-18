@@ -1,0 +1,11 @@
+@import './../../_vars.scss';
+
+.detail-status-order {
+  .h2 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+
+  @import './form-modal.scss';
+}

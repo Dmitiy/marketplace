@@ -1,0 +1,74 @@
+@import './../../_vars.scss';
+
+.footer {
+  background-color: $footer-bg-color;
+  padding-top: 16px;
+  padding-bottom: 36px;
+  @extend %flex-y--center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &-box {
+    .footer-box__item {
+      .copyright {
+        display: none;
+      }
+    }
+  }
+
+  &-cart {
+    .app-wrap {
+      @extend %flex-y--center;
+      justify-content: space-between;
+
+      .logo {
+        margin-right: 65px;
+      }
+
+      .copyright {
+        margin-right: auto;
+      }
+
+      .phone-number {
+        color: #9ea5ba;
+      }
+    }
+  }
+
+  .app-wrap {
+    @extend %flex-y--center;
+    flex-wrap: wrap;
+  }
+
+  p {
+    font-family: $font-regular;
+    font-size: 0.875rem;
+    color: $default-text-color;
+
+    &.phone-number {
+      font-family: $font-bold;
+      font-size: 1rem;
+      @extend %flex-y--center;
+
+      .icon-phone {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .logo {
+    &-title {
+      color: $white;
+      border-top: 2px solid $white;
+      border-bottom: 2px solid $white;
+    }
+
+    &-descriprion {
+      color: #a2a6bb;
+    }
+  }
+
+  @import './../footer/_top-footer.scss';
+
+  @import './../menu/_menu-footer.scss';
+}

@@ -1,0 +1,10 @@
+@import './../../_vars.scss';
+
+.controls-field {
+  @extend %common-bdrs-bg;
+  padding: 25px 32px 18px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  @extend %flex;
+  justify-content: space-between;
+}

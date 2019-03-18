@@ -1,0 +1,102 @@
+@import './../../_vars.scss';
+.cart {
+  border-radius: 5px;
+  margin-bottom: 36px;
+
+  &-detail-order {
+    .cart-header {
+      .date {
+        font-family: $font-bold;
+        font-size: 1rem;
+        line-height: 1.3125rem;
+        color: $dark-blue;
+      }
+    }
+
+    &__count {
+      font-family: $font-bold;
+      font-size: 1rem;
+      line-height: 1.3125rem;
+      color: $dark-blue;
+      margin-bottom: 10px;
+    }
+
+    .cart-body {
+      padding-left: 0;
+      padding-right: 0;
+
+      .cart-list {
+        &__item {
+          .ticket__desc {
+            margin-left: 41px;
+          }
+
+          &:last-child {
+            border-bottom: 1px solid #f0f2f7;
+          }
+        }
+      }
+    }
+  }
+
+  &-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .h2 {
+      padding: 44px 0 36px 46px;
+    }
+  }
+
+  &-body {
+    padding: 0 44px;
+
+    .cart-list {
+      @extend %flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+
+      &__item {
+        @extend %flex-y--center;
+        justify-content: space-between;
+        height: 100px;
+        border-top: 1px solid #f0f2f7;
+      }
+    }
+
+    @import '_cart-controls.scss';
+  }
+
+  &-footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #e3eaef;
+    padding: 36px 36px 64px;
+    @extend %flex-y--center;
+    justify-content: space-between;
+
+    .cart-total {
+      color: #79848f;
+      font-family: $font-medium;
+      font-size: 1.125rem;
+
+      &-items {
+        margin-right: 6px;
+      }
+
+      &-price {
+        font-size: 1.5rem;
+        color: $main-text-color;
+        font-family: $font-bold;
+      }
+
+      &-cash {
+        margin-left: 10px;
+      }
+
+      &-currency {
+        margin-left: 6px;
+      }
+    }
+  }
+}

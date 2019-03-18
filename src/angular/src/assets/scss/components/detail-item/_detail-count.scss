@@ -1,0 +1,30 @@
+@import './../../_vars.scss';
+
+.detail-count {
+  padding: 30px 27px 28px 28px;
+  @extend %common-bdrs-bg;
+  background-color: $bg;
+  margin-top: 32px;
+
+  &__group {
+    @extend %flex-y--center;
+    justify-content: space-between;
+  }
+
+  &__amount {
+    font-family: $font-bold;
+    font-size: 1.875rem;
+    line-height: 1.3125rem;
+  }
+
+  &__currency {
+  }
+
+  .input-counter {
+    margin-right: 40px;
+  }
+
+  .btn-default {
+    margin-top: 32px;
+  }
+}

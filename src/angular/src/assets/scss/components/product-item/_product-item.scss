@@ -1,0 +1,138 @@
+@import './../../_vars.scss';
+// $product-w: 270px;
+// $product-w-2x: 570px;
+
+$w-product-1x: 25%;
+$w-product-2x: 50%;
+
+.products-list {
+  @extend %flex;
+  flex-wrap: wrap;
+  margin: 26px -15px 73px;
+
+  .product-link {
+    @extend %common-bdrs-bg;
+    @extend %inline-flex-x--center;
+    flex-wrap: wrap;
+    flex-basis: calc(#{$w-product-1x} - 30px);
+    padding: 16px 16px 30px;
+    transition: all 0.2s ease;
+    margin: 0 15px 30px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 9px 21px rgba(168, 172, 185, 0.44);
+    }
+
+    &.product-big {
+      flex-basis: calc(#{$w-product-2x} - 30px);
+      margin: 0 15px 30px;
+      position: relative;
+      background-color: #c9d6e0;
+      border-radius: 5px;
+      transition: all 0.2s ease;
+      padding: 0;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 9px 21px rgba(168, 172, 185, 0.44);
+      }
+
+      .product-item {
+        height: 384px;
+
+        &__img {
+          margin-top: 0;
+        }
+
+        &__desc {
+          position: absolute;
+          top: 47%;
+          left: 40px;
+          transform: translateY(-50%);
+          text-align: left;
+          margin-top: 0;
+        }
+
+        &__title {
+          font-size: 2.25rem;
+          line-height: 1.1;
+          font-family: $font-bold;
+          text-transform: none;
+          max-width: 280px;
+          width: 100%;
+          margin-bottom: 30px;
+          overflow: inherit;
+          white-space: inherit;
+        }
+
+        &__price {
+          display: none;
+        }
+
+        .btn {
+          font-size: 0.875rem;
+          border-color: #aabac8;
+
+          &:hover {
+            border-color: #f24841;
+          }
+        }
+      }
+    }
+  }
+
+  .product-item {
+    @extend %flex-y--center;
+    flex-direction: column;
+    text-align: center;
+    height: 338px;
+
+    &__img {
+      margin-top: auto;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    &__desc {
+      margin-top: 10px;
+      align-content: center;
+      margin-top: auto;
+    }
+
+    &__title {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      font-family: $font-medium;
+      color: #202a57;
+      margin-bottom: 20px;
+      max-width: 130px;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .overflow-ellipsis {
+      text-overflow: ellipsis;
+    }
+
+    &__price,
+    &__currency {
+      font-size: 1.5rem;
+      line-height: 1.25rem;
+      font-family: $font-bold;
+      color: #263857;
+    }
+
+    &__price {
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}

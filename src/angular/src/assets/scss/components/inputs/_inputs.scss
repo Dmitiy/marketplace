@@ -1,0 +1,113 @@
+@import './../../_vars.scss';
+
+.input-box {
+  position: relative;
+
+  .helper-box {
+    display: none;
+  }
+
+  &.has-value {
+    .input + .input-label,
+    .input-label {
+      top: -4px;
+      left: 0;
+      transform: translateX(16px) translateY(0);
+      font-size: 0.75rem;
+    }
+  }
+
+  &.has-error {
+    .input {
+      border: 2px solid $error-input-outline-color;
+      animation-name: shake;
+      animation-duration: 0.7s;
+      animation-delay: 0.3s;
+      animation-iteration-count: 1;
+    }
+
+    .helper-box {
+      @extend %flex;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      z-index: 2;
+    }
+
+    .txt-error {
+      font-size: 0.8125rem;
+      line-height: 1rem;
+      font-family: $font-regular;
+    }
+  }
+
+  .input + .input-label,
+  .input ~ .input-label {
+    transition: 0.2s ease all;
+    position: absolute;
+    top: 21px;
+    left: 14px;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $input-default-text-color;
+  }
+
+  .input:focus + .input-label,
+  .input:focus ~ .input-label {
+    top: -4px;
+    left: 0;
+    transform: translateX(16px) translateY(0);
+    font-size: 0.75rem;
+  }
+
+  .input-label {
+    pointer-events: none;
+  }
+
+  .input {
+    width: 250px;
+  }
+}
+
+input,
+textarea,
+select {
+  padding: 10px 16px 12px;
+  border-radius: 3px;
+  background-color: $white;
+  border: 2px solid $default-input-outline-color;
+  color: $input-default-text-color;
+  transition: all 0.2s linear;
+  font-size: 0.875rem;
+  font-family: $font-regular;
+
+  &:hover {
+    border: 2px solid $hover-input-outline-color;
+  }
+
+  &:focus {
+    border: 2px solid $focus-input-outline-color;
+  }
+
+  &[disabled] {
+    border: 2px solid $disabled-input-outline-color;
+    background-color: $disabled-input-bg-color;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &:focus,
+  &:required,
+  &:valid {
+    color: #101a46;
+  }
+
+  &:invalid,
+  &:-moz-submit-invalid,
+  &:-moz-ui-invalid {
+    box-shadow: none;
+  }
+}

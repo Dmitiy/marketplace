@@ -1,0 +1,17 @@
+@import './../../_vars.scss';
+.input-counter {
+  max-width: 105px;
+  width: 100%;
+  @extend %inline-flex-xy--center;
+
+  .input {
+    width: 46px;
+    padding: 10px 0 11px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 13px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    font-family: $font-light;
+  }
+}

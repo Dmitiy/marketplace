@@ -1,0 +1,81 @@
+@import './../../_vars.scss';
+
+.range-slider {
+  @extend %inline-flex-y--center;
+  flex-wrap: wrap;
+
+  .range-values {
+    color: $dark-blue;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-family: $font-regular;
+    margin-bottom: 10px;
+
+    .input-min,
+    .input-max {
+      max-width: 88px;
+      width: 100%;
+      padding: 11px 9px 9px;
+    }
+
+    .txt-color {
+      &:first-of-type {
+        margin-right: 24px;
+      }
+
+      &:nth-of-type(2) {
+        margin: auto 10px auto 8px;
+      }
+    }
+  }
+
+  .range-input {
+    width: calc(100% - 60px);
+    @extend %flex;
+    padding-left: 60px;
+
+    .range-field {
+      width: 100%;
+      position: relative;
+      background-color: #a1a8bd;
+      height: 3px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .range-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f54732;
+        height: 3px;
+        width: 50%;
+      }
+
+      .range-thumb-min,
+      .range-thumb-max {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $white;
+        border: 1px solid #d4d8e4;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .range-thumb-min {
+        left: -1px;
+      }
+
+      .range-thumb-max {
+        left: 100px;
+      }
+    }
+  }
+}

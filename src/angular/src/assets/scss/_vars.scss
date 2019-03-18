@@ -1,0 +1,83 @@
+// page
+$wrapper-width: 1170px;
+
+// path
+$path-img: 'assets/img';
+$path-fonts: 'assets/fonts/';
+
+// fonts
+$font-bold: 'PT_Root_UI_Bold';
+$font-light: 'PT_Root_UI-Web-Light';
+$font-medium: 'PT_Root_UI-Web-Medium';
+$font-regular: 'PT_Root_UI-Web-Regular';
+
+//font-family
+$font-family: 'PT_ROOT_UI', 'PT Sans', 'Roboto', 'Helvetica', 'Courier New',
+  sans-serif;
+
+// colors palette
+
+$white: #fff;
+$bg: #f5f8fa;
+$footer-bg-color: #222328;
+$red: #f54732;
+$dark-blue: #142558;
+$grey: #a1a8bd;
+$light-grey: #e3e8f0;
+$green: #44b759;
+
+$cart-footer-bg-color: $grey;
+$card-2x-size-bg: #c9d6e0;
+
+// text-color
+$main-text-color: $dark-blue;
+$default-text-color: $grey;
+$text-error: $red;
+
+// buttons-large-color
+$default-btn-large-bg-color: #f24841;
+$hover-btn-large-bg-color: #e93d35;
+$active-btn-large-bg-color: #db2d25;
+$disabled-btn-large-bg-color: $grey;
+
+$default-btn-large-text-color: $white;
+
+//btn - default
+$default-btn-text-color: $dark-blue;
+
+$default-btn-outline-color: $light-grey;
+$default-btn-text-color: $dark-blue;
+
+$hover-btn-outline-color: #f24841;
+$hover-btn-text-color: #ec3033;
+
+$active-btn-outline-color: #db2d25;
+$active-btn-text-color: #d0171d;
+
+$disabled-btn-outline-color: $light-grey;
+$disabled-btn-text-color: #9096af;
+
+//links
+$default-link-color: #9096af;
+$hover-link-color: $white;
+
+// input-colors
+$input-default-text-color: #a1a8bd;
+
+$default-input-outline-color: $light-grey;
+$blur-input-outline-color: $light-grey;
+$disabled-input-outline-color: $light-grey;
+$disabled-input-bg-color: #f3f6fa;
+$hover-input-outline-color: $grey;
+$focus-input-outline-color: #315ad5;
+$error-input-outline-color: $red;
+
+// grid-system
+$gap: 30px;
+
+$w-100: 100%;
+$w-25: calc(#{$w-100} / 4 - #{$gap});
+
+.w-25 {
+  width: $w-25;
+}

@@ -1,0 +1,85 @@
+@import './../../_vars.scss';
+
+.menu-footer {
+  @extend %flex-y--baseline;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid $white;
+  width: 100%;
+
+  .menu {
+    &__item {
+      color: $default-text-color;
+      font-family: $font-regular;
+      font-size: 0.875rem;
+    }
+
+    &__link {
+      color: inherit;
+      @extend %flex-y--center;
+
+      &:hover {
+        color: $white;
+        cursor: pointer;
+      }
+    }
+
+    &-phone {
+      .title {
+        @extend %flex-y--center;
+
+        + .tel {
+          margin-top: 10px;
+        }
+
+        .icon-phone {
+          margin-right: 10px;
+        }
+      }
+
+      .tel {
+        padding-left: 24px;
+        font-family: $font-bold;
+        font-size: 1rem;
+
+        a {
+          font-size: inherit;
+          line-height: inherit;
+          font-family: inherit;
+          color: inherit;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &-check-status {
+      @extend %flex-y--center;
+
+      .menu__link {
+        @extend %flex-y--center;
+
+        .icon-circle_arrow_grey {
+          margin-left: 8px;
+        }
+
+        &:hover {
+          .icon-circle_arrow_grey {
+            background-position: -4px -31px;
+          }
+        }
+      }
+    }
+
+    &-log-in {
+      margin-right: 140px;
+      @extend %flex-y--center;
+
+      .icon-user {
+        margin-right: 10px;
+      }
+    }
+  }
+}

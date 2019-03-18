@@ -1,0 +1,43 @@
+@import './../../_vars.scss';
+
+.header {
+  @extend %flex;
+  background-color: $white;
+  padding-top: 0.75rem;
+  padding-bottom: 1.125rem;
+
+  .btn-burger {
+    margin-right: 1rem;
+    display: none;
+  }
+
+  &-cart {
+    .app-wrap {
+      .phone-number {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .app-wrap {
+    @extend %flex-y--center;
+
+    .menu-header {
+      .mobile {
+        display: none;
+      }
+    }
+  }
+
+  .phone-number {
+    margin-left: 66px;
+
+    .url {
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  @import './../menu/_menu-header.scss';
+}

@@ -1,0 +1,49 @@
+@import './../../_vars.scss';
+
+.form-modal {
+  margin-bottom: 100px;
+
+  .container {
+    max-width: 576px;
+    width: 100%;
+    padding: 45px 130px 55px;
+    margin: 0 auto;
+
+    .txt-modal {
+      font-size: 1rem;
+      line-height: 1.3125rem;
+      font-family: $font-regular;
+      color: $main-text-color;
+      margin-bottom: 48px;
+      letter-spacing: -0.6px;
+    }
+
+    .input-box,
+    .input {
+      max-width: 315px;
+      width: 100%;
+    }
+
+    .input-box {
+      + .input-box {
+        margin-top: 18px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .btn-default {
+      @extend %flex-xy--center;
+      padding-top: 14px;
+      padding-bottom: 17px;
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
+      font-family: $font-bold;
+
+      .icon-circle_arrow_white {
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
