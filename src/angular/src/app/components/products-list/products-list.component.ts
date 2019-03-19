@@ -19,4 +19,20 @@ export class ProductsListComponent implements OnInit {
     this._productService.getProducts()
       .subscribe(res => this.products = res);
   }
+  getBeds(): void {
+    this._productService.getBeds()
+      .subscribe(res => this.products = res);
+  }
+  getCupboards(): void {
+    this._productService.getCupboards()
+      .subscribe(res => this.products = res);
+  }
+  getKitchens(): void {
+    this._productService.getKitchens()
+      .subscribe(res => this.products = res);
+  }
+  getHouseholds(): void {
+    this._productService.getHouseholds()
+      .subscribe(res => this.products = res);
+  }
 }
