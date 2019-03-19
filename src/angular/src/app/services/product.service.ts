@@ -18,6 +18,10 @@ export class ProductService {
   constructor(private _http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
+    return this._http.get<Product[]>(this._productsUrl);
+  }
+
+  getChairs(): Observable<Product[]> {
     return this._http.get<Product[]>(this._productsUrl + '/chairs');
   }
   getBeds(): Observable<Product[]> {
