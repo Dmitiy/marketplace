@@ -6,11 +6,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { COMPONENTS_LIST } from './components-list.component';
-import { PreloaderComponent } from './components/preloader/preloader.component';
-import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 
 @NgModule({
-  declarations: [AppComponent, ...COMPONENTS_LIST, PreloaderComponent, BreadcrumbsComponent,],
+  declarations: [AppComponent, ...COMPONENTS_LIST],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

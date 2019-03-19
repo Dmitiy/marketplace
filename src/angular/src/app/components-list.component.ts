@@ -45,7 +45,8 @@ import { DetailStatusOrderFooterComponent } from './components/detail-status-ord
 import { CartDetailOrderComponent } from './components/cart-detail-order/cart-detail-order.component';
 import { FormModalComponent } from './components/forms/form-modal/form-modal.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
-
+import { PreloaderComponent } from './components/preloader/preloader.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 // layouts
 import { CatalogLayoutComponent } from './layouts/catalog-layout/catalog-layout.component';
 import { CartLayoutComponent } from './layouts/cart-layout/cart-layout.component';
@@ -122,4 +123,6 @@ export const COMPONENTS_LIST = [
   OrderStatusPageComponent,
   PageNotFoundComponent,
   CheckStatusLayoutComponent,
+  PreloaderComponent,
+  BreadcrumbsComponent,
 ];
