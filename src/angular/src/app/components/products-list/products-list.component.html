@@ -1,5 +1,6 @@
 <div class="products-list">
-  <app-product-item *ngFor='let product of products; let i = index;' [product]='product' [style.order]="i">
+  <app-product-item (click)='onSelect(product) ' *ngFor='let product of products; let i = index;' [product]='product'
+    [style.order]="i">
   </app-product-item>
   <app-product-item-big [ngStyle]="{'order':'5'}"></app-product-item-big>
 </div>
