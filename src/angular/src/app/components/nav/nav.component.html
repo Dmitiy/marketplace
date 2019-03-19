@@ -1,9 +1,5 @@
 <nav class="nav">
-  <a routerLink="/chairs" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Стулья и
-    кресла
+  <a *ngFor='let nav of navs' routerLink="{{nav.linkTo}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    {{nav.name}}
   </a>
-  <a routerLink="/beds" routerLinkActive="active">Кровати и матрасы</a>
-  <a routerLink="/cupboards" routerLinkActive="active">Шкафы и комоды</a>
-  <a routerLink="/kitchens" routerLinkActive="active">Мебель для кухни</a>
-  <a routerLink="/households" routerLinkActive="active">Товары для дома</a>
 </nav>

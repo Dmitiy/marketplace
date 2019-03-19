@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from './../../models/Product';
-import { Nav } from './../../models/Nav';
 import { ProductService } from './../../services/product.service';
 
 @Component({
@@ -48,5 +47,8 @@ export class ProductsListComponent implements OnInit {
       .subscribe(res => this.households = res);
   }
 
-  onSelect(product) { }
+  onSelect(product) {
+    console.log(product);
+
+  }
 }

@@ -1,4 +1,5 @@
 export interface Nav {
-  id?: number;
-  name?: string;
+  id?: number,
+  linkTo?: string,
+  name?: string
 }
