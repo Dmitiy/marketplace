@@ -32,10 +32,8 @@ body {
 
         @import './components/navigation/_navigation.scss';
 
-        @import './components/breadcrumbs/_breadcrumbs.scss';
-
       }
-
+      @import './components/breadcrumbs/_breadcrumbs.scss';
       main {
         flex: 1 0 auto;
 
