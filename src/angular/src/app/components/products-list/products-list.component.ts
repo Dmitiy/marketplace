@@ -11,11 +11,11 @@ import { PRODUCTS } from 'src/app/models/mock-products';
 export class ProductsListComponent implements OnInit {
   products: Product[];
 
-  constructor(private productService: ProductService) { }
+  constructor(private _productService: ProductService) { }
 
   ngOnInit() {
-    // this.productService.getProducts();
-    this.products = PRODUCTS;
+    this.products = this._productService.getProducts();
+    // this.products = PRODUCTS;
   }
 
 }
