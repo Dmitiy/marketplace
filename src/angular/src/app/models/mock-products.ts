@@ -57,12 +57,6 @@ export const PRODUCTS: Product[] = [
   },
   {
     "category": "chairs",
-    "id": 7,
-    "imgSrc": "assets/img/products/chairs/household-big.png",
-    "title": "Товары для дома со скидкой",
-  },
-  {
-    "category": "chairs",
     "id": 8,
     "imgSrc": "assets/img/products/chairs/ch-8.png",
     "title": "Кресло Мильтон",

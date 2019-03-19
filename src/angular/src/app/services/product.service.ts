@@ -9,6 +9,6 @@ export class ProductService {
   products;
   constructor() { }
   getProducts() {
-    return this.products = PRODUCTS;
+    // return this.products = PRODUCTS;
   }
 }
