@@ -34,14 +34,14 @@ body {
 
         @import './components/breadcrumbs/_breadcrumbs.scss';
 
-        @import './components/preview/_preview.scss';
-    }
+      }
 
-    @import './components/controls/_controls-field.scss';
-
-
-    main {
+      main {
         flex: 1 0 auto;
+
+        @import './components/preview/_preview.scss';
+
+        @import './components/controls/_controls-field.scss';
 
         @import './components/product-item/_product-item.scss';
 
