@@ -8,13 +8,13 @@ import { ProductService } from './../../services/product.service';
   styleUrls: ['./products-list.component.scss'],
 })
 export class ProductsListComponent implements OnInit {
-  private products: Product[] = [];
+  private _products: Product[] = [];
 
-  private chairs: Product[] = [];
-  private beds: Product[] = [];
-  private cupboards: Product[] = [];
-  private kitchens: Product[] = [];
-  private households: Product[] = [];
+  private _chairs: Product[] = [];
+  private _beds: Product[] = [];
+  private _cupboards: Product[] = [];
+  private _kitchens: Product[] = [];
+  private _households: Product[] = [];
 
   constructor(private _productService: ProductService) {}
 
@@ -24,7 +24,7 @@ export class ProductsListComponent implements OnInit {
   getProducts(): void {
     this._productService
       .getProducts()
-      .subscribe((res) => (this.products = res));
+      .subscribe((res) => (this._products = res));
   }
 
   onSelect(product) {
