@@ -11,7 +11,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root',
 })
 export class NavService {
-  private _URL = 'http://localhost:3004';
+  private _URL: string = 'http://localhost:3004';
 
   constructor(private _http: HttpClient) {}
 
