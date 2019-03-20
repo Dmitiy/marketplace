@@ -24,6 +24,13 @@ const routes: Routes = [
   { path: 'detail-order', component: DetailOrderLayoutComponent },
   { path: 'order-status', component: OrderStatusLayoutComponent },
   { path: 'check-status', component: CheckStatusLayoutComponent },
+
+  { path: 'chairs', component: CatalogLayoutComponent },
+  { path: 'beds', component: CatalogLayoutComponent },
+  { path: 'cupboards', component: CatalogLayoutComponent },
+  { path: 'kitchens', component: CatalogLayoutComponent },
+  { path: 'households', component: CatalogLayoutComponent },
+
   { path: '**', component: PageNotFoundComponent },
 ];
 
@@ -31,4 +38,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
