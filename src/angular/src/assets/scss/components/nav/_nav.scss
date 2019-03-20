@@ -8,13 +8,12 @@
     font-size: 0.75rem;
     font-family: $font-bold;
     text-transform: uppercase;
-    border-bottom: 2px solid transparent;
     color: $main-text-color;
     letter-spacing: 1.1px;
     position: relative;
     transition: color 0.2s ease;
 
-    + a {
+    +a {
       margin-left: 30px;
     }
 

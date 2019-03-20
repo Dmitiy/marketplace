@@ -1,5 +1,5 @@
+import { Nav } from './../models/Nav';
 import { Injectable } from '@angular/core';
-import { Product } from '../models/Product';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -10,12 +10,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-export class ProductService {
+export class NavService {
   private _URL = 'http://localhost:3004';
 
   constructor(private _http: HttpClient) {}
 
-  getProducts(): Observable<Product[]> {
-    return this._http.get<Product[]>(this._URL + '/chairs');
+  getNavs(): Observable<Nav[]> {
+    return this._http.get<Nav[]>(this._URL);
   }
 }

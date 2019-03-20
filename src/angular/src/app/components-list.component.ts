@@ -47,6 +47,7 @@ import { FormModalComponent } from './components/forms/form-modal/form-modal.com
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+
 // layouts
 import { CatalogLayoutComponent } from './layouts/catalog-layout/catalog-layout.component';
 import { CartLayoutComponent } from './layouts/cart-layout/cart-layout.component';
@@ -54,6 +55,7 @@ import { DetailOrderLayoutComponent } from './layouts/detail-order-layout/detail
 import { DetailItemLayoutComponent } from './layouts/detail-item-layout/detail-item-layout.component';
 import { OrderStatusLayoutComponent } from './layouts/order-status-layout/order-status-layout.component';
 import { CheckStatusLayoutComponent } from './layouts/check-status-layout/check-status-layout.component';
+import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
 
 export const COMPONENTS_LIST = [
   HeaderComponent,
@@ -109,6 +111,7 @@ export const COMPONENTS_LIST = [
   DetailItemLayoutComponent,
   OrderStatusLayoutComponent,
   CheckStatusLayoutComponent,
+  PageNotFoundComponent,
   PreloaderComponent,
   BreadcrumbsComponent,
 ];
