@@ -31,6 +31,12 @@ const routes: Routes = [
   { path: 'kitchens', component: CatalogLayoutComponent },
   { path: 'households', component: CatalogLayoutComponent },
 
+  { path: 'chairs/:id', component: DetailItemLayoutComponent },
+  { path: 'beds/:id', component: DetailItemLayoutComponent },
+  { path: 'cupboards/:id', component: DetailItemLayoutComponent },
+  { path: 'kitchens/:id', component: DetailItemLayoutComponent },
+  { path: 'households/:id', component: DetailItemLayoutComponent },
+
   { path: '**', component: PageNotFoundComponent },
 ];
 
