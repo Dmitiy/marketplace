@@ -2,8 +2,8 @@
   "chairs": [{
       "id": 1,
       "imgSrc": "assets/img/products/chairs/ch-1.png",
-      "title": "Cтул ханна",
-      "price": 9399,
+      "title": "Cтул Ханна",
+      "price": 2299,
       "currency": "₽",
       "count": 7
     },
@@ -11,7 +11,7 @@
       "id": 2,
       "imgSrc": "assets/img/products/chairs/ch-2.png",
       "title": "Cтул Эдинбург",
-      "price": 9399,
+      "price": 2319,
       "currency": "₽",
       "count": 2
     },
@@ -19,7 +19,7 @@
       "id": 3,
       "imgSrc": "assets/img/products/chairs/ch-3.png",
       "title": "Cтул Сольер",
-      "price": 9399,
+      "price": 1399,
       "currency": "₽",
       "count": 4
     },
@@ -27,7 +27,7 @@
       "id": 4,
       "imgSrc": "assets/img/products/chairs/ch-4.png",
       "title": "Cтул Стелла",
-      "price": 9399,
+      "price": 4499,
       "currency": "₽",
       "count": 2
     },
@@ -35,7 +35,7 @@
       "id": 5,
       "imgSrc": "assets/img/products/chairs/ch-5.png",
       "title": "Cтул Бланес",
-      "price": 9399,
+      "price": 4699,
       "currency": "₽",
       "count": 1
     },
@@ -43,7 +43,7 @@
       "id": 6,
       "imgSrc": "assets/img/products/chairs/ch-6.png",
       "title": "Кресло Гоа",
-      "price": 9399,
+      "price": 7599,
       "currency": "₽",
       "count": 3
     },
@@ -51,7 +51,7 @@
       "id": 7,
       "imgSrc": "assets/img/products/chairs/ch-8.png",
       "title": "Кресло Мильтон",
-      "price": 9399,
+      "price": 8889,
       "currency": "₽",
       "count": 4
     },
@@ -59,7 +59,7 @@
       "id": 8,
       "imgSrc": "assets/img/products/chairs/ch-9.png",
       "title": "Кресло Рикардо",
-      "price": 9399,
+      "price": 3219,
       "currency": "₽",
       "count": 6
     },

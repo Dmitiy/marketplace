@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { COMPONENTS_LIST } from './components-list.component';
+import { ProductService } from './services/product.service';
+import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, ...COMPONENTS_LIST],
+  declarations: [AppComponent, ...COMPONENTS_LIST, PageNotFoundComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, FormsModule, HttpClientModule],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -13,11 +13,11 @@ export class DetailItemComponent implements OnInit {
   constructor(private _productService: ProductService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.getProducts();
+    // this.getProducts();
   }
-  getProducts(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this._productService.getProducts(id)
-      .subscribe(product => this.product = product);
-  }
+  // getProducts(): void {
+  //   const id = +this.route.snapshot.paramMap.get('id');
+  //   this._productService.getProducts(id)
+  //     .subscribe(product => this.product = product);
+  // }
 }

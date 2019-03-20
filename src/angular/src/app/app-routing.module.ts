@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CatalogPageComponent } from './pages/catalog/catalog-page.component';
-import { CartPageComponent } from './pages/cart/cart-page.component';
-import { DetailItemPageComponent } from './pages/detail-item/detail-item-page.component';
-import { DetailOrderPageComponent } from './pages/detail-order/detail-order-page.component';
-import { OrderStatusPageComponent } from './pages/order-status/order-status-page.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { CheckStatusLayoutComponent } from './layouts/check-status-layout/check-status-layout.component';
+import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
+import { OrderStatusLayoutComponent } from './layouts/order-status-layout/order-status-layout.component';
+import { DetailOrderLayoutComponent } from './layouts/detail-order-layout/detail-order-layout.component';
+import { DetailItemLayoutComponent } from './layouts/detail-item-layout/detail-item-layout.component';
+import { CartLayoutComponent } from './layouts/cart-layout/cart-layout.component';
+import { CatalogLayoutComponent } from './layouts/catalog-layout/catalog-layout.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/catalog', pathMatch: 'full' },
   {
     path: 'catalog',
-    component: CatalogPageComponent,
+    component: CatalogLayoutComponent,
   },
   {
     path: 'catalog/:id',
-    component: DetailItemPageComponent,
+    component: DetailItemLayoutComponent,
   },
-  { path: 'cart', component: CartPageComponent },
-  { path: 'detail-item', component: DetailItemPageComponent },
-  { path: 'detail-order', component: DetailOrderPageComponent },
-  { path: 'order-status', component: OrderStatusPageComponent },
+  { path: 'cart', component: CartLayoutComponent },
+  { path: 'detail-item', component: DetailItemLayoutComponent },
+  { path: 'detail-order', component: DetailOrderLayoutComponent },
+  { path: 'order-status', component: OrderStatusLayoutComponent },
   { path: 'check-status', component: CheckStatusLayoutComponent },
   { path: '**', component: PageNotFoundComponent },
 ];

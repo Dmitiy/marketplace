@@ -53,14 +53,6 @@ import { CartLayoutComponent } from './layouts/cart-layout/cart-layout.component
 import { DetailOrderLayoutComponent } from './layouts/detail-order-layout/detail-order-layout.component';
 import { DetailItemLayoutComponent } from './layouts/detail-item-layout/detail-item-layout.component';
 import { OrderStatusLayoutComponent } from './layouts/order-status-layout/order-status-layout.component';
-
-// pages
-import { CatalogPageComponent } from './pages/catalog/catalog-page.component';
-import { CartPageComponent } from './pages/cart/cart-page.component';
-import { DetailItemPageComponent } from './pages/detail-item/detail-item-page.component';
-import { DetailOrderPageComponent } from './pages/detail-order/detail-order-page.component';
-import { OrderStatusPageComponent } from './pages/order-status/order-status-page.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { CheckStatusLayoutComponent } from './layouts/check-status-layout/check-status-layout.component';
 
 export const COMPONENTS_LIST = [
@@ -116,12 +108,6 @@ export const COMPONENTS_LIST = [
   DetailOrderLayoutComponent,
   DetailItemLayoutComponent,
   OrderStatusLayoutComponent,
-  CatalogPageComponent,
-  CartPageComponent,
-  DetailItemPageComponent,
-  DetailOrderPageComponent,
-  OrderStatusPageComponent,
-  PageNotFoundComponent,
   CheckStatusLayoutComponent,
   PreloaderComponent,
   BreadcrumbsComponent,
