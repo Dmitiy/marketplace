@@ -11,11 +11,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ProductService {
-  private _URL: string = 'http://localhost:3004';
+  private _URL: string = 'http://localhost:3000';
 
   constructor(private _http: HttpClient) {}
 
-  getProducts(): Observable<Product[]> {
-    return this._http.get<Product[]>(this._URL + '/chairs');
+  getProducts(link: string): Observable<Product[]> {
+    return this._http.get<Product[]>(`${this._URL}${link}`);
   }
 }

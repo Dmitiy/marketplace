@@ -1,33 +1,23 @@
+import { Product } from 'src/app/models/Product';
 import { Component, OnInit } from '@angular/core';
-import { Product } from './../../models/Product';
-import { ProductService } from './../../services/product.service';
-
+import { ProductService } from 'src/app/services/product.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-products-list',
   templateUrl: './products-list.component.html',
   styleUrls: ['./products-list.component.scss'],
 })
 export class ProductsListComponent implements OnInit {
-  private _products: Product[] = [];
+  _products: Product[] = [];
 
-  private _chairs: Product[] = [];
-  private _beds: Product[] = [];
-  private _cupboards: Product[] = [];
-  private _kitchens: Product[] = [];
-  private _households: Product[] = [];
-
-  constructor(private _productService: ProductService) {}
+  constructor(
+    private _productService: ProductService,
+    private _router: Router,
+  ) {}
 
   ngOnInit() {
-    this.getProducts();
-  }
-  getProducts(): void {
     this._productService
-      .getProducts()
+      .getProducts(this._router.url)
       .subscribe((res) => (this._products = res));
-  }
-
-  onSelect(product) {
-    console.log(product);
   }
 }

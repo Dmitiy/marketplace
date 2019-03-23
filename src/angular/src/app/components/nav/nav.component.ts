@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Nav } from 'src/app/models/Nav';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { NAVS } from 'src/app/models/mock-nav';
 import { Product } from 'src/app/models/Product';
-
+import { ProductService } from 'src/app/services/product.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -12,17 +11,13 @@ import { Product } from 'src/app/models/Product';
 })
 export class NavComponent implements OnInit {
   private _navs: Nav[] = [];
-  private _URL = 'http://localhost:3004';
 
-  private _products: Product[] = [];
+  public _products: Product[] = [];
 
-  private _chairs: Product[] = [];
-  private _beds: Product[] = [];
-  private _cupboards: Product[] = [];
-  private _kitchens: Product[] = [];
-  private _households: Product[] = [];
-
-  constructor(private _http: HttpClient) {}
+  constructor(
+    private _productService: ProductService,
+    private _router: Router,
+  ) {}
 
   ngOnInit() {
     this.getNavs();
@@ -31,11 +26,9 @@ export class NavComponent implements OnInit {
   getNavs() {
     return (this._navs = NAVS);
   }
-
-  onSelect(nav) {
-    this._http.get(this._URL + nav.linkTo).subscribe((res: Product[]) => {
-      console.log(res);
-      this._products = res;
-    });
-  }
+  // onSelect(link) {
+  //   this._productService
+  //     .getProducts(this._router.url)
+  //     .subscribe((res) => (this._products = res));
+  // }
 }
