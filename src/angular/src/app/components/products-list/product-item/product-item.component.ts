@@ -9,6 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductItemComponent implements OnInit {
   @Input() product: Product[];
+  @Input() category: string;
   constructor(private _productService: ProductService) {}
 
   ngOnInit() {

@@ -13,6 +13,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'chairs', pathMatch: 'full' },
 
   { path: 'chairs', component: CatalogLayoutComponent },
+  { path: ':category/:id', component: DetailItemLayoutComponent },
+
   { path: 'beds', component: CatalogLayoutComponent },
   { path: 'cupboards', component: CatalogLayoutComponent },
   { path: 'kitchens', component: CatalogLayoutComponent },

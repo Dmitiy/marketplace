@@ -9,15 +9,16 @@ import { Router } from '@angular/router';
 })
 export class ProductsListComponent implements OnInit {
   _products: Product[] = [];
-
+  category: string;
   constructor(
     private _productService: ProductService,
     private _router: Router,
   ) {}
 
   ngOnInit() {
+    this.category = this._router.url;
     this._productService
-      .getProducts(this._router.url)
+      .getProducts(this.category)
       .subscribe((res) => (this._products = res));
   }
 }
