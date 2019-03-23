@@ -11,3 +11,65 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  :host {
+    .products-list {
+      ::ng-deep {
+
+        .product-link {
+          width: 230px !important;
+        }
+
+        .product-big {
+          width: 490px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  :host {
+    .products-list {
+      ::ng-deep {
+
+        .product-link {
+          width: 215px !important;
+        }
+
+        .product-big {
+          width: 460px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  :host {
+    .products-list {
+      ::ng-deep {
+
+        .product-link,
+        .product-big {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  :host {
+    .products-list {
+      ::ng-deep {
+
+        .product-link,
+        .product-big {
+          width: 292px;
+        }
+      }
+    }
+  }
+}

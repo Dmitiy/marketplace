@@ -1381,6 +1381,7 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
   .app {
     .app-wrap {
       max-width: 292px;
@@ -1445,8 +1446,6 @@
       .navigation {
         display: none;
       }
-
-
     }
 
     .input-search .search-label {
@@ -1480,6 +1479,8 @@
 
       .products-list {
         margin-bottom: 30px;
+
+
 
         .product-link {
           flex-basis: calc(100% - 30px);
