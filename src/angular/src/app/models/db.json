@@ -155,7 +155,7 @@
   ],
   "cupboards": [{
       "id": 1,
-      "imgSrc": "https://via.placeholder.com/250/cccccc",
+      "imgSrc": "https://via.placeholder.com/150/cccccc",
       "title": "Шкаф Купе",
       "price": 22345,
       "currency": "₽",
@@ -163,7 +163,7 @@
     },
     {
       "id": 2,
-      "imgSrc": "https://via.placeholder.com/250/aaaaaa",
+      "imgSrc": "https://via.placeholder.com/150/aaaaaa",
       "title": "Шкаф Домино",
       "price": 19975,
       "currency": "₽",
@@ -171,7 +171,7 @@
     },
     {
       "id": 3,
-      "imgSrc": "https://via.placeholder.com/250/dddddd",
+      "imgSrc": "https://via.placeholder.com/150/dddddd",
       "title": "Шкаф Санта",
       "price": 4399,
       "currency": "₽",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "imgSrc": "https://via.placeholder.com/250/dfeddd",
+      "imgSrc": "https://via.placeholder.com/150/dfeddd",
       "title": "Шкаф Санта2",
       "price": 1299,
       "currency": "₽",
@@ -188,7 +188,7 @@
   ],
   "kitchens": [{
       "id": 1,
-      "imgSrc": "https://via.placeholder.com/350/",
+      "imgSrc": "https://via.placeholder.com/150/",
       "title": "Кухня 1",
       "price": 12345,
       "currency": "₽",
@@ -196,7 +196,7 @@
     },
     {
       "id": 2,
-      "imgSrc": "https://via.placeholder.com/350/fefafd",
+      "imgSrc": "https://via.placeholder.com/150/fefafd",
       "title": "Кухня 2",
       "price": 9975,
       "currency": "₽",
@@ -204,7 +204,7 @@
     },
     {
       "id": 3,
-      "imgSrc": "https://via.placeholder.com/350/cecece",
+      "imgSrc": "https://via.placeholder.com/150/cecece",
       "title": "Кухня 3",
       "price": 4399,
       "currency": "₽",
@@ -213,7 +213,7 @@
   ],
   "households": [{
       "id": 1,
-      "imgSrc": "https://via.placeholder.com/350/",
+      "imgSrc": "https://via.placeholder.com/150/",
       "title": "Товар для дома 1",
       "price": 12345,
       "currency": "₽",
@@ -221,7 +221,7 @@
     },
     {
       "id": 2,
-      "imgSrc": "https://via.placeholder.com/350/fefafd",
+      "imgSrc": "https://via.placeholder.com/150/fefafd",
       "title": "Товар для дома 2",
       "price": 9975,
       "currency": "₽",
@@ -229,7 +229,7 @@
     },
     {
       "id": 3,
-      "imgSrc": "https://via.placeholder.com/350/cecece",
+      "imgSrc": "https://via.placeholder.com/150/cecece",
       "title": "Товар для дома 3",
       "price": 4399,
       "currency": "₽",

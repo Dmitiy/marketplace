@@ -1,0 +1,13 @@
+:host {
+  .products-list {
+    ::ng-deep {
+      .product-link {
+        width: 270px;
+      }
+
+      .product-big {
+        width: 570px;
+      }
+    }
+  }
+}

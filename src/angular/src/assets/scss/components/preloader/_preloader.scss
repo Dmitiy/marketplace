@@ -1,0 +1,70 @@
+@import './../../_vars.scss';
+
+$width: 15px;
+$height: 15px;
+
+$bounce_height: 30px;
+
+.preloader {
+  @extend %flex-xy--center;
+
+  width: 100%;
+  background-color: #f5f8fa;
+  min-height: 100%;
+  z-index: 200;
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+
+    .text {
+      color: #f54732;
+      display: inline-block;
+      margin-left: .5rem;
+      font-size: 2rem;
+    }
+
+    .bounceball {
+      position: relative;
+      display: inline-block;
+      height: 37px;
+      width: $width;
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 0;
+        width: $width;
+        height: $height;
+        border-radius: 50%;
+        background-color: #E2781C;
+        transform-origin: 50%;
+        animation: bounce .4s alternate infinite ease;
+      }
+    }
+  }
+
+}
+
+@keyframes bounce {
+  0% {
+    top: $bounce_height;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+
+  35% {
+    height: $height;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0;
+  }
+}
