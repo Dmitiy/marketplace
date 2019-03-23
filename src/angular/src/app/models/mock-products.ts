@@ -1,6 +1,6 @@
-import { Product } from './Product';
+import { IProduct } from './Product';
 
-export const PRODUCTS: Product[] = [
+export const PRODUCTS: IProduct[] = [
   {
     id: 1,
     imgSrc: 'assets/img/products/chairs/ch-1.png',

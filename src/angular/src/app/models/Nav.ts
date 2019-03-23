@@ -1,4 +1,4 @@
-export interface Nav {
+export interface INav {
   id: number;
   linkTo: string;
   name: string;

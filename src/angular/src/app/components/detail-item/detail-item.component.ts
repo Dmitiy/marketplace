@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail-item',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-item.component.scss'],
 })
 export class DetailItemComponent implements OnInit {
-  constructor() {}
-  ngOnInit() {}
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    console.log(this.route.snapshot.paramMap.get('category'));
+  }
 }

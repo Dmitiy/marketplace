@@ -1,14 +1,15 @@
-import { Product } from 'src/app/models/Product';
+import { IProduct } from 'src/app/models/Product';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-products-list',
   templateUrl: './products-list.component.html',
   styleUrls: ['./products-list.component.scss'],
 })
 export class ProductsListComponent implements OnInit {
-  _products: Product[] = [];
+  products: IProduct[] = [];
   category: string;
   constructor(
     private _productService: ProductService,
@@ -19,6 +20,6 @@ export class ProductsListComponent implements OnInit {
     this.category = this._router.url;
     this._productService
       .getProducts(this.category)
-      .subscribe((res) => (this._products = res));
+      .subscribe((res) => (this.products = res));
   }
 }
