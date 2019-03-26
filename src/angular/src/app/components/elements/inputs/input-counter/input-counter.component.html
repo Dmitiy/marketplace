@@ -1,5 +1,5 @@
 <div class="input-counter">
-  <app-btn-minus></app-btn-minus>
-  <input class="input" name="inputCounter" value="1" />
-  <app-btn-plus></app-btn-plus>
+  <app-btn-minus (decrement)='decrementCount()'></app-btn-minus>
+  <input class="input" name="appInputCount" [(ngModel)]='inputCounterService.count' />
+  <app-btn-plus (increment)='incrementCount()'></app-btn-plus>
 </div>
