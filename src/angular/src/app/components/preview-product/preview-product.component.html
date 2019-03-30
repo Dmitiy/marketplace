@@ -1,9 +1,13 @@
 <div class="preview-product">
   <div class="app-wrap">
-    <h1 class="h1">Стулья и кресла</h1>
-    <img
-      src="assets/img/products/chairs/chair-preview.png"
-      alt="Стулья и кресла"
-    />
+    <ng-container [ngSwitch]="category">
+      <h1 class="h1" *ngSwitchCase="'/chairs'">Стулья и кресла</h1>
+      <h1 class="h1" *ngSwitchCase="'/beds'">Кровати и матрасы</h1>
+      <h1 class="h1" *ngSwitchCase="'/cupboards'">Шкафы и комоды</h1>
+      <h1 class="h1" *ngSwitchCase="'/kitchens'">Мебель для кухни</h1>
+      <h1 class="h1" *ngSwitchCase="'/households'">Товары для дома</h1>
+      <h1 class="h1" *ngSwitchDefault>Стулья и кресла</h1>
+    </ng-container>
+    <img src="assets/img/products/chairs/chair-preview.png" alt="Стулья и кресла" />
   </div>
 </div>

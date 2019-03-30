@@ -8,7 +8,7 @@
       <p class="product-item__price">{{product.price}}
         <span class="product-item__currency">{{product.currency}}</span>
       </p>
-      <button class="btn">В корзину</button>
+      <button class="btn" (click)='addToCart($event)'>В корзину</button>
     </figcaption>
   </figure>
 </a>
