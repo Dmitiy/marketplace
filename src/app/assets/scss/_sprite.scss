@@ -103,4 +103,50 @@
 		height: 12px;
 		background-position: -86px -4px;
 	}
+
+	&.ui-paginator-first {
+		width: 11px;
+		height: 10px;
+		background-position: -70px -73px;
+
+		&:hover {
+			background-position: -86px -67px;
+			transform: rotate(180deg);
+		}
+	}
+
+	&.ui-paginator-last {
+		width: 11px;
+		height: 10px;
+		background-position: -70px -73px;
+		transform: rotate(180deg);
+
+		&:hover {
+			background-position: -86px -67px;
+			transform: rotate(0deg);
+		}
+	}
+
+	&.ui-paginator-prev {
+		width: 11px;
+		height: 10px;
+		background-position: -67px -58px;
+
+		&:hover {
+			background-position: -86px -53px;
+			transform: rotate(180deg);
+		}
+	}
+
+	&.ui-paginator-next {
+		width: 11px;
+		height: 10px;
+		background-position: -67px -58px;
+		transform: rotate(180deg);
+
+		&:hover {
+			background-position: -86px -53px;
+			transform: rotate(0deg);
+		}
+	}
 }
