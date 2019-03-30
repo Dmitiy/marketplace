@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InputCounterService } from 'src/app/services/input-counter.service';
+import { ControlsService } from '../../../../services/controls.service';
 
 @Component({
   selector: 'app-btn-minus',
@@ -7,10 +7,10 @@ import { InputCounterService } from 'src/app/services/input-counter.service';
   styleUrls: ['./btn-minus.component.scss'],
 })
 export class BtnMinusComponent implements OnInit {
-  constructor(public inputCounterService: InputCounterService) {}
+  constructor(public controlsService: ControlsService) {}
 
   ngOnInit() {}
   decrement() {
-    this.inputCounterService.decrement();
+    this.controlsService.decrement();
   }
 }

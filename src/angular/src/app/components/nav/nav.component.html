@@ -1,5 +1,6 @@
 <nav class="nav">
-  <!-- <a routerLink="/chairs" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Стулья и кресла</a> -->
-  <a *ngFor="let nav of getNavs()" routerLink="{{ nav.linkTo }}" routerLinkActive="active">{{
-    nav.name }}</a>
+  <a *ngFor="let nav of getNavs()" routerLink="{{ nav.linkTo }}" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">
+    {{ nav.name }}
+  </a>
 </nav>

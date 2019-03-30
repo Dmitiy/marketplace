@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class InputCounterService {
+export class ControlsService {
   public count: number = 1;
 
   constructor() {}

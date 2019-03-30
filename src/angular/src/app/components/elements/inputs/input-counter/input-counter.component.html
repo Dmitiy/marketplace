@@ -1,5 +1,5 @@
 <div class="input-counter">
-  <app-btn-minus (decrement)='decrementCount()'></app-btn-minus>
-  <input class="input" name="appInputCount" [(ngModel)]='inputCounterService.count' />
-  <app-btn-plus (increment)='incrementCount()'></app-btn-plus>
+  <app-btn-minus (decrement)='decrementCount($event)'></app-btn-minus>
+  <input type='number' class="input" name="appInputCount" [(ngModel)]='controlsService.count' />
+  <app-btn-plus (increment)='incrementCount($event)'></app-btn-plus>
 </div>
