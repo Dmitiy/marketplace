@@ -1,106 +1,152 @@
 .icons {
-	background: url('#{$path-img}/sprite/sprite.png') no-repeat top left;
-	display: inline-flex;
+  background: url('#{$path-img}/sprite/sprite.png') no-repeat top left;
+  display: inline-flex;
 
-	&.icon-arrow {
-		width: 5px;
-		height: 7px;
-		background-position: -18px -79px;
-	}
+  &.icon-arrow {
+    width: 5px;
+    height: 7px;
+    background-position: -18px -79px;
+  }
 
-	&.icon-arrow-active {
-		width: 5px;
-		height: 7px;
-		background-position: -29px -79px;
-	}
+  &.icon-arrow-active {
+    width: 5px;
+    height: 7px;
+    background-position: -29px -79px;
+  }
 
-	&.icon-breadcrumbs_arrow {
-		width: 6px;
-		height: 8px;
-		background-position: -4px -79px;
-	}
+  &.icon-breadcrumbs_arrow {
+    width: 6px;
+    height: 8px;
+    background-position: -4px -79px;
+  }
 
-	&.icon-cart_active {
-		width: 18px;
-		height: 17px;
-		background-position: -58px -28px;
-	}
+  &.icon-cart_active {
+    width: 18px;
+    height: 17px;
+    background-position: -58px -28px;
+  }
 
-	&.icon-carousel_arrow {
-		width: 12px;
-		height: 7px;
-		background-position: -86px -24px;
-	}
+  &.icon-carousel_arrow {
+    width: 12px;
+    height: 7px;
+    background-position: -86px -24px;
+  }
 
-	&.icon-cart {
-		width: 18px;
-		height: 17px;
-		background-position: -31px -31px;
-	}
+  &.icon-cart {
+    width: 18px;
+    height: 17px;
+    background-position: -31px -31px;
+  }
 
-	&.icon-chevron_down {
-		width: 10px;
-		height: 6px;
-		background-position: -86px -39px;
-	}
+  &.icon-chevron_down {
+    width: 10px;
+    height: 6px;
+    background-position: -86px -39px;
+  }
 
-	&.icon-circle_arrow_darkblue {
-		width: 19px;
-		height: 19px;
-		background-position: -4px -4px;
-	}
+  &.icon-circle_arrow_darkblue {
+    width: 19px;
+    height: 19px;
+    background-position: -4px -4px;
+  }
 
-	&.icon-circle_arrow_grey {
-		width: 19px;
-		height: 19px;
-		background-position: -31px -4px;
-	}
+  &.icon-circle_arrow_grey {
+    width: 19px;
+    height: 19px;
+    background-position: -31px -4px;
+  }
 
-	&.icon-circle_arrow_white {
-		width: 19px;
-		height: 19px;
-		background-position: -4px -31px;
-	}
+  &.icon-circle_arrow_white {
+    width: 19px;
+    height: 19px;
+    background-position: -4px -31px;
+  }
 
-	&.icon-next_arr_red {
-		width: 6px;
-		height: 10px;
-		background-position: -86px -53px;
-	}
+  &.icon-next_arr_red {
+    width: 6px;
+    height: 10px;
+    background-position: -86px -53px;
+  }
 
-	&.icon-next {
-		width: 6px;
-		height: 10px;
-		background-position: -67px -58px;
-	}
+  &.icon-next {
+    width: 6px;
+    height: 10px;
+    background-position: -67px -58px;
+  }
 
-	&.icon-phone {
-		width: 13px;
-		height: 13px;
-		background-position: -4px -58px;
-	}
+  &.icon-phone {
+    width: 13px;
+    height: 13px;
+    background-position: -4px -58px;
+  }
 
-	&.icon-search_active {
-		width: 13px;
-		height: 13px;
-		background-position: -25px -58px;
-	}
+  &.icon-search_active {
+    width: 13px;
+    height: 13px;
+    background-position: -25px -58px;
+  }
 
-	&.icon-search {
-		width: 13px;
-		height: 13px;
-		background-position: -46px -58px;
-	}
+  &.icon-search {
+    width: 13px;
+    height: 13px;
+    background-position: -46px -58px;
+  }
 
-	&.icon-transfer {
-		width: 20px;
-		height: 16px;
-		background-position: -58px -4px;
-	}
+  &.icon-transfer {
+    width: 20px;
+    height: 16px;
+    background-position: -58px -4px;
+  }
 
-	&.icon-user {
-		width: 12px;
-		height: 12px;
-		background-position: -86px -4px;
-	}
+  &.icon-user {
+    width: 12px;
+    height: 12px;
+    background-position: -86px -4px;
+  }
+
+  &.ui-paginator-first {
+    width: 11px;
+    height: 10px;
+    background-position: -70px -73px;
+
+    &:hover {
+      background-position: -86px -67px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &.ui-paginator-last {
+    width: 11px;
+    height: 10px;
+    background-position: -70px -73px;
+    transform: rotate(180deg);
+
+    &:hover {
+      background-position: -86px -67px;
+      transform: rotate(0deg);
+    }
+  }
+
+  &.ui-paginator-prev {
+    width: 11px;
+    height: 10px;
+    background-position: -67px -58px;
+
+    &:hover {
+      background-position: -86px -53px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &.ui-paginator-next {
+    width: 11px;
+    height: 10px;
+    background-position: -67px -58px;
+    transform: rotate(180deg);
+
+    &:hover {
+      background-position: -86px -53px;
+      transform: rotate(0deg);
+    }
+  }
 }

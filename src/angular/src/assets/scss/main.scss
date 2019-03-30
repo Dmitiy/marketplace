@@ -4,64 +4,68 @@
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: $bg;
-    font-family: $font-family;
-    color: $main-text-color;
+  background-color: $bg;
+  font-family: $font-family;
+  color: $main-text-color;
 }
 
 .app {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
 
-    .app-wrap {
-        max-width: $wrapper-width;
-        width: 100%;
-        margin: 0 auto;
-    }
+  .app-wrap {
+    max-width: $wrapper-width;
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    @import './components/aside/_aside.scss';
+  @import './components/aside/_aside.scss';
 
-    header {
-        @import './components/header/_header.scss';
+  header {
+    @import './components/header/_header.scss';
 
-        @import './components/navigation/_navigation.scss';
+    @import './components/navigation/_navigation.scss';
 
-      }
-      @import './components/breadcrumbs/_breadcrumbs.scss';
-      main {
-        flex: 1 0 auto;
+  }
 
-        @import './components/preview/_preview.scss';
+  @import './components/breadcrumbs/_breadcrumbs.scss';
 
-        @import './components/controls/_controls-field.scss';
+  main {
+    flex: 1 0 auto;
 
-        @import './components/product-item/_product-item.scss';
+    @import './components/preview/_preview.scss';
 
-        @import './components/pagination/_pagination.scss';
+    @import './components/controls/_controls-field.scss';
 
-        @import './components/forms/_form-check-modal.scss';
+    @import './components/product-item/_product-item.scss';
 
-        @import './components/forms/_form-checkout-order.scss';
+    @import './components/pagination/_pagination.scss';
 
-        @import './components/cart/_cart-checkout.scss';
+    @import './components/forms/_form-check-modal.scss';
 
-        @import './components/detail-item/_detail-item.scss';
+    @import './components/forms/_form-checkout-order.scss';
 
-        @import './components/detail-status-order/_detail-status-order.scss';
+    @import './components/cart/_cart-checkout.scss';
 
-    }
+    @import './components/detail-item/_detail-item.scss';
 
-    footer {
-        flex-shrink: 0;
+    @import './components/detail-status-order/_detail-status-order.scss';
 
-        @import './components/footer/_footer.scss';
-    }
+  }
+
+  footer {
+    flex-shrink: 0;
+
+    @import './components/footer/_footer.scss';
+  }
 }
+
+@import './ngPrime/_ngPrime-layout.scss';
 
 @import './_media.scss';
