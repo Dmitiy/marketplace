@@ -1,4 +1,4 @@
-<button class="btn-burger">
+<button [class]="controlsService.isOpen ? 'btn-burger' : 'btn-burger btn-burger--close'" (click)='toggleMenu($event)'>
   <span></span>
   <span></span>
   <span></span>

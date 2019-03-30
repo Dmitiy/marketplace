@@ -6,7 +6,7 @@
   right: 100%;
 
   &-open {
-    @extend %flex;
+    @extend %flex-xy--center;
     position: fixed;
     right: 0;
     height: 100%;
@@ -44,7 +44,7 @@
           }
         }
 
-        + a {
+        +a {
           margin-left: 0;
           margin-top: 1px;
         }

@@ -1572,6 +1572,10 @@
       }
 
       .detail-status-order {
+        .h2 {
+          letter-spacing: 1.2px;
+        }
+
         .container {
           .order-status-detail {
             &__header {

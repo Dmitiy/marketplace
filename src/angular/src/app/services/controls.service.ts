@@ -1,10 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class ControlsService {
   public count: number = 1;
+  public isOpen: boolean = true;
 
   constructor() {}
 
@@ -17,5 +18,9 @@ export class ControlsService {
 
   increment(): void {
     this.count++;
+  }
+
+  isOpenMenu() {
+    this.isOpen = !this.isOpen;
   }
 }
