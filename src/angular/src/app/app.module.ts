@@ -11,13 +11,13 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 import { COMPONENTS_LIST } from "./components-list.component";
 
-import {
-  NGPRIME_COMPONENTS_LIST,
-  NGPRIME_MODULES_LIST,
-} from "./ng-prime-list.component";
+import { NGPRIME_MODULES_LIST } from "./ng-prime-list.component";
 
 @NgModule({
-  declarations: [AppComponent, ...COMPONENTS_LIST, ...NGPRIME_COMPONENTS_LIST],
+  declarations: [
+    AppComponent,
+    ...COMPONENTS_LIST,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,4 +29,4 @@ import {
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

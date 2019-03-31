@@ -1,0 +1,28 @@
+@import '../_vars';
+
+.ui-slider {
+	background-color: #a1a8bd !important;
+
+	&:not(.ui-state-disabled) {
+		.ui-slider-handle:hover {
+			border: 1px solid #f54732 !important;
+			cursor: ew-resize;
+		}
+	}
+
+	&.ui-slider-horizontal {
+		height: 3px !important;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.ui-slider-handle {
+		border: 1px solid #d4d8e4 !important;
+	}
+
+	.ui-slider-range {
+		background-color: #f54732 !important;
+	}
+}

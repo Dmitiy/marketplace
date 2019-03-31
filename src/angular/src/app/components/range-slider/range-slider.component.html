@@ -6,10 +6,6 @@
     <input class="input-max" type="number" name="rangeMaxPrice" value="12900">
   </div>
   <div class="range-input">
-    <div class="range-field">
-      <div class="range-progress"></div>
-      <span class="range-thumb-min"></span>
-      <span class="range-thumb-max"></span>
-    </div>
+    <p-slider [(ngModel)]="rangeValues" [style]="{'width':'14em'}" [range]="true"></p-slider>
   </div>
 </div>

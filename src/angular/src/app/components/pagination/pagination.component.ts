@@ -1,6 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
-import { ProductService } from "../../services/product.service";
-import { PaginatorModule } from "primeng/paginator";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-pagination",
@@ -8,13 +6,8 @@ import { PaginatorModule } from "primeng/paginator";
   styleUrls: ["./pagination.component.scss"],
 })
 export class PaginationComponent implements OnInit {
-  constructor(private _productService: ProductService) {}
+  constructor() { }
 
-  ngOnInit() {}
-  paginate(event) {
-    //event.first = Index of the first record
-    //event.rows = Number of rows to display in new page
-    //event.page = Index of the new page
-    //event.pageCount = Total number of pages
-  }
+  ngOnInit() { }
+
 }

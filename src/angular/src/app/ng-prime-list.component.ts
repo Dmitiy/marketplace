@@ -1,3 +1,9 @@
 import { PaginatorModule } from "primeng/paginator";
-export const NGPRIME_COMPONENTS_LIST = [];
-export const NGPRIME_MODULES_LIST = [PaginatorModule];
+import { SliderModule } from "primeng/slider";
+import { GalleriaModule } from 'primeng/galleria';
+
+export const NGPRIME_MODULES_LIST = [
+	PaginatorModule,
+	SliderModule,
+	GalleriaModule,
+];

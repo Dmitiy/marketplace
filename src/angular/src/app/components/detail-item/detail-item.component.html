@@ -1,7 +1,8 @@
 <div class="detail-item">
   <div class="container">
     <div class="detail-item-gallery">
-      <app-gallery></app-gallery>
+      <p-galleria [images]="images" [activeIndex]='0' [showCaption]="false" [frameWidth]='50'>
+      </p-galleria>
     </div>
     <app-detail-check-container></app-detail-check-container>
     <article class="article">

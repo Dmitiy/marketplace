@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail-item',
@@ -7,9 +6,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./detail-item.component.scss'],
 })
 export class DetailItemComponent implements OnInit {
-  constructor(private route: ActivatedRoute) {}
+  images: any[];
+
+  constructor() { }
 
   ngOnInit() {
-    console.log(this.route.snapshot.paramMap.get('category'));
+    this.images = [];
+    this.images.push({ source: './assets/img/gallery/ch-g-big.png', alt: 'Description for Image 1', title: 'Title 1' });
+    this.images.push({ source: 'https://via.placeholder.com/360x430', alt: 'Description for Image 1', title: 'Title 1' });
+    this.images.push({ source: './assets/img/gallery/ch-g-big.png', alt: 'Description for Image 1', title: 'Title 1' });
+    this.images.push({ source: 'https://via.placeholder.com/360x430', alt: 'Description for Image 1', title: 'Title 1' });
   }
 }
