@@ -1,0 +1,14 @@
+<app-preview-product></app-preview-product>
+<div class="app-wrap">
+  <app-controls-field></app-controls-field>
+  <div class="products-list" *ngIf='products.length; else loading'>
+    <app-product-item *ngFor='let product of products; let i = index;' [category]='category' [product]='product'
+      [style.order]="i">
+    </app-product-item>
+    <app-product-item-big [ngStyle]="{'order':'5'}"></app-product-item-big>
+  </div>
+  <ng-template #loading>
+    <app-preloader></app-preloader>
+  </ng-template>
+  <p-paginator [rows]="10" [totalRecords]="100" (onPageChange)="paginate($event)"></p-paginator>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalStoreService } from 'src/app/services/local-store.service';
 
 @Component({
   selector: 'app-menu-header',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public localStoreService: LocalStoreService
+  ) { }
 
   ngOnInit() {
   }

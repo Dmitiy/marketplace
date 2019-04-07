@@ -19,15 +19,15 @@
     <div class="menu-cart">
       <span class="icons icon-cart"></span>
       <a class="menu__link" routerLink="/cart">Корзина</a>
-      <span class="menu-cart__counter">0</span>
+      <span class="menu-cart__counter">{{localStoreService.counterCart}}</span>
     </div>
   </li>
   <li class="menu__item">
     <div class="menu-log-in">
-      <a class="btn" routerLink="/login">
+      <button class="btn" routerLink="/login">
         <span class="icons icon-user"></span>
         Вход
-      </a>
+      </button>
     </div>
   </li>
 </ul>

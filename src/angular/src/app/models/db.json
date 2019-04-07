@@ -5,7 +5,9 @@
       "title": "Cтул Ханна",
       "price": 2299,
       "currency": "₽",
-      "count": 7
+      "count": 7,
+      "delivery": "бесплатная",
+      "numId": "3212445"
     },
     {
       "id": 2,
@@ -13,7 +15,9 @@
       "title": "Cтул Эдинбург",
       "price": 2319,
       "currency": "₽",
-      "count": 2
+      "count": 2,
+      "delivery": "платная",
+      "numId": "122423"
     },
     {
       "id": 3,
@@ -21,7 +25,9 @@
       "title": "Cтул Сольер",
       "price": 1399,
       "currency": "₽",
-      "count": 4
+      "count": 4,
+      "delivery": "бесплатная",
+      "numId": "222452"
     },
     {
       "id": 4,
@@ -29,7 +35,9 @@
       "title": "Cтул Стелла",
       "price": 4499,
       "currency": "₽",
-      "count": 2
+      "count": 2,
+      "delivery": "бесплатная",
+      "numId": "552123"
     },
     {
       "id": 5,
@@ -37,7 +45,9 @@
       "title": "Cтул Бланес",
       "price": 4699,
       "currency": "₽",
-      "count": 1
+      "count": 1,
+      "delivery": "платная",
+      "numId": "222"
     },
     {
       "id": 6,
@@ -45,7 +55,9 @@
       "title": "Кресло Гоа",
       "price": 7599,
       "currency": "₽",
-      "count": 3
+      "count": 3,
+      "delivery": "бесплатная",
+      "numId": "22222"
     },
     {
       "id": 7,
@@ -53,7 +65,9 @@
       "title": "Кресло Мильтон",
       "price": 8889,
       "currency": "₽",
-      "count": 4
+      "count": 4,
+      "delivery": "бесплатная",
+      "numId": "12"
     },
     {
       "id": 8,
@@ -61,7 +75,9 @@
       "title": "Кресло Рикардо",
       "price": 3219,
       "currency": "₽",
-      "count": 6
+      "count": 6,
+      "delivery": "платная",
+      "numId": "2"
     },
     {
       "id": 9,
@@ -69,7 +85,9 @@
       "title": "Cтул Версаль",
       "price": 9399,
       "currency": "₽",
-      "count": 9
+      "count": 9,
+      "delivery": "бесплатная",
+      "numId": "8"
     },
     {
       "id": 10,
@@ -77,7 +95,9 @@
       "title": "Cтул Лина",
       "price": 9399,
       "currency": "₽",
-      "count": 2
+      "count": 2,
+      "delivery": "платная",
+      "numId": "85"
     },
     {
       "id": 11,
@@ -85,7 +105,9 @@
       "title": "Кресло Софья",
       "price": 9399,
       "currency": "₽",
-      "count": 22
+      "count": 22,
+      "delivery": "бесплатная",
+      "numId": "2142"
     },
     {
       "id": 12,
@@ -93,7 +115,9 @@
       "title": "Кресло Софья",
       "price": 9399,
       "currency": "₽",
-      "count": 6
+      "count": 6,
+      "delivery": "платная",
+      "numId": "21432"
     },
     {
       "id": 13,
@@ -101,7 +125,9 @@
       "title": "Кресло Софья",
       "price": 9399,
       "currency": "₽",
-      "count": 1
+      "count": 1,
+      "delivery": "бесплатная",
+      "numId": "2142275"
     },
     {
       "id": 14,
@@ -109,7 +135,9 @@
       "title": "Кресло Софья",
       "price": 9399,
       "currency": "₽",
-      "count": 5
+      "count": 5,
+      "delivery": "бесплатная",
+      "numId": "12375"
     }
   ],
   "beds": [{

@@ -1,16 +1,16 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root',
 })
 export class ControlsService {
-  public count: number = 1;
+  public count: number = 0;
   public isOpen: boolean = true;
 
-  constructor() {}
+  constructor() { }
 
   decrement(): void {
-    if (this.count <= 1) {
+    if (this.count <= 0) {
       return;
     }
     this.count--;

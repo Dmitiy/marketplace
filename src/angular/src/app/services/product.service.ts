@@ -13,7 +13,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 export class ProductService {
   private _URL: string = "http://localhost:3000";
 
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient) { }
 
   getProducts(link: string): Observable<IProduct[]> {
     return this._http.get<IProduct[]>(`${this._URL}${link}`);

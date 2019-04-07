@@ -1,18 +1,13 @@
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
 
-import { AppRoutingModule } from "./app-routing.module";
-
-import { FormsModule } from "@angular/forms";
-
-import { HttpClientModule } from "@angular/common/http";
-
-import { AppComponent } from "./app.component";
-import { COMPONENTS_LIST } from "./components-list.component";
-
-import { NGPRIME_MODULES_LIST } from "./ng-prime-list.component";
-
+import { COMPONENTS_LIST } from './components-list.component';
+import { NGPRIME_MODULES_LIST } from './ng-prime-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +19,9 @@ import { NGPRIME_MODULES_LIST } from "./ng-prime-list.component";
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ...NGPRIME_MODULES_LIST,
+    ...NGPRIME_MODULES_LIST
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

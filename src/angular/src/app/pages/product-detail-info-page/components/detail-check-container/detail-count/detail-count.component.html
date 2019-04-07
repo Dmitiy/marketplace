@@ -1,0 +1,24 @@
+<div class="detail-count">
+  <div class="app-wrap">
+    <div class="detail-count__group">
+      <p class="detail-count__amount">9 399
+        <span class="detail-count__currency">₽</span>
+      </p>
+      <div class="input-counter">
+        <button class="control-minus" (click)='decrement()'>
+          <span class="sign"></span>
+        </button>
+        <input type='number' class="input" name="" />
+        <button class="control-plus" (click)='increment()'>
+          <span class="sign"></span>
+          <span class="sign"></span>
+        </button>
+      </div>
+    </div>
+    <button class="btn-default btn-block" routerLink='/cart'>Купить</button>
+    <p class="detail-transfer">
+      <span class="icons icon-transfer"></span>
+      Бесплатная доставка
+    </p>
+  </div>
+</div>

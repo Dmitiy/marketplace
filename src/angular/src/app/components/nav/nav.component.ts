@@ -10,13 +10,13 @@ import { NAVS } from 'src/app/models/mock-nav';
 export class NavComponent implements OnInit {
   private _navs: INav[] = [];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     this.getNavs();
   }
 
   getNavs() {
-    return (this._navs = NAVS);
+    return this._navs = NAVS;
   }
 }
