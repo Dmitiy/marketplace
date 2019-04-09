@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-count.component.scss']
 })
 export class DetailCountComponent implements OnInit {
-
+  count: number = 1;
   constructor() { }
 
   ngOnInit() {
   }
-
+  increment() {
+    this.count++;
+  }
+  decrement() {
+    if (this.count <= 0) {
+      return
+    }
+    this.count--;
+  }
 }

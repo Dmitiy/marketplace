@@ -12,7 +12,5 @@ export class MenuHeaderComponent implements OnInit {
     public localStoreService: LocalStoreService
   ) { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }

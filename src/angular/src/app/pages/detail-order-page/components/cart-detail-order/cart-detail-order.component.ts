@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { LocalStoreService } from 'src/app/services/local-store.service';
+import { IProduct } from 'src/app/models/Product';
 
 @Component({
   selector: 'app-cart-detail-order',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-detail-order.component.scss']
 })
 export class CartDetailOrderComponent implements OnInit {
-
-  constructor() { }
+  @Input() product: IProduct;
+  constructor(
+    public localStoreService: LocalStoreService
+  ) { }
 
   ngOnInit() {
   }

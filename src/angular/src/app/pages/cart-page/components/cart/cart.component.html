@@ -4,15 +4,15 @@
   </header>
   <section class="cart-body">
     <ol class="cart-list">
-      <li class="cart-list__item">
-        <app-ticket></app-ticket>
-        <app-cart-controls></app-cart-controls>
+      <li class="cart-list__item" *ngFor='let product of localStoreService.store; let index = i'>
+        <app-ticket [product]='product' [id]='i'></app-ticket>
+        <app-cart-controls [product]='product' [id]='i'></app-cart-controls>
       </li>
     </ol>
   </section>
   <footer class="cart-footer">
     <p class="cart-total">
-      <span class="cart-total-items">3 товара</span>
+      <span class="cart-total-items">{{localStoreService.store.length}} товара(-ов)</span>
     </p>
     <p class="cart-total-price">К оплате:
       <span class="cart-total-cash">28 197</span>

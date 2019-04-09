@@ -7,33 +7,27 @@ import { IProduct } from '../models/Product';
 export class LocalStoreService {
 
   public counterCart: number = 0;
-  private _category: string;
-  private _cartfromStorage = localStorage.getItem('cart');
-  private _cart = this._cartfromStorage ? JSON.parse(this._cartfromStorage) : {};
-  private _store: any[] = [];
+  public store: IProduct[] = [];
 
-  constructor() { }
-
-  addToLocalStorage(product: IProduct) {
-
-    this._store.push(product);
-    localStorage.setItem('cart', JSON.stringify(this._store));
-    this.showCartCount();
+  constructor() {
+    const cart = localStorage.getItem('cart');
+    this.store = cart ? JSON.parse(cart) : [];
+    this.counterCart = this.store.length;
   }
 
-  showCartCount() {
-    this.counterCart = JSON.parse(this._cartfromStorage);
-    console.log('store', this._cart);
-
+  updateLocalStorage(product: IProduct) {
+    this.store.push(product);
+    localStorage.setItem('cart', JSON.stringify(this.store));
+    this.counterCart = this.store.length;
   }
 
-  // removefromCart(id: number) {
-  //   delete this.cart[id];
-  //   localStorage.setItem('cart', JSON.stringify(this.cart));
-  // }
+  removeItem(val: any) {
+    let index = this.store.filter(item => item !== val);
 
-  // updateCounterCart( id, count) {
-  //   this.cart[id] = count;
-  //   localStorage.setItem('cart', JSON.stringify(this.cart));
-  // }
+    if (this.store.find(index => index === val)) {
+      this.store.splice(this.store.indexOf(val), 1);
+    }
+
+    this.counterCart = this.store.length;
+  }
 }

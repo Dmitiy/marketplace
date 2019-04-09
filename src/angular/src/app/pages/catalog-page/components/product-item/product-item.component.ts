@@ -12,22 +12,20 @@ export class ProductItemComponent implements OnInit {
   @Input() product: IProduct[];
   @Input() category: string;
 
+
   constructor(
     public productService: ProductService,
     public localStoreService: LocalStoreService
   ) { }
 
   ngOnInit() {
+
   }
 
-  addToCart(product: IProduct, event) {
+  addToCart(product: IProduct) {
     event.preventDefault();
     event.stopPropagation();
-
-    this.localStoreService.addToLocalStorage(product);
+    this.localStoreService.updateLocalStorage(product);
 
   }
-
-
-
 }

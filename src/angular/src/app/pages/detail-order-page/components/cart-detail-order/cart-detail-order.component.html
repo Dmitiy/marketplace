@@ -1,18 +1,18 @@
 <div class="cart cart-detail-order">
   <header class="cart-header">
-    <p class="cart-detail-order__count">3 товара</p>
+    <p class="cart-detail-order__count">{{localStoreService.counterCart}} товара</p>
   </header>
   <section class="cart-body">
     <ol class="cart-list">
-      <li class="cart-list__item">
+      <li class="cart-list__item" *ngFor='let product of localStoreService.store;'>
         <figure class="ticket">
           <div class="ticket__img">
-            <img src="assets/img/products/chairs/ch-1.png" alt="Кресло Ханна">
+            <img src="{{product.imgSrc}}" alt="{{product.title}}">
           </div>
           <figcaption class="ticket__desc">
-            <p class="ticket__title">Кресло Ханна</p>
+            <p class="ticket__title">{{product.title}}</p>
             <p class="ticket__order">Код товара
-              <span class="ticket__number">1049556</span>
+              <span class="ticket__number">{{product.numId}}</span>
             </p>
           </figcaption>
         </figure>

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ControlsService } from '../../../../services/controls.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { IProduct } from 'src/app/models/Product';
 
 @Component({
   selector: 'app-input-counter',
@@ -7,13 +7,21 @@ import { ControlsService } from '../../../../services/controls.service';
   styleUrls: ['./input-counter.component.scss'],
 })
 export class InputCounterComponent implements OnInit {
-  constructor(public controlsService: ControlsService) {}
-  ngOnInit() {}
+  count: number = 1;
+  // @Input() product: IProduct;
 
-  decrementCount() {
-    this.controlsService.decrement();
+  constructor() { }
+
+  ngOnInit() {
   }
-  incrementCount() {
-    this.controlsService.increment();
+
+  increment() {
+    this.count++;
+  }
+  decrement() {
+    if (this.count <= 0) {
+      return
+    }
+    this.count--;
   }
 }

@@ -4,20 +4,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ControlsService {
-  public count: number = 0;
   public isOpen: boolean = true;
 
   constructor() { }
 
-  decrement(): void {
-    if (this.count <= 0) {
+  decrement(count): void {
+    if (count <= 0) {
       return;
     }
-    this.count--;
+    count--;
   }
 
-  increment(): void {
-    this.count++;
+  increment(count): void {
+    count++;
   }
 
   isOpenMenu() {
