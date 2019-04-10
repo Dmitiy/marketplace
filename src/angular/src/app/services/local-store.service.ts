@@ -27,7 +27,7 @@ export class LocalStoreService {
     if (this.store.find(index => index === val)) {
       this.store.splice(this.store.indexOf(val), 1);
     }
-
+    localStorage.setItem('cart', JSON.stringify(this.store));
     this.counterCart = this.store.length;
   }
 }

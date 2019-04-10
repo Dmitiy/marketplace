@@ -7,10 +7,9 @@ import { ControlsService } from '../../../../services/controls.service';
   styleUrls: ['./btn-minus.component.scss'],
 })
 export class BtnMinusComponent implements OnInit {
-  constructor(public controlsService: ControlsService) {}
+  constructor(public controlsService: ControlsService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
   decrement() {
-    this.controlsService.decrement();
   }
 }

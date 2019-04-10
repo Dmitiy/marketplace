@@ -7,10 +7,9 @@ import { ControlsService } from '../../../../services/controls.service';
   styleUrls: ['./btn-plus.component.scss'],
 })
 export class BtnPlusComponent implements OnInit {
-  constructor(public controlsService: ControlsService) {}
+  constructor(public controlsService: ControlsService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
   increment() {
-    this.controlsService.increment();
   }
 }

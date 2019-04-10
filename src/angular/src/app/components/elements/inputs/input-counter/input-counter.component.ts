@@ -7,13 +7,11 @@ import { ControlsService } from '../../../../services/controls.service';
   styleUrls: ['./input-counter.component.scss'],
 })
 export class InputCounterComponent implements OnInit {
-  constructor(public controlsService: ControlsService) {}
-  ngOnInit() {}
+  constructor(public controlsService: ControlsService) { }
+  ngOnInit() { }
 
   decrementCount() {
-    this.controlsService.decrement();
   }
   incrementCount() {
-    this.controlsService.increment();
   }
 }

@@ -24,8 +24,6 @@ export class ProductItemComponent implements OnInit {
     event.preventDefault();
     event.stopPropagation();
 
-    this.localStoreService.addToLocalStorage(product);
-
   }
 
 
