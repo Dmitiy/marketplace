@@ -1,0 +1,33 @@
+<ul class="menu-header">
+  <li class="menu__item mobile">
+    <div class="input-search">
+      <label class="search-label" for="">
+        <input class="input" placeholder="Поиск по товарам">
+        <span class="icons icon-search"></span>
+      </label>
+    </div>
+  </li>
+  <li class="menu__item">
+    <div class="menu-check-status">
+      <a class="menu__link" routerLink="/check-status">
+        Проверить статус заказа
+        <span class="icons icon-arrow"></span>
+      </a>
+    </div>
+  </li>
+  <li class="menu__item">
+    <div class="menu-cart">
+      <span class="icons icon-cart"></span>
+      <a class="menu__link" routerLink="/cart">Корзина</a>
+      <span class="menu-cart__counter">{{localStoreService.counterCart}}</span>
+    </div>
+  </li>
+  <li class="menu__item">
+    <div class="menu-log-in">
+      <button class="btn" routerLink="/login">
+        <span class="icons icon-user"></span>
+        Вход
+      </button>
+    </div>
+  </li>
+</ul>

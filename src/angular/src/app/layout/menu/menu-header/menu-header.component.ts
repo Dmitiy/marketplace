@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { LocalStoreService } from 'src/app/services/local-store.service';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.scss']
+  selector: 'app-menu-header',
+  templateUrl: './menu-header.component.html',
+  styleUrls: ['./menu-header.component.scss']
 })
-export class CartComponent implements OnInit {
+export class MenuHeaderComponent implements OnInit {
+
   constructor(
     public localStoreService: LocalStoreService
   ) { }

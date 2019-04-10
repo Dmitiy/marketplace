@@ -1,40 +1,29 @@
-import { AsideComponent } from './components/aside/aside.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { TopFooterComponent } from './components/footer/top-footer/top-footer.component';
-import { FooterBoxComponent } from './components/footer/footer-box/footer-box.component';
-import { FooterCartComponent } from './components/footer/footer-cart/footer-cart.component';
-import { HeaderCartComponent } from './components/header/header-cart/header-cart.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { NavComponent } from './components/nav/nav.component';
-import { MenuHeaderComponent } from './components/menu/menu-header/menu-header.component';
-import { MenuFooterComponent } from './components/menu/menu-footer/menu-footer.component';
-import { LogoFooterComponent } from './components/logo/logo-footer/logo-footer.component';
-import { LogoHeaderComponent } from './components/logo/logo-header/logo-header.component';
-import { InputSearchComponent } from './components/elements/inputs/input-search/input-search.component';
-import { BtnPlusComponent } from './components/elements/buttons/btn-plus/btn-plus.component';
-import { BtnMinusComponent } from './components/elements/buttons/btn-minus/btn-minus.component';
-import { BtnCloseComponent } from './components/elements/buttons/btn-close/btn-close.component';
-import { BurgerComponent } from './components/elements/buttons/burger/burger.component';
-import { SlotPhoneComponent } from './components/slots/slot-phone/slot-phone.component';
+/*
+* common layout of pages
+*/
 
-import { ArticleComponent } from './components/article/article.component';
-import { RangeSliderComponent } from './components/range-slider/range-slider.component';
-import { SelectComponent } from './components/elements/inputs/select/select.component';
-import { PaginationComponent } from './components/pagination/pagination.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { FormCheckoutOrderComponent } from './components/forms/form-checkout-order/form-checkout-order.component';
-import { CartCheckoutComponent } from './components/cart-checkout/cart-checkout.component';
-import { FormModalComponent } from './components/forms/form-modal/form-modal.component';
-import { ProductsListComponent } from './components/products-list/products-list.component';
-import { DetailItemComponent } from './components/detail-item/detail-item.component';
-import { DetailStatusOrderComponent } from './components/detail-status-order/detail-status-order.component';
-
-import { PreloaderComponent } from './components/preloader/preloader.component';
+import { NavComponent } from './layout/nav/nav.component';
+import { AsideComponent } from './layout/aside/aside.component';
+import { BurgerComponent } from './layout/slots/burger/burger.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { SlotPhoneComponent } from './layout/slots/slot-phone/slot-phone.component';
+import { PreloaderComponent } from './layout/preloader/preloader.component';
+import { TopFooterComponent } from './layout/footer/top-footer/top-footer.component';
+import { FooterBoxComponent } from './layout/footer/footer-box/footer-box.component';
+import { FooterCartComponent } from './layout/footer/footer-cart/footer-cart.component';
+import { HeaderCartComponent } from './layout/header/header-cart/header-cart.component';
+import { NavigationComponent } from './layout/navigation/navigation.component';
+import { MenuHeaderComponent } from './layout/menu/menu-header/menu-header.component';
+import { MenuFooterComponent } from './layout/menu/menu-footer/menu-footer.component';
+import { LogoFooterComponent } from './layout/logo/logo-footer/logo-footer.component';
+import { LogoHeaderComponent } from './layout/logo/logo-header/logo-header.component';
+import { RangeSliderComponent } from './layout/range-slider/range-slider.component';
+import { InputSearchComponent } from './layout/slots/input-search/input-search.component';
 
 /*
- * chunks of pages components
- */
+* chunks of pages components
+*/
 
 // catalog-page
 import { PreviewProductComponent } from './pages/catalog-page/components/preview-product/preview-product.component';
@@ -77,9 +66,6 @@ export const COMPONENTS_LIST = [
   BreadcrumbsComponent,
   NavComponent,
   BurgerComponent,
-  BtnPlusComponent,
-  BtnMinusComponent,
-  BtnCloseComponent,
   InputCounterComponent,
   CartControlsComponent,
   TicketComponent,
@@ -88,13 +74,9 @@ export const COMPONENTS_LIST = [
   LogoFooterComponent,
   LogoHeaderComponent,
   SlotPhoneComponent,
-  InputSearchComponent,
   FooterComponent,
   ProductItemComponent,
   ProductItemBigComponent,
-  RangeSliderComponent,
-  SelectComponent,
-  PaginationComponent,
   TopFooterComponent,
   FooterBoxComponent,
   ControlsFieldComponent,
@@ -102,25 +84,18 @@ export const COMPONENTS_LIST = [
   HeaderCartComponent,
   AsideComponent,
   NavigationComponent,
-  ProductsListComponent,
   CartComponent,
-  FormCheckoutOrderComponent,
   FormCheckoutOrderAddressComponent,
   FormCheckoutOrderReceiverComponent,
-  CartCheckoutComponent,
-  GalleryComponent,
-  DetailItemComponent,
   DetailCountComponent,
   DetailDescComponent,
   DetailCheckContainerComponent,
-  ArticleComponent,
   ProgressRoadComponent,
-  DetailStatusOrderComponent,
   DetailStatusOrderHeaderComponent,
   DetailStatusOrderFooterComponent,
   CartDetailOrderComponent,
-  FormModalComponent,
-
+  RangeSliderComponent,
+  InputSearchComponent,
   PageNotFoundComponent,
   CatalogPageComponent,
   ProductDetailInfoPageComponent,

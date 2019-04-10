@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ControlsService {
-  public isOpen: boolean = true;
+  public isOpen: boolean = false;
 
   constructor() { }
 

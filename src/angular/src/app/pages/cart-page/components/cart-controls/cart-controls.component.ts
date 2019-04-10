@@ -17,7 +17,7 @@ export class CartControlsComponent implements OnInit {
 
   ngOnInit() {
   }
-  removeItem(product) {
-    this.localStoreService.removeItem(product);
+  removeItem(product, id) {
+    this.localStoreService.removeItem(product, id);
   }
 }
