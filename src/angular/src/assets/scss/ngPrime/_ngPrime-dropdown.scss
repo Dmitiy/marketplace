@@ -1,0 +1,118 @@
+@import '../vars';
+
+.select-by-criteria {
+  width: 180px;
+}
+
+.select-by-selected-criteria {
+  width: 42px;
+
+  .ui-dropdown {
+    min-width: 3.5rem;
+  }
+}
+
+.select-by-criteria,
+.select-by-selected-criteria {
+  &.ui-dropdown-flip {
+    .ui-dropdown-trigger {
+      .pi-chevron-down {
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.ui-dropdown {
+  border: none !important;
+
+  .ui-dropdown-trigger {
+    right: 12px !important;
+
+    .pi-chevron-down {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 1.375rem;
+        background: url('#{$path-img}/sprite/sprite.png') no-repeat top left;
+        background-position: -86px -39px;
+        width: 10px;
+        height: 6px;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.ui-dropdown-label {
+  color: #142558 !important;
+  cursor: pointer;
+  font-family: PT_Root_UI_Bold;
+  font-size: 1rem !important;
+}
+
+.ui-widget * {
+  width: 100%;
+}
+
+.ui-dropdown-panel .ui-dropdown-items {
+  .ui-dropdown-item.ui-state-highlight {
+    background-color: $white !important;
+    color: #142558 !important;
+
+  }
+
+  .ui-dropdown-item:not(.ui-state-highlight):not(.ui-state-disabled):hover {
+    color: #142558 !important;
+    background-color: #eaeaea;
+  }
+
+  .ui-dropdown-item {
+    color: #142558 !important;
+    font-family: PT_Root_UI_Bold;
+    font-size: 1rem !important;
+    padding: 0.429em 0.657em !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  .ui-dropdown .ui-dropdown-label {
+    padding-right: 3em !important;
+  }
+
+  .app main {
+    .controls-field {
+      align-items: flex-start !important;
+
+      .select-by-criteria {
+        .ui-dropdown {
+          min-width: 13.5rem !important;
+
+          .ui-dropdown-trigger .ui-dropdown-trigger-icon {
+            left: -35% !important;
+          }
+        }
+      }
+
+      .ui-dropdown .ui-dropdown-trigger .ui-dropdown-trigger-icon {
+        top: 27%;
+      }
+
+      .select {
+        margin-top: 4px !important;
+      }
+
+      .range-slider {
+        width: 272px;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}

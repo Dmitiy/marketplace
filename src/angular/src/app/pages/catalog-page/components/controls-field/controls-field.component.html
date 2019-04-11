@@ -3,15 +3,17 @@
   <ul class="select">
     <li class="select__item">
       <label for="">Сортировка:</label>
-      <div class="select-by">
-        <p-dropdown name='selectedCriteria' [options]="criteria" [(ngModel)]="selectedCriteria">
+      <div class="select-by-criteria" [ngClass]="{ 'ui-dropdown-flip': isOpenCriteria }">
+        <p-dropdown name=' selectedCriteria' (onClick)='openSelectedCriteria()' [options]="criteria"
+          [(ngModel)]="selectedCriteria">
         </p-dropdown>
       </div>
     </li>
     <li class="select__item">
       <label for="">Товаров на странице:</label>
-      <div class="select-by">
-        <p-dropdown name='selectedCriteriaPage' [options]="criteriaPage" [(ngModel)]="selectedCriteriaPage">
+      <div class="select-by-selected-criteria" [ngClass]="{ 'ui-dropdown-flip': isOpenCriteriaPage }">
+        <p-dropdown name='selectedCriteriaPage' (onClick)='openSelectedCriteriaPage()' [options]="criteriaPage"
+          [(ngModel)]="selectedCriteriaPage">
         </p-dropdown>
       </div>
     </li>
