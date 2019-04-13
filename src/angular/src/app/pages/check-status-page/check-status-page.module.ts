@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CheckStatusPageRoutingModule } from './check-status-page-routing.module';
 import { CheckStatusPageComponent } from './check-status-page.component';
 
-const routes: Routes = [
-  { path: '', component: CheckStatusPageComponent },
-];
-
 @NgModule({
-  declarations: [],
+  declarations: [
+    CheckStatusPageComponent,
+  ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    FormsModule,
+    CheckStatusPageRoutingModule
   ]
 })
 export class CheckStatusPageModule { }

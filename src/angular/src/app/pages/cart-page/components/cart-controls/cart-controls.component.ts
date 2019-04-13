@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IProduct } from 'src/app/models/Product';
-import { LocalStoreService } from 'src/app/services/local-store.service';
+import { IProduct } from '../../../../models/Product';
+import { LocalStoreService } from '../../../../services/local-store.service';
 
 @Component({
   selector: 'app-cart-controls',
@@ -19,5 +19,5 @@ export class CartControlsComponent implements OnInit {
   }
   removeItem(product) {
     this.localStoreService.removeItem(product);
-}
+  }
 }

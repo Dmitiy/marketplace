@@ -1,0 +1,11 @@
+<div class="range-slider">
+  <div class="range-values">
+    <span class="txt-color">Цена</span>
+    <input class="input-min" type="number" name="rangeMinPrice" value="5300" />
+    <span class="txt-color">—</span>
+    <input class="input-max" type="number" name="rangeMaxPrice" value="12900">
+  </div>
+  <div class="range-input">
+    <p-slider [(ngModel)]="rangeValues" [style]="{'width':'14em'}" [range]="true"></p-slider>
+  </div>
+</div>
