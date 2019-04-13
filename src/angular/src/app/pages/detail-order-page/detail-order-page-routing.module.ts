@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DetailOrderPageComponent } from './detail-order-page.component';
 
 const routes: Routes = [
-  { path: 'detail-order', component: DetailOrderPageComponent },
+  { path: '', component: DetailOrderPageComponent },
 ];
 
 @NgModule({
