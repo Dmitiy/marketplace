@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IProduct } from '../../../../models/Product';
 import { LocalStoreService } from '../../../../services/local-store.service';
+import { ControlsService } from '../../../../services/controls.service';
 
 @Component({
   selector: 'app-cart-controls',
@@ -11,7 +12,9 @@ export class CartControlsComponent implements OnInit {
   @Input() id: number;
   @Input() product: IProduct;
 
+  totalPriceItem: number;
   constructor(
+    public controlsService: ControlsService,
     public localStoreService: LocalStoreService
   ) { }
 

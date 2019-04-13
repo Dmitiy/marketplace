@@ -12,7 +12,8 @@
   </section>
   <footer class="cart-footer">
     <p class="cart-total">
-      <span class="cart-total-items">{{localStoreService.store.length}} товара(-ов)</span>
+      <span class="cart-total-items">{{localStoreService.store.length}}
+        {{localStoreService.checkCounterFunc()}}</span>
     </p>
     <p class="cart-total-price">К оплате:
       <span class="cart-total-cash">28 197</span>

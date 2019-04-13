@@ -7,9 +7,11 @@ import { LocalStoreService } from '../../../../services/local-store.service';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
+
   constructor(
     public localStoreService: LocalStoreService
   ) { }
 
   ngOnInit() { }
+
 }

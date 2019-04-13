@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ControlsService {
-  public isOpen: boolean = false;
+  isOpen: boolean = false;
+  hasValueCart: boolean = false;
 
   constructor() { }
 
@@ -22,4 +23,5 @@ export class ControlsService {
   isOpenMenu() {
     this.isOpen = !this.isOpen;
   }
+
 }

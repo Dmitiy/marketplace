@@ -17,14 +17,16 @@
   </li>
   <li class="menu__item">
     <div class="menu-cart">
-      <span class="icons icon-cart"></span>
+      <span class="icons" [ngClass]="{'icon-cart': localStoreService.counterCart === 0, 'icon-cart_active':
+        localStoreService.counterCart > 0 }"></span>
       <a class="menu__link" routerLink="/cart">Корзина</a>
-      <span class="menu-cart__counter">{{localStoreService.counterCart}}</span>
+      <span class="menu-cart__counter"
+        [ngClass]='{"animated heartBeat" : controlsService.hasValueCart}'>{{localStoreService.counterCart}}</span>
     </div>
   </li>
   <li class="menu__item">
     <div class="menu-log-in">
-      <button class="btn" routerLink="/login">
+      <button class="btn" ripple routerLink="/login">
         <span class="icons icon-user"></span>
         Вход
       </button>

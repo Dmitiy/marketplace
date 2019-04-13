@@ -6,7 +6,7 @@
   height: 14px;
   background-color: transparent;
   border: none;
-  z-index: 101;
+  z-index: 1001;
 
   &:hover {
     cursor: pointer;
@@ -22,8 +22,7 @@
     transform-origin: left center;
     transition: 0.35s ease-in-out;
 
-    &:first-child {
-    }
+    &:first-child {}
 
     &:nth-child(2) {
       top: calc(50% - 1px);
