@@ -4,7 +4,7 @@ export interface IProduct {
   id?: number;
 
   // код товара
-  numId?: number | string;
+  numId?: number;
 
   // номер заказа
   orderId?: number | string;
@@ -16,10 +16,10 @@ export interface IProduct {
   orderStatus?: number | string;
 
   // доставка: 'бесплатная': true || 'платная': false
-  delivery?: string | boolean;
+  delivery?: string;
 
   // есть в наличии: 'в наличии': true || 'в наличии нет': false
-  hasValue?: string | boolean;
+  hasValue?: boolean;
 
   // категория товара
   name?: string;
