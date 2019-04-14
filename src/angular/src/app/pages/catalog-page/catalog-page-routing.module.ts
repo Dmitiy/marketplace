@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { CatalogPageComponent } from './catalog-page.component';
 
 const routes: Routes = [
-
   { path: '', component: CatalogPageComponent },
   { path: 'chairs', component: CatalogPageComponent },
   { path: 'beds', component: CatalogPageComponent },

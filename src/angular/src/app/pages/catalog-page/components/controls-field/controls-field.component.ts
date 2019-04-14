@@ -15,6 +15,7 @@ export class ControlsFieldComponent implements OnInit {
   criteriaPage: SelectItem[];
   selectedCriteria: ICriteria;
   selectedCriteriaPage: ICriteria;
+
   isOpenCriteria: boolean = false;
   isOpenCriteriaPage: boolean = false;
 

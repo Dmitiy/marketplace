@@ -20,7 +20,6 @@ export class CatalogPageComponent implements OnInit {
   constructor(
     private _productService: ProductService,
     private _router: Router,
-    private _route: ActivatedRoute,
   ) { }
 
   ngOnInit() {
@@ -32,6 +31,15 @@ export class CatalogPageComponent implements OnInit {
     this._productService
       .getProducts(this.category)
       .subscribe((res) => (this.products = res));
+  }
+
+  paginate(event) {
+    console.log(event);
+
+    //event.first = Index of the first record
+    //event.rows = Number of rows to display in new page
+    //event.page = Index of the new page
+    //event.pageCount = Total number of pages
   }
 
   // changeCategory(newCategory?: string) {
