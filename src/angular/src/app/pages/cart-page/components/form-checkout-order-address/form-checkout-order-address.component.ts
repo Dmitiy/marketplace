@@ -11,5 +11,4 @@ export class FormCheckoutOrderAddressComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

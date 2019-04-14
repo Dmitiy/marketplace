@@ -18,7 +18,7 @@
   <li class="menu__item">
     <div class="menu-cart">
       <span class="icons" [ngClass]="{'icon-cart': localStoreService.counterCart === 0, 'icon-cart_active':
-        localStoreService.counterCart > 0 }"></span>
+        localStoreService.counterCart > 0 }" routerLink="/cart"></span>
       <a class="menu__link" routerLink="/cart">Корзина</a>
       <span class="menu-cart__counter"
         [ngClass]='{"animated heartBeat" : controlsService.hasValueCart}'>{{localStoreService.counterCart}}</span>

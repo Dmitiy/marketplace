@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-detail-desc',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-desc.component.scss']
 })
 export class DetailDescComponent implements OnInit {
-
+  @Output() titleItem: string;
   constructor() { }
 
   ngOnInit() {

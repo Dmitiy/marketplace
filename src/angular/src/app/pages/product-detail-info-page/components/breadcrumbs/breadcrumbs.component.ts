@@ -28,6 +28,5 @@ export class BreadcrumbsComponent implements OnInit {
       .subscribe(r => {
         this.productName = r.title;
       });
-
   }
 }

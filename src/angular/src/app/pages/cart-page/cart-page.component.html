@@ -5,14 +5,17 @@
     </div>
     <div class="container app-wrap">
       <div class="form-checkout-order">
-        <form>
+
+        <form #userForm="ngForm">
+
           <fieldset>
+            <div>{{userForm.value | json}}</div>
             <h2 class="h2">Оформление заказа</h2>
             <p class="h3">Адрес доставки</p>
             <app-form-checkout-order-address></app-form-checkout-order-address>
             <p class="h3">Получатель</p>
             <app-form-checkout-order-receiver></app-form-checkout-order-receiver>
-            <button class="btn-default btn-block" routerLink='/detail-order'>Оформить заказ</button>
+            <button type='submit' class="btn-default btn-block" routerLink='/detail-order'>Оформить заказ</button>
           </fieldset>
         </form>
       </div>

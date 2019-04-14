@@ -173,6 +173,10 @@
         }
       }
 
+      .detail-status-order .container .order-status-detail__link {
+        margin-left: 110px;
+      }
+
       .detail-item {
         .container {
           padding: 24px;
@@ -998,6 +1002,10 @@
                   }
                 }
               }
+            }
+
+            &__info {
+              display: flex;
             }
           }
         }

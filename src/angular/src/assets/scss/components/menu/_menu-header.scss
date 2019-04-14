@@ -11,6 +11,10 @@
   &-header {
     justify-content: flex-end;
     margin-left: auto;
+
+    .icon-cart_active {
+      margin-right: 10px;
+    }
   }
 
   &__item {

@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IProduct } from 'src/app/models/Product';
 
 @Component({
   selector: 'app-input-counter',
@@ -8,8 +7,6 @@ import { IProduct } from 'src/app/models/Product';
 })
 export class InputCounterComponent implements OnInit {
   count: number = 1;
-  // @Input() product: IProduct;
-
   constructor() { }
 
   ngOnInit() {

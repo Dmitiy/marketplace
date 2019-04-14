@@ -18,9 +18,6 @@ export interface IProduct {
   // доставка: 'бесплатная': true || 'платная': false
   delivery?: string | boolean;
 
-  // общее количество заказанных единиц товара или список всех заказанных товаров
-  itemsCount?: number | number[];
-
   // есть в наличии: 'в наличии': true || 'в наличии нет': false
   hasValue?: string | boolean;
 
@@ -33,10 +30,13 @@ export interface IProduct {
   // путь к изображению товара
   imgSrc?: string;
 
-  // предпросмотр товара и галерея карточки товара
+  // предпросмотр товара
   imgSrcPreview?: string[];
 
-  // общее количество определенного товара в на
+  // галерея карточки товара
+  gallery?: string[];
+
+  // общее количество определенного товара в наличии
   count?: number;
 
   // цена товара

@@ -1,0 +1,19 @@
+:host {}
+
+@media (min-width: 320px) {
+  :host {
+    width: 100%;
+
+    .nav {
+      a {
+        &.active:after {
+          display: none;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

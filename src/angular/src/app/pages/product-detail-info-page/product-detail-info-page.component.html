@@ -6,32 +6,57 @@
         <p-galleria [images]="images" [activeIndex]='0' [showCaption]="false" [frameWidth]='50'>
         </p-galleria>
       </div>
-      <app-detail-check-container></app-detail-check-container>
-      <article class="article">
-        <header class="article-header">
-          <p class="h4">Описание</p>
-        </header>
-        <section class="article-body">
-          <p>Кресло Ханна — элегантное решение для кухни или столовой,выдержанной в современном
-            стиле. Каркас модели выполнен из массива древесины, видимые элементы отделаны
-            березовым шпоном и покрыты белой эмалью. Велюровая обивка приятна на ощупь, долго
-            сохраняет опрятный вид и первоначальный цвет. Мягкое сиденье обеспечивает комфорт
-            во время длительной трапезы или дружеской беседы за столом. Высокая спинка с легким
-            изгибом позволяет принять удобное положение, расслабив спину.</p>
-        </section>
-      </article>
-      <article class="article">
-        <header class="article-header">
-          <p class="h4">Материал обивки — ткань</p>
-        </header>
-        <section class="article-body">
-          <p>Удовольствие от трапезы за кухонным столом во многом зависит от качества кухонных
-            стульев.При выборе важно все, в том числе материал обивки. Кухонные стулья с
-            тканевой обивкой сиденья и спинки практичны, комфортны и гигиеничны: текстиль
-            приятен на ощупь, не способствует образованию конденсата при соприкосновении с
-            телом, стоек к механическим повреждениям, долго сохраняет первоначальный вид.</p>
-        </section>
-      </article>
+      <div class="detail-check-container">
+        <form>
+          <fieldset>
+            <div class="detail-desc">
+              <h2 class="h2">{{titleItem}}</h2>
+              <p class="detail-desc__code">
+                Код товара
+                <span>{{numIdItem}}</span>
+              </p>
+              <p class="detail-desc__stat" [ngClass]="{'detail-desc__stat--active' : hasValueItem}">
+                <span class="detail-desc__indicator"></span>
+                В наличии
+              </p>
+            </div>
+            <div class="detail-count">
+              <div class="app-wrap">
+                <div class="detail-count__group">
+                  <p class="detail-count__amount">{{priceItem}}
+                    <span class="detail-count__currency">{{currencyItem}}</span>
+                  </p>
+                  <div class="input-counter">
+                    <button class="control-minus" (click)='decrement()'>
+                      <span class="sign"></span>
+                    </button>
+                    <input type='number' class="input" name="detailCountInput" [(ngModel)]='countItem' />
+                    <button class="control-plus" (click)='increment()'>
+                      <span class="sign"></span>
+                      <span class="sign"></span>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn-default btn-block" routerLink='/cart'>Купить</button>
+                <p class="detail-transfer">
+                  <span class="icons icon-transfer"></span>
+                  {{deliveryItem}} доставка
+                </p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <ng-container *ngIf='descTitleItem'>
+        <article class="article" *ngFor='let article of descTitleItem;'>
+          <header class="article-header">
+            <p class="h4">{{article.title}}</p>
+          </header>
+          <section class="article-body">
+            <p>{{article.text}}</p>
+          </section>
+        </article>
+      </ng-container>
     </div>
   </div>
 </div>

@@ -19,7 +19,7 @@ export class ProductService {
     return this._http.get<IProduct[]>(`${this._URL}${link}`);
   }
 
-  getProduct(link: string, id: string): Observable<IProduct> {
+  getProduct(link: string, id: any): Observable<IProduct> {
     return this._http.get<IProduct>(`${this._URL}/${link}/${id}`);
   }
 }
