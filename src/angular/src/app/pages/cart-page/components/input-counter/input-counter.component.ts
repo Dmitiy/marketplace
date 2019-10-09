@@ -10,7 +10,7 @@ import { IProduct } from '../../../../models/Product';
 export class InputCounterComponent implements OnInit {
 	@Input() product: IProduct;
 	count: number;
-
+	store = this.localStoreService.store;
 	constructor(
 		public localStoreService: LocalStoreService
 	) { }
@@ -19,8 +19,7 @@ export class InputCounterComponent implements OnInit {
 
 	increment() {
 		this.count = ++this.product.count;
-		const store = this.localStoreService.store;
-		localStorage.setItem('cart', JSON.stringify(store));
+		localStorage.setItem('cart', JSON.stringify(this.store));
 	}
 	decrement() {
 
@@ -28,7 +27,6 @@ export class InputCounterComponent implements OnInit {
 			return;
 		}
 		this.count = --this.product.count;
-		const store = this.localStoreService.store;
-		localStorage.setItem('cart', JSON.stringify(store));
+		localStorage.setItem('cart', JSON.stringify(this.store));
 	}
 }
