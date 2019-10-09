@@ -1,24 +1,34 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { LocalStoreService } from 'src/app/services/local-store.service';
+import { IProduct } from '../../../../models/Product';
 
 @Component({
-  selector: 'app-input-counter',
-  templateUrl: './input-counter.component.html',
-  styleUrls: ['./input-counter.component.scss'],
+	selector: 'app-input-counter',
+	templateUrl: './input-counter.component.html',
+	styleUrls: ['./input-counter.component.scss'],
 })
 export class InputCounterComponent implements OnInit {
-  count: number = 1;
-  constructor() { }
+	@Input() product: IProduct;
+	count: number;
 
-  ngOnInit() {
-  }
+	constructor(
+		public localStoreService: LocalStoreService
+	) { }
 
-  increment() {
-    this.count++;
-  }
-  decrement() {
-    if (this.count <= 0) {
-      return
-    }
-    this.count--;
-  }
+	ngOnInit() { }
+
+	increment() {
+		this.count = ++this.product.count;
+		const store = this.localStoreService.store;
+		localStorage.setItem('cart', JSON.stringify(store));
+	}
+	decrement() {
+
+		if (this.count <= 0) {
+			return;
+		}
+		this.count = --this.product.count;
+		const store = this.localStoreService.store;
+		localStorage.setItem('cart', JSON.stringify(store));
+	}
 }

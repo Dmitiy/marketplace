@@ -4,23 +4,22 @@ import { LocalStoreService } from '../../../../services/local-store.service';
 import { ControlsService } from '../../../../services/controls.service';
 
 @Component({
-  selector: 'app-cart-controls',
-  templateUrl: './cart-controls.component.html',
-  styleUrls: ['./cart-controls.component.scss']
+	selector: 'app-cart-controls',
+	templateUrl: './cart-controls.component.html',
+	styleUrls: ['./cart-controls.component.scss']
 })
 export class CartControlsComponent implements OnInit {
-  @Input() id: number;
-  @Input() product: IProduct;
+	@Input() id: number;
+	@Input() product: IProduct;
 
-  totalPriceItem: number;
-  constructor(
-    public controlsService: ControlsService,
-    public localStoreService: LocalStoreService
-  ) { }
+	constructor(
+		public controlsService: ControlsService,
+		public localStoreService: LocalStoreService
+	) { }
 
-  ngOnInit() {
-  }
-  removeItem(product) {
-    this.localStoreService.removeItem(product);
-  }
+	ngOnInit() { }
+
+	removeItem(product) {
+		this.localStoreService.removeItem(product);
+	}
 }

@@ -5,30 +5,42 @@ import { LocalStoreService } from 'src/app/services/local-store.service';
 import { ControlsService } from 'src/app/services/controls.service';
 
 @Component({
-  selector: "app-product-item",
-  templateUrl: "./product-item.component.html",
-  styleUrls: ["./product-item.component.scss"],
+	selector: "app-product-item",
+	templateUrl: "./product-item.component.html",
+	styleUrls: ["./product-item.component.scss"],
 })
 export class ProductItemComponent implements OnInit {
-  @Input() product: IProduct[];
-  @Input() category: string;
+	@Input() product: IProduct[];
+	@Input() category: string;
 
-  constructor(
-    public productService: ProductService,
-    public controlsService: ControlsService,
-    public localStoreService: LocalStoreService
-  ) { }
+	constructor(
+		public productService: ProductService,
+		public controlsService: ControlsService,
+		public localStoreService: LocalStoreService
+	) { }
 
-  ngOnInit() { }
+	ngOnInit() { }
 
-  addToCart(product: IProduct) {
-    event.preventDefault();
-    event.stopPropagation();
-    this.localStoreService.updateLocalStorage(product);
-    this.controlsService.hasValueCart = !this.controlsService.hasValueCart;
-    setTimeout(() => {
-      this.controlsService.hasValueCart = false;
+	addToCart(product: IProduct) {
+		event.preventDefault();
+		event.stopPropagation();
 
-    }, 400)
-  }
+		const store = this.localStoreService.store;
+
+		// если есть в массиве такой же элемент, то увеличить счетчик
+
+		if (store.includes(product)) {
+			product.count++;
+			localStorage.setItem('cart', JSON.stringify(store));
+		} else {
+			this.localStoreService.updateLocalStorage(product);
+		}
+
+		// есть ли в наличии (boolean)
+		this.controlsService.hasValueCart = !this.controlsService.hasValueCart;
+
+		setTimeout(() => {
+			this.controlsService.hasValueCart = false;
+		}, 400);
+	}
 }

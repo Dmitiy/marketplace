@@ -1,9 +1,9 @@
 <ul class="cart-controls">
-  <li class="ticket__price"><span>{{product.price}} {{product.currency}}</span></li>
+  <li class="ticket__price"><span>{{product.price}}&nbsp;{{product.currency}}</span></li>
   <li class="ticket__counter">
-    <app-input-counter></app-input-counter>
+    <app-input-counter [product]='product'></app-input-counter>
   </li>
-  <li class="ticket__total-price"><span>9 399 {{product.currency}}</span></li>
+  <li class="ticket__total-price"><span>{{product.count * product.price}}&nbsp;{{product.currency}}</span></li>
   <li class="ticket__close">
     <button class="control-close" (click)='removeItem(product)'>
       <span class="sign"></span>
