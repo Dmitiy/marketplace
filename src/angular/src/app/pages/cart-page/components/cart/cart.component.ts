@@ -7,7 +7,7 @@ import { LocalStoreService } from '../../../../services/local-store.service';
 	styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-	totalSum: number = 0;
+	totalSum: number = this.localStoreService.totalPrice();
 	constructor(
 		public localStoreService: LocalStoreService
 	) { }

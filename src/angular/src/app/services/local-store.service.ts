@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IProduct } from '../models/Product';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
 	providedIn: 'root'
@@ -16,9 +17,13 @@ export class LocalStoreService {
 		this.counterCart = this.store.length;
 	}
 
+	setLocalStorage() {
+		localStorage.setItem('cart', JSON.stringify(this.store));
+	}
+
 	updateLocalStorage(product: IProduct) {
 		this.store.push(product);
-		localStorage.setItem('cart', JSON.stringify(this.store));
+		this.setLocalStorage();
 		this.counterCart = this.store.length;
 	}
 
@@ -27,7 +32,7 @@ export class LocalStoreService {
 			return item.id !== val.id;
 		});
 
-		localStorage.setItem('cart', JSON.stringify(this.store));
+		this.setLocalStorage();
 		this.counterCart = this.store.length;
 	}
 
@@ -46,8 +51,19 @@ export class LocalStoreService {
 		else if ((n >= 2 && n <= 4) || (n > 20 && n % 10 >= 2 && n % 10 <= 4)) {
 			this.wordEnds = "товара";
 		}
-		else { this.wordEnds = "товаров" };
+		else { this.wordEnds = "товаров" }
 
 		return this.wordEnds;
+	}
+
+	// итоговая сумма в корзине
+	totalPrice() {
+		let totalSum: number = 0;
+
+		totalSum = this.store
+			.map((el) => el.price * el.count)
+			.reduce((total, value) => total + value, 0);
+
+		return totalSum;
 	}
 }

@@ -19,7 +19,7 @@ export class InputCounterComponent implements OnInit {
 
 	increment() {
 		this.count = ++this.product.count;
-		localStorage.setItem('cart', JSON.stringify(this.store));
+		this.localStoreService.setLocalStorage();
 	}
 	decrement() {
 
@@ -27,6 +27,6 @@ export class InputCounterComponent implements OnInit {
 			return;
 		}
 		this.count = --this.product.count;
-		localStorage.setItem('cart', JSON.stringify(this.store));
+		this.localStoreService.setLocalStorage();
 	}
 }
