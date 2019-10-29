@@ -1,7 +1,7 @@
 <a class="product-link" routerLink="{{category}}/{{product.id}}">
   <figure class="product-item">
     <div class="product-item__img">
-      <img src={{product.imgSrc}} alt='{{product.title}}' />
+      <img [src]=product.imgSrc alt='{{product.title}}' />
     </div>
     <figcaption class="product-item__desc">
       <p class="product-item__title overflow-ellipsis">{{product.title}}</p>

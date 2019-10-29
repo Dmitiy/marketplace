@@ -7,7 +7,7 @@
       <li class="cart-list__item" *ngFor='let product of localStoreService.store;'>
         <figure class="ticket">
           <div class="ticket__img">
-            <img src="{{product.imgSrc}}" alt="{{product.title}}">
+            <img [src]="product.imgSrc" alt="{{product.title}}">
           </div>
           <figcaption class="ticket__desc">
             <p class="ticket__title">{{product.title}}</p>

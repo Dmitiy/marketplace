@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { IProduct } from '../models/Product';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, fromEvent } from 'rxjs';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class LocalStoreService {
+
+	store$: BehaviorSubject<Array<IProduct>> = new BehaviorSubject<Array<IProduct>>([]);
 
 	counterCart: number = 0;
 	store: IProduct[] = [];
@@ -19,6 +21,7 @@ export class LocalStoreService {
 
 	setLocalStorage() {
 		localStorage.setItem('cart', JSON.stringify(this.store));
+		this.store$.next(this.store);
 	}
 
 	updateLocalStorage(product: IProduct) {

@@ -19,7 +19,9 @@ export class ProductItemComponent implements OnInit {
 		public localStoreService: LocalStoreService
 	) { }
 
-	ngOnInit() { }
+	ngOnInit() { 
+		
+	}
 
 	addToCart(product: IProduct) {
 		event.preventDefault();
@@ -31,7 +33,7 @@ export class ProductItemComponent implements OnInit {
 
 		if (store.includes(product)) {
 			product.count++;
-			localStorage.setItem('cart', JSON.stringify(store));
+			this.localStoreService.setLocalStorage();
 		} else {
 			this.localStoreService.updateLocalStorage(product);
 		}

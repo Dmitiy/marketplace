@@ -9,8 +9,9 @@ import { IProduct } from '../../../../models/Product';
 })
 export class InputCounterComponent implements OnInit {
 	@Input() product: IProduct;
+
 	count: number;
-	store = this.localStoreService.store;
+
 	constructor(
 		public localStoreService: LocalStoreService
 	) { }
@@ -21,11 +22,12 @@ export class InputCounterComponent implements OnInit {
 		this.count = ++this.product.count;
 		this.localStoreService.setLocalStorage();
 	}
-	decrement() {
 
+	decrement() {
 		if (this.count <= 0) {
 			return;
 		}
+
 		this.count = --this.product.count;
 		this.localStoreService.setLocalStorage();
 	}
