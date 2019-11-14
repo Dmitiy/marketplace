@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LocalStoreService } from '../../../../services/local-store.service';
-import { take } from 'rxjs/operators';
-import { Subscription, Subject } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 @Component({
 	selector: 'app-cart',
@@ -9,8 +8,7 @@ import { Subscription, Subject } from 'rxjs';
 	styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit, OnDestroy {
-	totalSum = 0;
-	private _subscription: Subject<any> = new Subject<any>();
+	totalSum: number;
 	subs: Subscription;
 
 	constructor(
@@ -18,22 +16,17 @@ export class CartComponent implements OnInit, OnDestroy {
 	) { }
 
 	ngOnInit() {
-		this.totalSum = this.localStoreService.totalPrice();
-		this.subs = this.localStoreService.store$.pipe().subscribe(res => {
+		this.totalSum = this.localStoreService.setLocalStorage();
+		this.subs = this.localStoreService.store$.subscribe(res => {
 			if (res.length) {
 				this.totalSum = res.map(el => el.price * el.count).reduce((a, b) => a + b, 0);
 			} else {
 				this.totalSum = 0;
 			}
-			console.log(this.totalSum);
-
 		});
 	}
 
 	ngOnDestroy() {
-		// this.localStoreService.store$.unsubscribe();
-		// this._subscription.next();
-		// this._subscription.complete();
 		this.subs.unsubscribe();
 	}
 }
