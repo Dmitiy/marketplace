@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
 	styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit, OnDestroy {
-	totalSum: number;
+	totalSum;
 	subs: Subscription;
 
 	constructor(
