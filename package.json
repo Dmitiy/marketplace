@@ -40,7 +40,7 @@
     "img-loader": "^3.0.0",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-loader": "^2.4.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
